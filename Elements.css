@@ -1,0 +1,55 @@
+/* ==================================================
+                      CHECK BOX
+====================================================*/
+/* скрываем стандратный чек бокс */
+.ch-box-cont input[type="checkbox"] {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+/* контейнер */
+.ch-box-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+/* круг */
+.ch-box-cont label{
+  background-color: transparent;
+  border: 1px solid var(--border-primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+
+  display: flex;
+  justify-content: center;
+}
+/* галочка */
+.ch-box-cont label:after {
+  content: "";
+  border: 2px solid var(--background-color);
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+  height: 3px;
+  width: 8px;
+  margin-top: 4px;
+  opacity: 0;
+}
+
+/* checked state background circle*/
+.ch-box-cont input[type="checkbox"]:checked + label {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+/* checked state show check*/
+.ch-box-cont input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+.ch-box-label:hover{
+  cursor: pointer;
+}

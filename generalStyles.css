@@ -63,12 +63,25 @@ body{
 .fw-600{
     font-weight: 600;
 }
+.fw-7{
+    font-weight: 600;
+}
 .fw-800{
     font-weight: 800;
 }
 .text-20{
     font-size: 20px;
 }
+
+.fs-36{font-size: 36px;}
+
+.fc-se{color: var(--secondary-color);}
+.fc-pr{color: var(--primary-color);}
+
+.ta-center{text-align: center;}
+.ta-end{text-align: end;}
+
+
 
 .sect-title-marg{
     margin: 48px 0 24px 0;
@@ -156,6 +169,20 @@ body{
 }
 
 
+.grid-text-icon{
+    display: grid;
+    width: min-content;
+    grid-template-columns: max-content 24px;
+    gap: 8px;
+}
+.grid-icon-text{
+    width: min-content;
+    display: grid;
+    grid-template-columns: 24px max-content;
+    gap: 8px;
+}
+
+
 
 /* ==================================================
                             HEADER
@@ -238,11 +265,12 @@ header .Sign i{                     /* это что? */
 }
 
 
-
-/* PROFILE TABS IN MENU PROFILE */
+/* ==================================================
+                PROFILE TABS IN MENU PROFILE
+====================================================*/
 .nav-profile{
     background: none;
-    padding: 36px 20px;
+    padding: 36px 0;
     height: auto;
 }
 
@@ -275,6 +303,7 @@ header .Sign i{                     /* это что? */
     grid-template-columns: 24px max-content;
     gap: 8px;
     padding: 4px 16px 4px 4px;
+    margin-left: 20px;
 }
 .profile-item{
     grid-template-columns: 1fr 24px;
