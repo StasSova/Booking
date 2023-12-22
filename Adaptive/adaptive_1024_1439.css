@@ -3,20 +3,10 @@
 /* ==================================================
                 PROFILE TABS IN MENU PROFILE
 ====================================================*/
-.nav-profile{
-    background: none;
-    padding: 24px 0;
-    height: auto;
-}
-
-.profile-item-back{
-    grid-template-columns: 24px max-content;
-}
-.profile-item-back p:before{
-    content: "Main";
-}
-
 .profile-item{
     margin-right: 16px;
+}
+.profile-item-back{
+    margin: 0 16px 0 20px;
 }
 }
