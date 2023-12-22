@@ -9,6 +9,7 @@
     width: 75%;
     margin: 64px auto 0 auto;
     background-color: var(--background-color);
+    height: auto;
 }
 
 .header{
