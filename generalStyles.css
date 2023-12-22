@@ -175,7 +175,7 @@ header h3 a{
 }
 header h3{
     font-size: 26px;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 /* right panel */
@@ -244,6 +244,7 @@ header .Sign i{                     /* это что? */
 /* ==================================================
                             NAVIGATION
 ====================================================*/
+
 nav{
     display: flex;
     height: 220px;
@@ -271,27 +272,30 @@ nav .panel:hover{
     transition: 1s;
     box-shadow: 0px 4px 4px 2px var(--border-primary-color);
 }
-
 /* container */
 nav .panel div{
     margin-left: 50px;
 }
-/* text in container */
 nav .panel div span{
     margin-right: 5px;
     margin-left: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black-color);
 }
 /* separator */
 nav .panel .br{
     height: 80%;
     border-left: 1px solid var(--border-primary-color);
 }
-
 nav .panel div p{
+  
     display: flex;
     align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black-color);
 }
-
 /* контейнер кнопки поиска */
 nav .panel div .search{
     display: flex;
@@ -302,6 +306,11 @@ nav .panel div .search{
     margin-right: 12px;
     align-items: center;
     justify-content: center;
+  transition: transform  0.3s ease; 
+}
+
+nav .panel div .search:hover {
+  transform: scale(1.1);
 }
 
 /* Иконка поиска */
@@ -313,12 +322,10 @@ nav .panel .search svg path{
     fill: var(--secondary-color); /*цвет внутри окошка*/
     stroke: var(--background-color); /*цвет бордера*/
 }
-
 nav .panel span{
-    padding-left: 15px;
-    padding-right: 10px;
-}
+  white-space: nowrap;
 
+}
 
 /* ==================================================
                             BOOKING
@@ -336,7 +343,6 @@ nav .panel span{
     width: 25px;
     height: 25px;
 }
-
 .Booking div{
     padding-top: 40px;
     height: 100px;
@@ -344,15 +350,52 @@ nav .panel span{
     flex-direction: column;
     align-items: center;
 }
+.Booking div p
+{
+  margin-top: 5px;
+}
+.Booking div:hover p {
+    color: var(--black-color); 
+}
+
+.Booking img {
+  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+.Booking .first:hover img,
+.Booking .second:hover img,
+.Booking .third:hover img {
+  filter: brightness(0) saturate(100%) invert(0);
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+
 /* TEXT */
 .Booking p.simple-primary-text{
     transition: color 0.5s ease;
+  color: var(--primary-color);
 }
 .Booking p.simple-primary-text:hover{
     color: var(--black-color);
     transition: 0.5s ease;
 }
-
+/* ICON */
+.cust-icon{
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+}
+/* цвет иконки */
+.cust-icon path{
+     fill: var(--background-color); /* иконка внутри */
+     stroke: var(--primary-color); /* граница иконки */
+}
+/* прямоугольник иконки */
+.cust-icon rect{
+    width: 24px;
+    height: 24px;
+}
 
 /* ==================================================
                         SMALL HOTELS CARD
