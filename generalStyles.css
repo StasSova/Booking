@@ -169,6 +169,8 @@ body{
 }
 
 
+
+
 .grid-text-icon{
     display: grid;
     width: min-content;
@@ -176,9 +178,9 @@ body{
     gap: 8px;
 }
 .grid-icon-text{
-    width: min-content;
+    width: 100%;
     display: grid;
-    grid-template-columns: 24px max-content;
+    grid-template-columns: 24px 1fr;
     gap: 8px;
 }
 

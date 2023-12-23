@@ -7,10 +7,12 @@ main section{
     margin-top: 24px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
 }
 .facility-block{
     margin: 24px 0;
 }
+
 
 p.fac-title{
     font-weight: 700;
@@ -28,24 +30,64 @@ p.fac-title{
     margin: 8px 0;
 }
 
+
 /* ==================================================
                             ADAPTIVE 1024 1439
 ====================================================*/
 @media only screen and (min-width: 1024px) and (max-width: 1439px)
 {
-
+    .grid-cont{
+        margin-top: 24px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .column:nth-child(3){
+        grid-column: span 2;
+        order: -1; /* делаем элемент первым*/
+    }
+    .TravInfo .card{
+        padding: 16px 36px;
+    }
 }
 /* ==================================================
                             ADAPTIVE 768 1023
 ====================================================*/
 @media only screen and (min-width: 768px) and (max-width: 1023px)
 {
-
+    .grid-cont{
+        margin-top: 24px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .column:nth-child(3){
+        grid-column: span 2;
+        order: -1; /* делаем элемент первым*/
+    }
+    .TravInfo .card{
+        padding: 16px 36px;
+    }
 }
 /* ==================================================
-                            ADAPTIVE 320 765
+                            ADAPTIVE 320 767
 ====================================================*/
-@media only screen and (max-width: 765px)
+@media only screen and (max-width: 767px)
 {
+    .grid-cont{
+        margin-top: 24px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+    .column:nth-child(3){
+        order: -1; /* делаем элемент первым*/
+    }
+    .TravInfo .card{
+        padding: 16px 36px;
+    }
 
+    .TravInfo .facility-block .grid-icon-text:not(:first-child) {
+        margin-left: 32px;
+    }
+    
+    
 }
