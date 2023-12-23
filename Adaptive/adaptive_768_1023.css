@@ -9,4 +9,12 @@
 .profile-item-back{
     margin: 0 16px 0 20px;
 }
+/* ==================================================
+            SMALL SQUARE CARD WITH ICON AND TEXT
+====================================================*/
+.imp-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
 }

@@ -45,14 +45,6 @@
 .Reviews .flex-col-cent{
     flex-basis: 30%;
 }
-/* ==================================================
-                        IMPORTANT INFORMATION
-====================================================*/
-.imp-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-}
 
 
 
