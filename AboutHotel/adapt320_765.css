@@ -70,7 +70,7 @@
     gap: 16px;
     margin-bottom: 16px;
 }
-.price .Sub-title-primary{
+.price p{
     text-align: center;
 }
 .price .prev-item{

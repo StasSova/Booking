@@ -91,12 +91,6 @@
     justify-items: center;
 }
 
-.book-price-cont p.simple-secondary-text{
-    font-weight: 800;
-    font-size: 20px;
-    text-align: center;
-}
-
 .book-item .book-price-cont{
     order: 2;
     align-items: center;
