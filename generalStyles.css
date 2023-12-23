@@ -372,7 +372,9 @@ nav .panel .search svg{
 .profile-tabs{
     flex-basis: 100%;
     display: flex;
-    overflow-x: scroll;
+    overflow-x: auto;
+    align-items: center;
+    height: auto;
 }
 .profile-tabs p{
     text-wrap: nowrap;
@@ -380,6 +382,7 @@ nav .panel .search svg{
 
 .profile-item-container{
     display: flex;
+    height: 100%;
 }
 .profile-item-back,
 .profile-item{
@@ -388,6 +391,7 @@ nav .panel .search svg{
     border-radius: 16px;
     border: 1px solid var(--border-primary-color);
     align-items: center;
+    margin: 0 0 8px 0;
     transition: box-shadow 1s;
 }
 /* BACK */
@@ -400,7 +404,7 @@ nav .panel .search svg{
     grid-template-columns: 24px 1fr;
     gap: 8px;
     padding: 4px 16px 4px 4px;
-    margin: 0 20px 0 32px;
+    margin: 0 20px 8px 32px;
 }
 
 .profile-item-back img{
@@ -429,6 +433,7 @@ nav .panel .search svg{
 .active-pr-item svg rect{
     fill: var(--secondary-color);
 }
+
 
 
 
