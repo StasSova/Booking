@@ -1,21 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
-body{
-  font-family: 'Nunito Sans', sans-serif;
-  margin: 0;
-}
-:root{
-    --background-color: #ffffff;
-    --primary-color: #717171;
-    --secondary-color: #581ADB;
-    --secondary-shadow-color:#581ADB59; 
-    --black-color: #222222;
-    --white-text-color: #FFFFFF;
-    --border-primary-color: #DDDDDD;
-    --text-bth-color: #ee0039;
-    --text-black-color: #222222;
-}
-
-
 /* ==================================================
                               MAIN
 ====================================================*/
@@ -111,7 +93,7 @@ main .map-button {
   background-color: transparent;
   border: 1px solid var(--border-primary-color);
   border-radius: 20px;
-  color: var(--text-bth-color);
+  color: var(--red-color);
   font-size: 16px;
   font-weight: 400;
 }
@@ -288,7 +270,7 @@ main content .card .container .card-header .hotelName h1
 {
   font-size: 20px;
   font-weight: 700;
-  color: var(--text-black-color);
+  color: var(--black-color);
   margin: 0;
 }
 main content .card .container .card-header .hotelName img:first-of-type{
@@ -439,36 +421,4 @@ main content .card .container .crown-icon {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-}
-
-
-
-/* ==================================================
-                                FOOTER
-====================================================*/
-footer{
-    margin-top: 300px;
-    height: 464px;
-    background-color: white;
-    border-top:1px solid #DDDDDD;
-}
-
-footer .ftr-container{
-    color: #717171;
-    padding-top: 2%;
-    width: 75%;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-}
-.ftr-container ul{
-    list-style-type:none;
-
-}
-.ftr-container li{
-    margin-bottom: 10px;
-}
-.ftr-container a{
-    text-decoration: none;
-    color: var(--primary-color);
 }

@@ -20,6 +20,7 @@ body{
     --secondary-shadow-color:#581ADB59;
     --box-black-shadow: rgba(0,0,0,0.36); 
     --black-color: #222222;
+    --red-color:#ee0039;
     --white-text-color: #FFFFFF;
     --border-primary-color: #DDDDDD;
 }
@@ -54,6 +55,17 @@ body{
 .simple-secondary-text{ color: var(--secondary-color); }
 .simple-black-text {color: var(--black-color);}
 
+
+.simple-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--primary-color);
+}
+a{
+    text-decoration: none;
+}
+
 .upper-text{
     text-transform: uppercase;
 }
@@ -66,20 +78,23 @@ body{
 .fw-7{
     font-weight: 700;
 }
-.fw-800{
-    font-weight: 800;
-}
+
 .text-20{
     font-size: 20px;
 }
+.font-weight-8{
+    font-weight: 800;
+}
 
-.fs-36{font-size: 36px;}
+.font-size-36{font-size: 36px;}
+.font-size-24{font-size: 24px;}
 
-.fc-se{color: var(--secondary-color);}
-.fc-pr{color: var(--primary-color);}
+.font-col-se{color: var(--secondary-color);}
+.font-col-pr{color: var(--primary-color);}
+.font-col-bl{color: var(--black-color);}
 
-.ta-center{text-align: center;}
-.ta-end{text-align: end;}
+.txt-al-center{text-align: center;}
+.txt-al-end{text-align: end;}
 
 
 
@@ -110,6 +125,7 @@ body{
 }
 
 /* ICON */
+.icon-bl,
 .cust-icon{
     margin-right: 8px;
     width: 24px;
@@ -126,7 +142,9 @@ body{
     width: 24px;
     height: 24px;
 }
-
+.icon-bl{
+     stroke: var(--black-color); /* граница иконки */
+}
 
 /* BUTTON */
 .btn-small-book{
@@ -168,13 +186,10 @@ body{
     font-weight: 700;
 }
 
-
-
-
 .grid-text-icon{
     display: grid;
-    width: min-content;
-    grid-template-columns: max-content 24px;
+    width: 100%;
+    grid-template-columns: 1fr 24px;
     gap: 8px;
 }
 .grid-icon-text{
@@ -184,6 +199,24 @@ body{
     gap: 8px;
 }
 
+
+.hoverable-1{
+    transition: box-shadow 0.5s;
+}
+.hoverable-1:hover{
+    box-shadow: 0px 4px 4px 2px var(--border-primary-color);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.hoverable-2{
+    transition: transform 0.5s;
+}
+.hoverable-2:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
 
 
 /* ==================================================
@@ -198,16 +231,6 @@ header{
     padding: 0 20px;
     border-bottom: 1px solid var(--border-primary-color);
 }
-/* Title */
-header h3 a{
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-header h3{
-    font-size: 26px;
-    font-weight: 800;
-}
-
 /* right panel */
 header .Sign{
     display: flex;
@@ -216,54 +239,124 @@ header .Sign{
     justify-content: space-between;
 }
 
+/* Language */
+header .Sign a.lang{height: 32px;width: 32px;}
+
 /* на каждый элемент */
-header .Sign div{
+header .Sign a.Reg,
+header .Sign a.SignIn{
     border-radius: 30px;
     margin-left: 10px;
     border: 1px solid var(--border-primary-color);
-    transition:
-        box-shadow 1s ease,
-        scale 0.5s ease;
 }
+header .Sign .Reg{padding: 6px 16px 6px 16px;}
+header .Sign .SignIn{padding: 6px 6px 6px 16px;}
 
-/* Language */
-header .Sign .lang{
-    border-radius: 50%;
-    padding: 0px;
-    height: 32px;
-    width: 32px;
-    border: none;
-    background: url(img/Component\ 1.svg) no-repeat;
-}
-header .Sign .lang:hover{
-    transition: 0.5s;
-    scale: 1.25;
-}
 
-/* Register */
-header .Sign .Reg{
-    padding: 9px 16px 9px 16px;
+/* ==================================================
+                            NAVIGATION
+====================================================*/
+nav{
+    display: flex;
+    height: 220px;
+    background: url(img/Back_img_Main.png);
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
 }
-header .Sign .SignIn:hover,
-header .Sign .Reg:hover{
-    transition: 1s;
-    box-shadow: 0px 4px 4px 2px var(--border-primary-color);
-}
-
-/* Sign in */
-header .Sign .SignIn img{
-    padding-left: 20px;
-    padding-right: 10px;
-}
-header .Sign .SignIn{
+/* Panel */
+nav .panel{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 6px 0px 6px 16px;
+    border-radius: 32px;
+    margin: -30px;
+    position: absolute;
+    width:70%;
+    border: 1px solid var(--border-primary-color);
+    Height:64px;
+    background-color: var(--background-color);
 }
-                                        
-header .Sign i{                     /* это что? */
-    padding-left: 20px; 
+/* container */
+nav .panel div{
+    margin-left: 50px;
+}
+nav .panel div span{
+    margin-right: 8px;
+    margin-left: 8px;
+}
+nav .panel span{
+     white-space: nowrap;
+}
+/* separator */
+nav .panel .br{
+    height: 80%;
+    border-left: 1px solid var(--border-primary-color);
+}
+nav .panel div p{
+    display: flex;
+    align-items: center;
+}
+/* контейнер кнопки поиска */
+nav .panel div .search{
+    display: flex;
+    background-color: var(--secondary-color);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 8px;
+    align-items: center;
+    justify-content: center;
+}
+/* Иконка поиска */
+nav .panel .search svg{
+    width: 22px;
+    height: 22px;
+    fill: var(--secondary-color); /*цвет внутри окошка*/
+    stroke: var(--background-color); /*цвет бордера*/
+}
+
+/* ==================================================
+                            BOOKING
+====================================================*/
+.Booking{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    height: 184px;
+    background-color: var(--background-color);
+}
+.Booking div img{
+    width: 25px;
+    height: 25px;
+}
+.Booking div{
+    padding-top: 40px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Booking div p{margin-top: 5px;}
+.Booking div:hover p {color: var(--black-color); }
+
+.Booking img {
+  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+.Booking .first:hover img,
+.Booking .second:hover img,
+.Booking .third:hover img {
+  filter: brightness(0) saturate(100%) invert(0);
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+/* TEXT */
+.Booking p.simple-primary-text{transition: color 0.5s ease;}
+.Booking p.simple-primary-text:hover{
+    color: var(--black-color);
+    transition: 0.5s ease;
 }
 
 
@@ -340,161 +433,8 @@ header .Sign i{                     /* это что? */
 
 
 
-/* ==================================================
-                            NAVIGATION
-====================================================*/
-
-nav{
-    display: flex;
-    height: 220px;
-    background: url(img/Rectangle\ 4.png);
-    width: 100%;
-    justify-content: center;
-    align-items: flex-end;
-}
-/* Panel */
-nav .panel{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 30px;
-    margin: -30px;
-    position: absolute;
-    width:70%;
-    border: 1px solid var(--border-primary-color);
-    Height:64px;
-    background-color: var(--background-color);
-
-    transition: box-shadow 1s ease;
-}
-nav .panel:hover{
-    transition: 1s;
-    box-shadow: 0px 4px 4px 2px var(--border-primary-color);
-}
-/* container */
-nav .panel div{
-    margin-left: 50px;
-}
-nav .panel div span{
-    margin-right: 5px;
-    margin-left: 5px;
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--black-color);
-}
-/* separator */
-nav .panel .br{
-    height: 80%;
-    border-left: 1px solid var(--border-primary-color);
-}
-nav .panel div p{
-  
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--black-color);
-}
-/* контейнер кнопки поиска */
-nav .panel div .search{
-    display: flex;
-    background-color: var(--secondary-color);
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    margin-right: 12px;
-    align-items: center;
-    justify-content: center;
-  transition: transform  0.3s ease; 
-}
-
-nav .panel div .search:hover {
-  transform: scale(1.1);
-}
-
-/* Иконка поиска */
-nav .panel .search svg{
-    width: 22px;
-    height: 22px;
-}
-nav .panel .search svg path{
-    fill: var(--secondary-color); /*цвет внутри окошка*/
-    stroke: var(--background-color); /*цвет бордера*/
-}
-nav .panel span{
-  white-space: nowrap;
-
-}
-
-/* ==================================================
-                            BOOKING
-====================================================*/
-.Booking{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 70%;
-    margin: auto;
-    height: 184px;
-    background-color: var(--background-color);
-}
-.Booking div img{
-    width: 25px;
-    height: 25px;
-}
-.Booking div{
-    padding-top: 40px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.Booking div p
-{
-  margin-top: 5px;
-}
-.Booking div:hover p {
-    color: var(--black-color); 
-}
-
-.Booking img {
-  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
-}
-
-.Booking .first:hover img,
-.Booking .second:hover img,
-.Booking .third:hover img {
-  filter: brightness(0) saturate(100%) invert(0);
-  transform: scale(1.1);
-  opacity: 0.7;
-}
 
 
-/* TEXT */
-.Booking p.simple-primary-text{
-    transition: color 0.5s ease;
-  color: var(--primary-color);
-}
-.Booking p.simple-primary-text:hover{
-    color: var(--black-color);
-    transition: 0.5s ease;
-}
-/* ICON */
-.cust-icon{
-    margin-right: 8px;
-    width: 24px;
-    height: 24px;
-}
-/* цвет иконки */
-.cust-icon path{
-     fill: var(--background-color); /* иконка внутри */
-     stroke: var(--primary-color); /* граница иконки */
-}
-/* прямоугольник иконки */
-.cust-icon rect{
-    width: 24px;
-    height: 24px;
-}
 
 /* ==================================================
                         SMALL HOTELS CARD
