@@ -22,22 +22,83 @@ body{
     --white-text-color: #FFFFFF;
     --border-primary-color: #DDDDDD;
 }
-
-/* Обычный текст */
-.simple-black-text,
-.simple-primary-text,
-.simple-secondary-text{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-}
-.simple-primary-text{ color: var(--primary-color); }
-.simple-secondary-text{ color: var(--secondary-color); }
-.simple-black-text {color: var(--black-color);}
-
 /* ==================================================
                         TYPOGRAPHY    
 ====================================================*/
+a{
+    text-decoration: none;
+}
+/* HEADER */
+.header-title{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--black-color);
+}
+.header-title a{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--secondary-color);
+}
+.header-button-text{
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+/* NAVIGATION */
+nav .panel p{
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+/* MAIN */
+.main-title{
+    color: var(--secondary-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+/* SMALL HOTELS CARD */
+.hoteles-title{
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.hotels-descr{
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.hotels-price{
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
 .simple-text{
     font-weight: 400;
     font-size: 16px;
@@ -63,16 +124,6 @@ body{
     text-align: center;
     text-transform: uppercase;
     margin: 48px 0 24px 0;
-}
-
-
-a{
-    text-decoration: none;
-}
-
-.upper-text{text-transform: uppercase;}
-.bold-text{
-    font-weight: 700;
 }
 
 /* FONT WEIGHT */
@@ -109,31 +160,6 @@ a{
 /* TEXT TRANSFORM */
 .tt-up{text-transform: uppercase;}
 
-
-
-.text-20{
-    font-size: 20px;
-}
-.font-weight-8{
-    font-weight: 800;
-}
-
-.font-size-36{font-size: 36px;}
-.font-size-24{font-size: 24px;}
-
-.font-col-se{color: var(--secondary-color);}
-.font-col-pr{color: var(--primary-color);}
-.font-col-bl{color: var(--black-color);}
-
-.txt-al-center{text-align: center;}
-.txt-al-end{text-align: end;}
-
-
-
-.sect-title-marg{
-    margin: 48px 0 24px 0;
-    text-align: center;
-}
 
 /* ==================================================
                             ICON
@@ -272,23 +298,6 @@ header{
     border-bottom: 1px solid var(--border-primary-color);
 }
 
-.header-title{
-    font-size: 24px;
-    font-weight: 800;
-    line-height: 29px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: var(--black-color);
-}
-.header-title a{
-    font-size: 24px;
-    font-weight: 800;
-    line-height: 33px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: var(--secondary-color);
-}
-
 /* right panel */
 header .Sign{
     display: flex;
@@ -411,8 +420,8 @@ nav .panel .search svg{
   opacity: 0.7;
 }
 /* TEXT */
-.Booking p.simple-primary-text{transition: color 0.5s ease;}
-.Booking p.simple-primary-text:hover{
+.Booking p.simple-text{transition: color 0.5s ease;}
+.Booking p.simple-text:hover{
     color: var(--black-color);
     transition: 0.5s ease;
 }
@@ -561,26 +570,45 @@ nav .panel .search svg{
     margin-right: 12px;
 }
 
-.Comment .Comment-Name{
+.Comment-Name{
+    color: var(--black-color);
+    font-size: 16px;
     font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
 }
+.Comment-date,
+.Comment-hotel-name{
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.Comment-text {
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    max-height: 66px; /* Количество строк * высоту строки (22px) */
+    overflow: hidden;
+}
+
 
 .Comment .main-info{
     display: flex;
     flex-direction: row;
     height: 60%;
-    padding-bottom: 32px;
 }
 
 .Comment i{
     margin-right: -8px;
     margin-left: 8px;
     color: var(--primary-color);
-}
-
-.Comment .main-info p {
-    height: 100%;
-    overflow: hidden;
 }
 
 
