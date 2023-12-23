@@ -4,8 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
 /* ==================================================
                             BASIC STYLE
 ====================================================*/
@@ -24,24 +22,6 @@ body{
     --white-text-color: #FFFFFF;
     --border-primary-color: #DDDDDD;
 }
-/* Заголовки */
-.Title-text{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 49px;
-    color: var(--secondary-color);
-    text-transform: capitalize;
-}
-
-.Sub-title-primary,
-.Sub-title-secondary{
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-    text-align: center;
-}
-.Sub-title-primary {color: var(--primary-color);}
-.Sub-title-secondary {color: var(--secondary-color);}
 
 /* Обычный текст */
 .simple-black-text,
@@ -55,29 +35,81 @@ body{
 .simple-secondary-text{ color: var(--secondary-color); }
 .simple-black-text {color: var(--black-color);}
 
-
+/* ==================================================
+                        TYPOGRAPHY    
+====================================================*/
 .simple-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: var(--primary-color);
 }
+
+.text-title-block{
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.text-title-block-content{
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 48px 0 24px 0;
+}
+
+
 a{
     text-decoration: none;
 }
 
-.upper-text{
-    text-transform: uppercase;
-}
+.upper-text{text-transform: uppercase;}
 .bold-text{
     font-weight: 700;
 }
-.fw-600{
-    font-weight: 600;
-}
-.fw-7{
-    font-weight: 700;
-}
+
+/* FONT WEIGHT */
+.fw-1{font-weight: 100;}
+.fw-2{font-weight: 200;}
+.fw-3{font-weight: 300;}
+.fw-4{font-weight: 400;}
+.fw-5{font-weight: 500;}
+.fw-6{font-weight: 600;}
+.fw-7{font-weight: 700;}
+.fw-8{font-weight: 800;}
+.fw-9{font-weight: 900;}
+/* FONT SIZE */
+.fs-14{font-size: 14px;}
+.fs-16{font-size: 16px;}
+.fs-18{font-size: 18px;}
+.fs-20{font-size: 20px;}
+.fs-22{font-size: 22px;}
+.fs-24{font-size: 24px;}
+.fs-26{font-size: 26px;}
+.fs-28{font-size: 28px;}
+.fs-30{font-size: 30px;}
+.fs-32{font-size: 32px;}
+.fs-34{font-size: 34px;}
+.fs-36{font-size: 36px;}
+/* FONT COLOR */
+.fc-pr{color: var(--primary-color);}
+.fc-sc{color: var(--secondary-color);}
+.fc-bl{color: var(--black-color);}
+/* TEXT ALIGN */
+.ta-s{text-align: start;}
+.ta-c{text-align: center;}
+.ta-e{text-align: end;}
+/* TEXT TRANSFORM */
+.tt-up{text-transform: uppercase;}
+
+
 
 .text-20{
     font-size: 20px;
@@ -103,28 +135,9 @@ a{
     text-align: center;
 }
 
-.flex-row-btw{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.flex-row-start{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-}
-
-.flex-col-cent{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-/* ICON */
+/* ==================================================
+                            ICON
+====================================================*/
 .icon-bl,
 .cust-icon{
     margin-right: 8px;
@@ -146,7 +159,9 @@ a{
      stroke: var(--black-color); /* граница иконки */
 }
 
-/* BUTTON */
+/* ==================================================
+                            BUTTON (REMOVE)
+====================================================*/
 .btn-small-book{
     background-color: transparent;
     color: var(--white-text-color);
@@ -185,7 +200,9 @@ a{
     font-size: 16px;
     font-weight: 700;
 }
-
+/* ==================================================
+                        CONTAINERS
+====================================================*/
 .grid-text-icon{
     display: grid;
     width: 100%;
@@ -199,7 +216,30 @@ a{
     gap: 8px;
 }
 
+.flex-row-btw{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.flex-row-start{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.flex-col-cent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* ==================================================
+                            HOVER
+====================================================*/
 .hoverable-1{
     transition: box-shadow 0.5s;
 }
@@ -231,6 +271,24 @@ header{
     padding: 0 20px;
     border-bottom: 1px solid var(--border-primary-color);
 }
+
+.header-title{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--black-color);
+}
+.header-title a{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--secondary-color);
+}
+
 /* right panel */
 header .Sign{
     display: flex;
