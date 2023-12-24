@@ -56,51 +56,71 @@
 
 
 
-
+/* ==================================================
+                      INPUT
+====================================================*/
+.input-border{
+  padding: 32px;
+  height: 64px;
+  width: 100%;
+  border-radius: 32px;
+  border: 1px solid var(--border-primary-color);
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  background-color: transparent;
+}
+/* TYPE: NUMBER  скрываем левый увеличитель значения*/
+.input-border::-webkit-inner-spin-button,
+.input-border::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 /* ==================================================
                       SELECT
 ====================================================*/
-.custom-select {
-  width: 100%;
-  height: 64px;
-  min-width: 350px;
-  position: relative;
-}
-
-select{
-  appearance: none;
-  height: 100%;
-  width: 100%;
-  border: 1px solid var(--border-primary-color);
-  border-radius: 32px;
+.select-menu .select-btn{
+  display: flex;
+  align-items: center;
   cursor: pointer;
-  padding-left: 32px;
+  justify-content: space-between;
+}
+.select-btn svg{
+  margin-right: 0;
+  transition: 0.3s;
+}
+.select-menu.active .select-btn svg{
+    transform: rotate(-180deg);
+}
+.select-menu.active .select-btn{
+  border-radius: 32px 32px 8px 8px;
 }
 
-.custom-select::after {
-  content: "";
-  position: absolute;
-  right: 16px;
-  top: 20px;
-  width: 24px;
-  height: 24px;
-  background-image: url("svg/arrowdown2.svg");
-  pointer-events: none;
+.select-menu .options{
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 8px 8px 32px 32px;
+  border: 1px solid var(--border-primary-color);
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+  display: none;
 }
-
-
-
-/* .custom-select::before {
-  border-left: var(--size) solid transparent;
-  border-right: var(--size) solid transparent;
-  border-bottom: var(--size) solid black;
-  top: 40%;
+.select-menu.active .options{
+    display: block;
 }
-
-.custom-select::after {
-  border-left: var(--size) solid transparent;
-  border-right: var(--size) solid transparent;
-  border-top: var(--size) solid black;
-  top: 55%;
-} */
+.options .option{
+  display: flex;
+  height: 55px;
+  cursor: pointer;
+  padding: 0 16px;
+  border-radius: 8px;
+  align-items: center;
+}
+.options .option:hover{
+  background: #F2F2F2;
+}
+.option .option-text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primary-color);
+}
