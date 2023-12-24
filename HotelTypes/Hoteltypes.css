@@ -1,3 +1,6 @@
+nav{
+  background-image: url('../img/Back_img_HotelTypes.png') !important;
+}
 /* ==================================================
                               MAIN
 ====================================================*/
@@ -80,7 +83,9 @@ main aside input[type="range"]::-webkit-slider-thumb {
 }
 
 /*BUTTOM MAP*/
-
+main .filter-button {
+  display: none; 
+}
 /* Стилизация кнопки с округлыми краями и границей */
 main .map-button {
   position: relative; 

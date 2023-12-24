@@ -382,6 +382,14 @@ nav .panel .search svg{
     fill: var(--secondary-color); /*цвет внутри окошка*/
     stroke: var(--background-color); /*цвет бордера*/
 }
+.desktop-icon {
+    display: block !important;
+  }
+  
+.mobile-icon {
+    display: none !important;
+  }
+  
 
 /* ==================================================
                             BOOKING
