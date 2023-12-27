@@ -3,6 +3,44 @@ main section{
     margin: 0 auto 10% auto;
 }
 
+.create-card-cont{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 32px;
+    height: auto;
+}
+.card-cont,
+.card-info{
+    border: 1px solid var(--border-primary-color);
+    box-shadow: 0px 4px 69px 0px #0000000D;
+    box-shadow: 0px 1px 8px 0px #00000014;
+    border-radius: 13px;
+    padding: 24px;
+}
+.card-cont{
+    height: max-content;
+}
+.card-cont-main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+}
+
+.input-text-cont{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto max-content;
+    gap: 16px;
+    align-items: center;
+}
+
+.card-info{
+    height: 352px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 /* ==================================================
                             ADAPTIVE 1024 1439
 ====================================================*/
