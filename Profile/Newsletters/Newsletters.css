@@ -61,6 +61,7 @@
     margin-right: -15px;
     height: 544px;
     overflow-x: auto; 
+    padding: 10px 0;
 }
 
 .News .vertical-cards .v-card {
