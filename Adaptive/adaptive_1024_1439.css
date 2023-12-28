@@ -164,7 +164,7 @@ header .right-part{
     .Booking div {
         padding-top: 0px;
     }
-    nav {
+    .adap {
         background-image: url('/img/Back_img_Main.png') !important;
         background-position: 1180px center;
         height: 112px;

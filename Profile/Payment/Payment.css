@@ -20,6 +20,7 @@ main section{
     min-height: 300px; /* Минимальная начальная высота */
     height: max-content; /* Высота изменяется в зависимости от содержимого, но не меньше min-height */
 }
+
 .card-cont-main{
     display: flex;
     flex-wrap: wrap;
