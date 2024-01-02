@@ -1,499 +1,550 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Travel information</title>
-        <link rel='icon' href="../../img/favicon.png"/>
-        <link rel="stylesheet" href="TravelInfo.css">
-        <link rel="stylesheet" href="../../generalStyles.css">
-        <link rel="stylesheet" href="../../Elements.css">
-        <link rel="stylesheet" href="../../Adaptive/adaptive_1024_1439.css">
-        <link rel="stylesheet" href="../../Adaptive/adaptive_768_1023.css">
-        <link rel="stylesheet" href="../../Adaptive/adaptive_0_765.css">
-    </head>
-    <body>
-        <header>
-            <h3 class="header-title">Hotel for 
-                <a href="../../index.html">you.</a>
-            </h3>
-            <div class="Sign">
-                <a class="lang hoverable-2">
-                <img src="../../svg/color_lang_circle.svg" alt="icon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel information</title>
+    <link rel="stylesheet" href="TravelInfo.css">
+    <link rel="stylesheet" href="../../generalStyles.css">
+    <link rel="stylesheet" href="../../Elements.css">
+
+    <link rel="stylesheet" href="../../Adaptive/adaptive_1024_1439.css">
+    <link rel="stylesheet" href="../../Adaptive/adaptive_768_1023.css">
+    <link rel="stylesheet" href="../../Adaptive/adaptive_0_765.css">
+</head>
+<body>
+    <header>
+        <h3 class="header-title">Hotel for 
+            <a href="../../index.html">you.</a>
+        </h3>
+        <div class="Sign">
+            <a class="lang hoverable-2">
+              <img src="../../svg/color_lang_circle.svg" alt="icon">
+            </a>
+        </div>
+    </header>
+    <nav class="nav-profile">
+        <div class="profile-tabs">
+            <div class="profile-back-cont">
+                <a class="profile-item-back hoverable-pr-item" href="../../index.html">
+                    <img src="../../svg/arrow_left.svg" alt="icon">
+                    <p class="simple-text">Main page</p>
                 </a>
             </div>
-        </header>
-        <nav class="nav-profile">
-            <div class="profile-tabs">
-                <div class="profile-back-cont">
-                    <a class="profile-item-back hoverable-pr-item" href="../../index.html">
-                        <img src="../../svg/arrow_left.svg" alt="icon">
-                        <p class="simple-text">Main page</p>
-                    </a>
+
+            <div class="profile-item-container">
+                <a class="profile-item hoverable-pr-item" href="../Account/Account.html">
+                    <p class="simple-text">Account</p>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="12" fill="#717171"/>
+                        <path d="M12.0007 4.5C10.0357 4.5 8.4382 6.0975 8.4382 8.0625C8.4382 9.99 9.9457 11.55 11.9107 11.6175C11.9707 11.61 12.0307 11.61 12.0757 11.6175H12.1282C13.0502 11.5867 13.9241 11.1986 14.5652 10.5352C15.2062 9.87175 15.5641 8.98503 15.5632 8.0625C15.5632 6.0975 13.9657 4.5 12.0007 4.5ZM15.8107 13.6117C13.7182 12.2168 10.3057 12.2168 8.1982 13.6117C7.2457 14.2493 6.7207 15.1117 6.7207 16.0343C6.7207 16.9567 7.2457 17.8118 8.1907 18.4418C9.2407 19.1468 10.6207 19.4993 12.0007 19.4993C13.3807 19.4993 14.7607 19.1468 15.8107 18.4418C16.7557 17.8043 17.2807 16.9492 17.2807 16.0192C17.2732 15.0967 16.7557 14.2417 15.8107 13.6117Z" fill="white"/>
+                    </svg>
+                </a>
+                <a class="profile-item hoverable-pr-item" href="../Payment/Payment.html">
+                    <p class="simple-text">Payment method</p>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="12" fill="#717171"/>
+                        <path d="M19.5 18.9383C19.5 19.2458 19.245 19.5008 18.9375 19.5008H5.0625C4.755 19.5008 4.5 19.2458 4.5 18.9383C4.5 18.6308 4.755 18.3758 5.0625 18.3758H18.9375C19.245 18.3758 19.5 18.6308 19.5 18.9383ZM14.5433 6.39227L6.48825 14.4473C6.18075 14.7548 5.68575 14.7548 5.38575 14.4473H5.37825C4.87766 13.9441 4.59665 13.2633 4.59665 12.5535C4.59665 11.8438 4.87766 11.1629 5.37825 10.6598L10.7408 5.29727C11.7908 4.24727 13.4857 4.24727 14.5357 5.29727C14.8432 5.58977 14.8433 6.09227 14.5433 6.39227Z" fill="white"/>
+                        <path d="M18.6161 9.36773L16.3286 7.08023C16.0211 6.77273 15.5261 6.77273 15.2261 7.08023L7.17105 15.1352C6.86355 15.4352 6.86355 15.9302 7.17105 16.2377L9.45855 18.5327C9.96306 19.0336 10.6451 19.3147 11.3561 19.3147C12.067 19.3147 12.749 19.0336 13.2536 18.5327L18.6086 13.1702C19.6736 12.1202 19.6736 10.4177 18.6161 9.36773ZM12.5711 16.1402L11.6636 17.0552C11.4761 17.2427 11.1686 17.2427 10.9736 17.0552C10.8834 16.963 10.8329 16.8392 10.8329 16.7102C10.8329 16.5813 10.8834 16.4574 10.9736 16.3652L11.8886 15.4502C12.0686 15.2702 12.3836 15.2702 12.5711 15.4502C12.7586 15.6377 12.7586 15.9602 12.5711 16.1402ZM15.5486 13.1627L13.7186 15.0002C13.5311 15.1802 13.2236 15.1802 13.0286 15.0002C12.9384 14.908 12.8879 14.7842 12.8879 14.6552C12.8879 14.5263 12.9384 14.4024 13.0286 14.3102L14.8661 12.4727C15.0461 12.2927 15.3611 12.2927 15.5486 12.4727C15.7361 12.6677 15.7361 12.9752 15.5486 13.1627Z" fill="white"/>
+                    </svg>
+                </a>
+                <a class="profile-item hoverable-pr-item active-pr-item" href="#!">
+                    <p class="simple-text">Travel information</p>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="12" fill="#717171"/>
+                        <path d="M12.0001 17.0625C11.6926 17.0625 11.4376 16.8075 11.4376 16.5V15.75C11.4376 15.4425 11.6926 15.1875 12.0001 15.1875C12.3076 15.1875 12.5626 15.4425 12.5626 15.75V16.5C12.5626 16.8075 12.3076 17.0625 12.0001 17.0625ZM12.0001 20.0625C11.6926 20.0625 11.4376 19.8075 11.4376 19.5V18.75C11.4376 18.4425 11.6926 18.1875 12.0001 18.1875C12.3076 18.1875 12.5626 18.4425 12.5626 18.75V19.5C12.5626 19.8075 12.3076 20.0625 12.0001 20.0625ZM4.49861 20.061C4.45361 20.061 4.40861 20.0535 4.36361 20.046C4.06361 19.971 3.87611 19.6635 3.95111 19.3635L4.70111 16.3635C4.71884 16.2916 4.75055 16.2239 4.79445 16.1643C4.83834 16.1046 4.89355 16.0542 4.95693 16.0159C5.0203 15.9776 5.0906 15.9521 5.16381 15.941C5.23702 15.9299 5.31171 15.9333 5.38361 15.951C5.45551 15.9687 5.52321 16.0004 5.58285 16.0443C5.64249 16.0882 5.6929 16.1434 5.73121 16.2068C5.76951 16.2702 5.79496 16.3405 5.80609 16.4137C5.81723 16.4869 5.81384 16.5616 5.79611 16.6335L5.04611 19.6335C4.97861 19.8885 4.75361 20.061 4.49861 20.061ZM19.3149 19.8773C19.0599 19.8773 18.8349 19.7048 18.7674 19.4498L18.0174 16.4498C17.9424 16.1498 18.1224 15.8423 18.4299 15.7673C18.7299 15.6923 19.0374 15.8722 19.1124 16.1798L19.8624 19.1798C19.9374 19.4797 19.7574 19.7873 19.4499 19.8622C19.4049 19.8697 19.3599 19.8773 19.3149 19.8773ZM17.3536 6.975C17.3536 7.2 17.1661 7.38 16.9486 7.38H7.14611C6.92111 7.38 6.74111 7.1925 6.74111 6.975C6.74111 6.75 6.92861 6.57 7.14611 6.57H7.70111L7.91111 5.5875C8.10611 4.6275 8.51111 3.75 10.1311 3.75H13.9486C15.5686 3.75 15.9811 4.6275 16.1761 5.58L16.3861 6.5625H16.9411C17.1661 6.5625 17.3536 6.75 17.3536 6.975ZM17.5861 10.05C17.5036 9.15 17.2636 8.1975 15.5161 8.1975H8.57111C6.82361 8.1975 6.59111 9.1575 6.50111 10.05L6.19361 13.365C6.15611 13.7775 6.29111 14.19 6.57611 14.505C6.86861 14.82 7.27361 15 7.70861 15H8.72861C9.61361 15 9.77861 14.4975 9.89111 14.16L10.0036 13.83C10.1311 13.455 10.1611 13.365 10.6486 13.365H13.4386C13.9261 13.365 13.9411 13.4175 14.0836 13.83L14.1961 14.16C14.3011 14.4975 14.4736 15 15.3511 15H16.3711C16.7986 15 17.2111 14.82 17.5036 14.505C17.7886 14.1975 17.9236 13.7775 17.8861 13.365L17.5861 10.05ZM10.4086 11.19H8.78111C8.55611 11.19 8.37611 11.0025 8.37611 10.785C8.37611 10.5675 8.56361 10.38 8.78111 10.38H10.4161C10.6411 10.38 10.8211 10.5675 10.8211 10.785C10.8211 11.0025 10.6336 11.19 10.4086 11.19ZM15.3061 11.19H13.6711C13.4461 11.19 13.2661 11.0025 13.2661 10.785C13.2661 10.5675 13.4536 10.38 13.6711 10.38H15.3061C15.5311 10.38 15.7111 10.5675 15.7111 10.785C15.7111 11.0025 15.5311 11.19 15.3061 11.19Z" fill="white"/>
+                    </svg>
+                </a>
+                <a class="profile-item hoverable-pr-item" href="../Newsletters/Newsletters.html">
+                    <p class="simple-text">Newsletters</p>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="12" fill="#717171"/>
+                        <path d="M18.7275 4.75H16.5225C15.57 4.75 15 5.32 15 6.2725V8.4775C15 9.43 15.57 10 16.5225 10H18.7275C19.68 10 20.25 9.43 20.25 8.4775V6.2725C20.25 5.32 19.68 4.75 18.7275 4.75ZM19.2075 7.51C18.93 8.395 17.9625 8.875 17.625 8.875C17.2875 8.875 16.3275 8.41 16.0425 7.51C15.9975 7.375 15.975 7.225 15.975 7.0825C15.975 6.595 16.2225 6.0925 16.74 5.9275C17.0475 5.83 17.3775 5.8825 17.61 6.0775C17.85 5.89 18.18 5.83 18.495 5.9275C19.185 6.145 19.4025 6.9175 19.2075 7.51Z" fill="white"/>
+                        <path d="M16.5225 11.125C15.8203 11.125 15.1469 10.8461 14.6504 10.3496C14.1539 9.85306 13.875 9.17966 13.875 8.4775V6.25C13.875 5.8375 13.5375 5.5 13.125 5.5H8.25C6.18 5.5 4.5 7.1725 4.5 9.235V14.4625C4.5 16.5325 6.18 18.2125 8.25 18.2125H9.375C9.585 18.2125 9.855 18.3475 9.975 18.5125L11.1 20.005C11.595 20.665 12.405 20.665 12.9 20.005L14.025 18.5125C14.1675 18.325 14.3925 18.2125 14.625 18.2125H15.7575C17.8275 18.2125 19.5 16.54 19.5 14.47V11.875C19.5 11.4625 19.1625 11.125 18.75 11.125H16.5225ZM9 13C8.58 13 8.25 12.6625 8.25 12.25C8.25 11.8375 8.58 11.5 9 11.5C9.4125 11.5 9.75 11.8375 9.75 12.25C9.75 12.6625 9.42 13 9 13ZM12 13C11.58 13 11.25 12.6625 11.25 12.25C11.25 11.8375 11.58 11.5 12 11.5C12.4125 11.5 12.75 11.8375 12.75 12.25C12.75 12.6625 12.42 13 12 13Z" fill="white"/>
+                    </svg>
+                </a>
+                <a class="profile-item hoverable-pr-item" href="../Security/Security.html">
+                    <p class="simple-text">Security</p>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="12" fill="#717171"/>
+                        <path d="M12.0008 15.0134C12.325 15.0134 12.636 14.8846 12.8653 14.6553C13.0945 14.426 13.2233 14.1151 13.2233 13.7909C13.2233 13.4666 13.0945 13.1557 12.8653 12.9264C12.636 12.6972 12.325 12.5684 12.0008 12.5684C11.6766 12.5684 11.3656 12.6972 11.1364 12.9264C10.9071 13.1557 10.7783 13.4666 10.7783 13.7909C10.7783 14.1151 10.9071 14.426 11.1364 14.6553C11.3656 14.8846 11.6766 15.0134 12.0008 15.0134Z" fill="white"/>
+                        <path d="M16.71 9.1475V8.21C16.71 6.185 16.2225 3.5 12 3.5C7.7775 3.5 7.29 6.185 7.29 8.21V9.1475C5.19 9.41 4.5 10.475 4.5 13.0925V14.4875C4.5 17.5625 5.4375 18.5 8.5125 18.5H15.4875C18.5625 18.5 19.5 17.5625 19.5 14.4875V13.0925C19.5 10.475 18.81 9.41 16.71 9.1475ZM12 16.055C10.7475 16.055 9.735 15.035 9.735 13.79C9.735 12.5375 10.755 11.525 12 11.525C12.6001 11.527 13.1751 11.7662 13.5994 12.1906C14.0238 12.6149 14.263 13.1899 14.265 13.79C14.265 15.0425 13.2525 16.055 12 16.055ZM8.5125 9.08H8.34V8.21C8.34 6.0125 8.9625 4.55 12 4.55C15.0375 4.55 15.66 6.0125 15.66 8.21V9.0875H8.5125V9.08Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main class="TravInfo">
+        <section>
+            <p class="main-title">Travel information</p>
+            <div class="grid-cont">
+                <div class="column">
+                        
+                    <div class="facility-block">
+
+                        <div class="grid-icon-text">
+                            <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.16992 1.5H15.8199V8.2C15.812 9.20884 15.4064 10.1738 14.6911 10.8853C13.9759 11.5968 13.0088 11.9974 11.9999 12C10.9893 12 10.0197 11.6006 9.30225 10.8888C8.58485 10.1771 8.17784 9.21057 8.16992 8.2V1.5Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M8.16992 5.33008H18.6999" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M4.34964 23.5V19.67C4.347 18.6637 4.54294 17.6668 4.92621 16.7363C5.30948 15.8059 5.87256 14.9602 6.58319 14.2477C7.29382 13.5352 8.13803 12.9699 9.06748 12.5842C9.99693 12.1985 10.9933 12 11.9996 12C14.0285 12 15.9743 12.806 17.409 14.2406C18.8437 15.6753 19.6496 17.6211 19.6496 19.65V23.5" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M9.13086 17.7598H11.0409" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M9.13086 21.5898H11.0409" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M8.92969 12.6602L12.9597 15.8502V23.5002" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                            </svg>
+                            <p class="text-title-block">General</p>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input  id="shuttle_service" type="checkbox"/>
+                                <label for="shuttle_service"></label>
+                            </div>
+                            <label     for="shuttle_service" class="ch-box-label simple-text">Shuttle service</label>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input  id="Additional_charge" type="checkbox"/>
+                                <label for="Additional_charge"></label>
+                            </div>
+                            <label     for="Additional_charge" class="ch-box-label simple-text">Additional charge</label>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input  id="Minimarket_on_site" type="checkbox"/>
+                                <label for="Minimarket_on_site"></label>
+                            </div>
+                            <label     for="Minimarket_on_site" class="ch-box-label simple-text">Minimarket on site</label>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input  id="Designated_smoking_area" type="checkbox"/>
+                                <label for="Designated_smoking_area"></label>
+                            </div>
+                            <label     for="Designated_smoking_area" class="ch-box-label simple-text">Designated smoking area</label>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Air_conditioning" type="checkbox"/>
+                                <label for="Air_conditioning"></label>
+                            </div>
+                            <label for="Air_conditioning" class="ch-box-label simple-text">Air conditioning</label>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Mosquito_net" type="checkbox"/>
+                                <label for="Mosquito_net"></label>
+                            </div>
+                            <label for="Mosquito_net" class="ch-box-label simple-text">Mosquito net</label>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Wake-up_service" type="checkbox"/>
+                                <label for="Wake-up_service"></label>
+                            </div>
+                            <label for="Wake-up_service" class="ch-box-label simple-text">Wake-up service</label>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Heating" type="checkbox"/>
+                                <label for="Heating"></label>
+                            </div>
+                            <label for="Heating" class="ch-box-label simple-text">Heating</label>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Interconnected_rooms_available" type="checkbox"/>
+                                <label for="Interconnected_rooms_available"></label>
+                            </div>
+                            <label for="Interconnected_rooms_available" class="ch-box-label simple-text">Interconnected room(s) available</label>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Lift" type="checkbox"/>
+                                <label for="Lift"></label>
+                            </div>
+                            <label for="Lift" class="ch-box-label simple-text">Lift</label>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Family_rooms" type="checkbox"/>
+                                <label for="Family_rooms"></label>
+                            </div>
+                            <label for="Family_rooms" class="ch-box-label simple-text">Family rooms</label>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Barber_beauty_shop" type="checkbox"/>
+                                <label for="Barber_beauty_shop"></label>
+                            </div>
+                            <label for="Barber_beauty_shop" class="ch-box-label simple-text">Barber/beauty shop</label>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Airport_shuttle" type="checkbox"/>
+                                <label for="Airport_shuttle"></label>
+                            </div>
+                            <label for="Airport_shuttle" class="ch-box-label simple-text">Airport shuttle</label>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Non-smoking_rooms" type="checkbox"/>
+                                <label for="Non-smoking_rooms"></label>
+                            </div>
+                            <label for="Non-smoking_rooms" class="ch-box-label simple-text">Non-smoking rooms</label>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Wake_up_service_Alarm_clock" type="checkbox"/>
+                                <label for="Wake_up_service_Alarm_clock"></label>
+                            </div>
+                            <label for="Wake_up_service_Alarm_clock" class="ch-box-label simple-text">Wake up service/Alarm clock</label>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Room_service" type="checkbox"/>
+                                <label for="Room_service"></label>
+                            </div>
+                            <label for="Room_service" class="ch-box-label simple-text">Room service</label>
+                        </div>
+                    </div>
+
+                    <div class="facility-block">
+                        <div class="grid-icon-text"> 
+                            <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_92_275)">
+                                <path d="M0.5 22.54H8.17V17.75H15.83V12H23.5" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M19.6699 12V1.45996H13.9199V6.24996H19.6699" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_92_275">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <p class="text-title-block">Accessibility</p>
+                        </div>
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Upper_floors_stairs_only" type="checkbox"/>
+                                <label for="Upper_floors_stairs_only"></label>
+                            </div>
+                            <label for="Upper_floors_stairs_only" class="ch-box-label simple-text">Upper floors accessible by stairs only</label>
+                        </div>
+                        
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Upper_floors_elevator" type="checkbox"/>
+                                <label for="Upper_floors_elevator"></label>
+                            </div>
+                            <label for="Upper_floors_elevator" class="ch-box-label simple-text">Upper floors accessible by elevator</label>
+                        </div>
+                    </div>
+
+                    <div class="facility-block">
+                        <div class="grid-icon-text"> 
+                            <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_92_280)">
+                                <path d="M0.5 3.34961H12" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M6.25 0.480469V3.35047" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M9.12094 3.34961C9.12094 6.86961 5.84094 11.5496 1.46094 13.8996" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M4.50977 7.37012C6.00523 10.1218 8.25731 12.3878 10.9998 13.9001" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M12.9609 22.5205L16.7909 11.9805H17.7509L21.5809 22.5205" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M20.4303 18.6904H15.0703" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M11.0391 22.5195H14.8791" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M19.6699 22.5195H23.4999" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_92_280">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <p class="text-title-block">Languages spoken</p>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Language_English" type="checkbox"/>
+                                <label for="Language_English"></label>
+                            </div>
+                            <label for="Language_English" class="ch-box-label simple-text">English</label>
+                        </div>
+                        
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Language_Russian" type="checkbox"/>
+                                <label for="Language_Russian"></label>
+                            </div>
+                            <label for="Language_Russian" class="ch-box-label simple-text">Russian</label>
+                        </div>
+                        
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Language_Ukrainian" type="checkbox"/>
+                                <label for="Language_Ukrainian"></label>
+                            </div>
+                            <label for="Language_Ukrainian" class="ch-box-label simple-text">Ukrainian</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="profile-item-container">
-                    <a class="profile-item hoverable-pr-item" href="../Account/Account.html">
-                        <p class="simple-text">Account</p>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="24" height="24" rx="12" fill="#717171"/>
-                            <path d="M12.0007 4.5C10.0357 4.5 8.4382 6.0975 8.4382 8.0625C8.4382 9.99 9.9457 11.55 11.9107 11.6175C11.9707 11.61 12.0307 11.61 12.0757 11.6175H12.1282C13.0502 11.5867 13.9241 11.1986 14.5652 10.5352C15.2062 9.87175 15.5641 8.98503 15.5632 8.0625C15.5632 6.0975 13.9657 4.5 12.0007 4.5ZM15.8107 13.6117C13.7182 12.2168 10.3057 12.2168 8.1982 13.6117C7.2457 14.2493 6.7207 15.1117 6.7207 16.0343C6.7207 16.9567 7.2457 17.8118 8.1907 18.4418C9.2407 19.1468 10.6207 19.4993 12.0007 19.4993C13.3807 19.4993 14.7607 19.1468 15.8107 18.4418C16.7557 17.8043 17.2807 16.9492 17.2807 16.0192C17.2732 15.0967 16.7557 14.2417 15.8107 13.6117Z" fill="white"/>
-                        </svg>
-                    </a>
-                    <a class="profile-item hoverable-pr-item" href="../Payment/Payment.html">
-                        <p class="simple-text">Payment method</p>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="24" height="24" rx="12" fill="#717171"/>
-                            <path d="M19.5 18.9383C19.5 19.2458 19.245 19.5008 18.9375 19.5008H5.0625C4.755 19.5008 4.5 19.2458 4.5 18.9383C4.5 18.6308 4.755 18.3758 5.0625 18.3758H18.9375C19.245 18.3758 19.5 18.6308 19.5 18.9383ZM14.5433 6.39227L6.48825 14.4473C6.18075 14.7548 5.68575 14.7548 5.38575 14.4473H5.37825C4.87766 13.9441 4.59665 13.2633 4.59665 12.5535C4.59665 11.8438 4.87766 11.1629 5.37825 10.6598L10.7408 5.29727C11.7908 4.24727 13.4857 4.24727 14.5357 5.29727C14.8432 5.58977 14.8433 6.09227 14.5433 6.39227Z" fill="white"/>
-                            <path d="M18.6161 9.36773L16.3286 7.08023C16.0211 6.77273 15.5261 6.77273 15.2261 7.08023L7.17105 15.1352C6.86355 15.4352 6.86355 15.9302 7.17105 16.2377L9.45855 18.5327C9.96306 19.0336 10.6451 19.3147 11.3561 19.3147C12.067 19.3147 12.749 19.0336 13.2536 18.5327L18.6086 13.1702C19.6736 12.1202 19.6736 10.4177 18.6161 9.36773ZM12.5711 16.1402L11.6636 17.0552C11.4761 17.2427 11.1686 17.2427 10.9736 17.0552C10.8834 16.963 10.8329 16.8392 10.8329 16.7102C10.8329 16.5813 10.8834 16.4574 10.9736 16.3652L11.8886 15.4502C12.0686 15.2702 12.3836 15.2702 12.5711 15.4502C12.7586 15.6377 12.7586 15.9602 12.5711 16.1402ZM15.5486 13.1627L13.7186 15.0002C13.5311 15.1802 13.2236 15.1802 13.0286 15.0002C12.9384 14.908 12.8879 14.7842 12.8879 14.6552C12.8879 14.5263 12.9384 14.4024 13.0286 14.3102L14.8661 12.4727C15.0461 12.2927 15.3611 12.2927 15.5486 12.4727C15.7361 12.6677 15.7361 12.9752 15.5486 13.1627Z" fill="white"/>
-                        </svg>
-                    </a>
-                    <a class="profile-item hoverable-pr-item active-pr-item" href="#!">
-                        <p class="simple-text">Travel information</p>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="24" height="24" rx="12" fill="#717171"/>
-                            <path d="M12.0001 17.0625C11.6926 17.0625 11.4376 16.8075 11.4376 16.5V15.75C11.4376 15.4425 11.6926 15.1875 12.0001 15.1875C12.3076 15.1875 12.5626 15.4425 12.5626 15.75V16.5C12.5626 16.8075 12.3076 17.0625 12.0001 17.0625ZM12.0001 20.0625C11.6926 20.0625 11.4376 19.8075 11.4376 19.5V18.75C11.4376 18.4425 11.6926 18.1875 12.0001 18.1875C12.3076 18.1875 12.5626 18.4425 12.5626 18.75V19.5C12.5626 19.8075 12.3076 20.0625 12.0001 20.0625ZM4.49861 20.061C4.45361 20.061 4.40861 20.0535 4.36361 20.046C4.06361 19.971 3.87611 19.6635 3.95111 19.3635L4.70111 16.3635C4.71884 16.2916 4.75055 16.2239 4.79445 16.1643C4.83834 16.1046 4.89355 16.0542 4.95693 16.0159C5.0203 15.9776 5.0906 15.9521 5.16381 15.941C5.23702 15.9299 5.31171 15.9333 5.38361 15.951C5.45551 15.9687 5.52321 16.0004 5.58285 16.0443C5.64249 16.0882 5.6929 16.1434 5.73121 16.2068C5.76951 16.2702 5.79496 16.3405 5.80609 16.4137C5.81723 16.4869 5.81384 16.5616 5.79611 16.6335L5.04611 19.6335C4.97861 19.8885 4.75361 20.061 4.49861 20.061ZM19.3149 19.8773C19.0599 19.8773 18.8349 19.7048 18.7674 19.4498L18.0174 16.4498C17.9424 16.1498 18.1224 15.8423 18.4299 15.7673C18.7299 15.6923 19.0374 15.8722 19.1124 16.1798L19.8624 19.1798C19.9374 19.4797 19.7574 19.7873 19.4499 19.8622C19.4049 19.8697 19.3599 19.8773 19.3149 19.8773ZM17.3536 6.975C17.3536 7.2 17.1661 7.38 16.9486 7.38H7.14611C6.92111 7.38 6.74111 7.1925 6.74111 6.975C6.74111 6.75 6.92861 6.57 7.14611 6.57H7.70111L7.91111 5.5875C8.10611 4.6275 8.51111 3.75 10.1311 3.75H13.9486C15.5686 3.75 15.9811 4.6275 16.1761 5.58L16.3861 6.5625H16.9411C17.1661 6.5625 17.3536 6.75 17.3536 6.975ZM17.5861 10.05C17.5036 9.15 17.2636 8.1975 15.5161 8.1975H8.57111C6.82361 8.1975 6.59111 9.1575 6.50111 10.05L6.19361 13.365C6.15611 13.7775 6.29111 14.19 6.57611 14.505C6.86861 14.82 7.27361 15 7.70861 15H8.72861C9.61361 15 9.77861 14.4975 9.89111 14.16L10.0036 13.83C10.1311 13.455 10.1611 13.365 10.6486 13.365H13.4386C13.9261 13.365 13.9411 13.4175 14.0836 13.83L14.1961 14.16C14.3011 14.4975 14.4736 15 15.3511 15H16.3711C16.7986 15 17.2111 14.82 17.5036 14.505C17.7886 14.1975 17.9236 13.7775 17.8861 13.365L17.5861 10.05ZM10.4086 11.19H8.78111C8.55611 11.19 8.37611 11.0025 8.37611 10.785C8.37611 10.5675 8.56361 10.38 8.78111 10.38H10.4161C10.6411 10.38 10.8211 10.5675 10.8211 10.785C10.8211 11.0025 10.6336 11.19 10.4086 11.19ZM15.3061 11.19H13.6711C13.4461 11.19 13.2661 11.0025 13.2661 10.785C13.2661 10.5675 13.4536 10.38 13.6711 10.38H15.3061C15.5311 10.38 15.7111 10.5675 15.7111 10.785C15.7111 11.0025 15.5311 11.19 15.3061 11.19Z" fill="white"/>
-                        </svg>
-                    </a>
-                    <a class="profile-item hoverable-pr-item" href="../Newsletters/Newsletters.html">
-                        <p class="simple-text">Newsletters</p>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="24" height="24" rx="12" fill="#717171"/>
-                            <path d="M18.7275 4.75H16.5225C15.57 4.75 15 5.32 15 6.2725V8.4775C15 9.43 15.57 10 16.5225 10H18.7275C19.68 10 20.25 9.43 20.25 8.4775V6.2725C20.25 5.32 19.68 4.75 18.7275 4.75ZM19.2075 7.51C18.93 8.395 17.9625 8.875 17.625 8.875C17.2875 8.875 16.3275 8.41 16.0425 7.51C15.9975 7.375 15.975 7.225 15.975 7.0825C15.975 6.595 16.2225 6.0925 16.74 5.9275C17.0475 5.83 17.3775 5.8825 17.61 6.0775C17.85 5.89 18.18 5.83 18.495 5.9275C19.185 6.145 19.4025 6.9175 19.2075 7.51Z" fill="white"/>
-                            <path d="M16.5225 11.125C15.8203 11.125 15.1469 10.8461 14.6504 10.3496C14.1539 9.85306 13.875 9.17966 13.875 8.4775V6.25C13.875 5.8375 13.5375 5.5 13.125 5.5H8.25C6.18 5.5 4.5 7.1725 4.5 9.235V14.4625C4.5 16.5325 6.18 18.2125 8.25 18.2125H9.375C9.585 18.2125 9.855 18.3475 9.975 18.5125L11.1 20.005C11.595 20.665 12.405 20.665 12.9 20.005L14.025 18.5125C14.1675 18.325 14.3925 18.2125 14.625 18.2125H15.7575C17.8275 18.2125 19.5 16.54 19.5 14.47V11.875C19.5 11.4625 19.1625 11.125 18.75 11.125H16.5225ZM9 13C8.58 13 8.25 12.6625 8.25 12.25C8.25 11.8375 8.58 11.5 9 11.5C9.4125 11.5 9.75 11.8375 9.75 12.25C9.75 12.6625 9.42 13 9 13ZM12 13C11.58 13 11.25 12.6625 11.25 12.25C11.25 11.8375 11.58 11.5 12 11.5C12.4125 11.5 12.75 11.8375 12.75 12.25C12.75 12.6625 12.42 13 12 13Z" fill="white"/>
-                        </svg>
-                    </a>
-                    <a class="profile-item hoverable-pr-item" href="../Security/Security.html">
-                        <p class="simple-text">Security</p>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="24" height="24" rx="12" fill="#717171"/>
-                            <path d="M12.0008 15.0134C12.325 15.0134 12.636 14.8846 12.8653 14.6553C13.0945 14.426 13.2233 14.1151 13.2233 13.7909C13.2233 13.4666 13.0945 13.1557 12.8653 12.9264C12.636 12.6972 12.325 12.5684 12.0008 12.5684C11.6766 12.5684 11.3656 12.6972 11.1364 12.9264C10.9071 13.1557 10.7783 13.4666 10.7783 13.7909C10.7783 14.1151 10.9071 14.426 11.1364 14.6553C11.3656 14.8846 11.6766 15.0134 12.0008 15.0134Z" fill="white"/>
-                            <path d="M16.71 9.1475V8.21C16.71 6.185 16.2225 3.5 12 3.5C7.7775 3.5 7.29 6.185 7.29 8.21V9.1475C5.19 9.41 4.5 10.475 4.5 13.0925V14.4875C4.5 17.5625 5.4375 18.5 8.5125 18.5H15.4875C18.5625 18.5 19.5 17.5625 19.5 14.4875V13.0925C19.5 10.475 18.81 9.41 16.71 9.1475ZM12 16.055C10.7475 16.055 9.735 15.035 9.735 13.79C9.735 12.5375 10.755 11.525 12 11.525C12.6001 11.527 13.1751 11.7662 13.5994 12.1906C14.0238 12.6149 14.263 13.1899 14.265 13.79C14.265 15.0425 13.2525 16.055 12 16.055ZM8.5125 9.08H8.34V8.21C8.34 6.0125 8.9625 4.55 12 4.55C15.0375 4.55 15.66 6.0125 15.66 8.21V9.0875H8.5125V9.08Z" fill="white"/>
-                        </svg>
-                    </a>
+                
+                <div class="column">
+                   
+                    <div class="facility-block">
+                        <div class="grid-icon-text"> 
+                            <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_92_292)">
+                                <path d="M1.5 23.4795V9.15953L12 1.51953L22.5 9.15953V23.4795" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M7.23031 14.8896H16.7803C17.2869 14.8896 17.7727 15.0909 18.1309 15.4491C18.4891 15.8073 18.6903 16.2931 18.6903 16.7996V20.6196H5.32031V16.7996C5.32031 16.2931 5.52154 15.8073 5.87974 15.4491C6.23793 15.0909 6.72375 14.8896 7.23031 14.8896Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M10.0897 17.75H8.17969" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M15.8202 17.75H13.9102" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M8.18047 20.6104H7.23047V22.5204H8.18047V20.6104Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M16.7703 20.6104H15.8203V22.5204H16.7703V20.6104Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M16.7705 14.8903H7.23047L7.82047 12.5103C7.92336 12.098 8.16153 11.732 8.4969 11.471C8.83227 11.2099 9.24548 11.0689 9.67047 11.0703H14.3305C14.7555 11.0689 15.1687 11.2099 15.504 11.471C15.8394 11.732 16.0776 12.098 16.1805 12.5103L16.7705 14.8903Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_92_292">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <p class="text-title-block">Parking</p>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Parking_garage" type="checkbox"/>
+                                <label for="Parking_garage"></label>
+                            </div>
+                            <label for="Parking_garage" class="ch-box-label simple-text">Parking garage</label>
+                        </div>
+                    </div>
+                    
+                    <div class="facility-block">
+                        <div class="grid-icon-text"> 
+                            <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_92_346)">
+                                <path d="M22.5 22.4997H1.5V20.5897L2.46 18.6797H21.55L22.5 20.5897V22.4997Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M11.7492 5.32031H12.2392C14.7057 5.32031 17.0712 6.30013 18.8153 8.04422C20.5594 9.78831 21.5392 12.1538 21.5392 14.6203V14.8703H2.44922V14.6203C2.44922 12.1538 3.42904 9.78831 5.17313 8.04422C6.91721 6.30013 9.28271 5.32031 11.7492 5.32031Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M12 1.5V5.32" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M9.14062 1.5H14.8606" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M18.6803 14.8604H5.32031V18.6804H18.6803V14.8604Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_92_346">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            <p class="text-title-block">Reception services</p>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Fire_extinguishers" type="checkbox"/>
+                                <label for="Fire_extinguishers"></label>
+                            </div>
+                            <label for="Fire_extinguishers" class="ch-box-label simple-text">Fire extinguishers</label>
+                        </div>
+                        
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="CCTV_outside_property" type="checkbox"/>
+                                <label for="CCTV_outside_property"></label>
+                            </div>
+                            <label for="CCTV_outside_property" class="ch-box-label simple-text">CCTV outside property</label>
+                        </div>
+                        
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="CCTV_common_areas" type="checkbox"/>
+                                <label for="CCTV_common_areas"></label>
+                            </div>
+                            <label for="CCTV_common_areas" class="ch-box-label simple-text">CCTV in common areas</label>
+                        </div>
+                        
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Smoke_alarms" type="checkbox"/>
+                                <label for="Smoke_alarms"></label>
+                            </div>
+                            <label for="Smoke_alarms" class="ch-box-label simple-text">Smoke alarms</label>
+                        </div>
+                        
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Security_alarm" type="checkbox"/>
+                                <label for="Security_alarm"></label>
+                            </div>
+                            <label for="Security_alarm" class="ch-box-label simple-text">Security alarm</label>
+                        </div>
+                        
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Key_card_access" type="checkbox"/>
+                                <label for="Key_card_access"></label>
+                            </div>
+                            <label for="Key_card_access" class="ch-box-label simple-text">Key card access</label>
+                        </div>
+                        
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="24-hour_security" type="checkbox"/>
+                                <label for="24-hour_security"></label>
+                            </div>
+                            <label for="24-hour_security" class="ch-box-label simple-text">24-hour security</label>
+                        </div>
+                        
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Safety_deposit_box" type="checkbox"/>
+                                <label for="Safety_deposit_box"></label>
+                            </div>
+                            <label for="Safety_deposit_box" class="ch-box-label simple-text">Safety deposit box</label>
+                        </div>
+                    </div>
+                    
+                    <div class="facility-block">
+                        <div class="grid-icon-text">
+                            <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.27016 1.5H17.7302C18.4887 1.5 19.2161 1.80132 19.7525 2.33767C20.2888 2.87403 20.5902 3.60148 20.5902 4.36V22.5H3.41016V4.36C3.41016 3.60148 3.71148 2.87403 4.24783 2.33767C4.78418 1.80132 5.51164 1.5 6.27016 1.5Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M12.0005 18.6796C14.6349 18.6796 16.7705 16.544 16.7705 13.9096C16.7705 11.2752 14.6349 9.13965 12.0005 9.13965C9.36607 9.13965 7.23047 11.2752 7.23047 13.9096C7.23047 16.544 9.36607 18.6796 12.0005 18.6796Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M6.26953 5.32031H11.0495" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M15.8203 5.32031H17.7303" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M12.9492 5.32031H14.8592" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M7.23047 13.9103C12.0005 11.0503 12.9505 15.8203 16.7705 13.9103" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                </svg> 
+                            <p class="text-title-block">Cleaning services</p>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Daily_housekeeping" type="checkbox"/>
+                                <label for="Daily_housekeeping"></label>
+                            </div>
+                            <label for="Daily_housekeeping" class="ch-box-label simple-text">Daily housekeeping</label>
+                        </div>
+                        
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Laundry" type="checkbox"/>
+                                <label for="Laundry"></label>
+                            </div>
+                            <label for="Laundry" class="ch-box-label simple-text">Laundry</label>
+                        </div>
+                        
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Additional_charge_laundry" type="checkbox"/>
+                                <label for="Additional_charge_laundry"></label>
+                            </div>
+                            <label for="Additional_charge_laundry" class="ch-box-label simple-text">Additional charge</label>
+                        </div>
+                    </div>
+                   
+                    <div class="facility-block">
+                        <div class="grid-icon-text">
+                            <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 23.52C1.50264 22.2557 2.00604 21.044 2.90002 20.15C3.794 19.256 5.00573 18.7526 6.27 18.75C7.536 18.75 8.7503 19.2522 9.64644 20.1465C10.5426 21.0408 11.0474 22.254 11.05 23.52" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M6.27016 16.8401C7.84969 16.8401 9.13016 15.5597 9.13016 13.9801C9.13016 12.4006 7.84969 11.1201 6.27016 11.1201C4.69062 11.1201 3.41016 12.4006 3.41016 13.9801C3.41016 15.5597 4.69062 16.8401 6.27016 16.8401Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M13 23.52C13.0026 22.254 13.5074 21.0408 14.4036 20.1465C15.2997 19.2522 16.514 18.75 17.78 18.75C19.0443 18.7526 20.256 19.256 21.15 20.15C22.044 21.044 22.5474 22.2557 22.55 23.52" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M17.7291 16.8401C19.3087 16.8401 20.5891 15.5597 20.5891 13.9801C20.5891 12.4006 19.3087 11.1201 17.7291 11.1201C16.1496 11.1201 14.8691 12.4006 14.8691 13.9801C14.8691 15.5597 16.1496 16.8401 17.7291 16.8401Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M12.0002 3.48047L12.6202 4.73047L14.0102 4.94047L13.0002 5.91047L13.2402 7.29047L12.0002 6.64047L10.7602 7.29047L11.0002 5.91047L9.99023 4.94047L11.3802 4.73047L12.0002 3.48047Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                </svg> 
+                            <p class="text-title-block">Entertainment and family services</p>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Kids_outdoor_play_equipment" type="checkbox"/>
+                                <label for="Kids_outdoor_play_equipment"></label>
+                            </div>
+                            <label for="Kids_outdoor_play_equipment" class="ch-box-label simple-text">Kids' outdoor play equipment</label>
+                        </div>
+                    </div>
+                    
+                    <div class="facility-block">
+                        <div class="grid-icon-text">
+                            <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.9992 22.5C9.30691 21.9634 6.88382 20.5103 5.14254 18.3879C3.40126 16.2656 2.44947 13.6053 2.44922 10.86V3.41L11.9992 1.5L21.5492 3.41V10.86C21.549 13.6053 20.5972 16.2656 18.8559 18.3879C17.1146 20.5103 14.6915 21.9634 11.9992 22.5Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M7.23047 10.93L10.8105 14.51L16.7705 8.54004" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
+                                </svg> 
+                            <p class="text-title-block">Safety & security</p>
+                        </div>
+
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Invoice_provided" type="checkbox"/>
+                                <label for="Invoice_provided"></label>
+                            </div>
+                            <label for="Invoice_provided" class="ch-box-label simple-text">Invoice provided</label>
+                        </div>
+                        
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Private_check-in_check-out" type="checkbox"/>
+                                <label for="Private_check-in_check-out"></label>
+                            </div>
+                            <label for="Private_check-in_check-out" class="ch-box-label simple-text">Private check-in/check-out</label>
+                        </div>
+                        
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Concierge_service" type="checkbox"/>
+                                <label for="Concierge_service"></label>
+                            </div>
+                            <label for="Concierge_service" class="ch-box-label simple-text">Concierge service</label>
+                        </div>
+                        
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Luggage_storage" type="checkbox"/>
+                                <label for="Luggage_storage"></label>
+                            </div>
+                            <label for="Luggage_storage" class="ch-box-label simple-text">Luggage storage</label>
+                        </div>
+                        
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="Express_check-in_check-out" type="checkbox"/>
+                                <label for="Express_check-in_check-out"></label>
+                            </div>
+                            <label for="Express_check-in_check-out" class="ch-box-label simple-text">Express check-in/check-out</label>
+                        </div>
+                        
+                        <div class="grid-icon-text">
+                            <div class="ch-box-cont">
+                                <input id="24-hour_front_desk" type="checkbox"/>
+                                <label for="24-hour_front_desk"></label>
+                            </div>
+                            <label for="24-hour_front_desk" class="ch-box-label simple-text">24-hour front desk</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <p class="simple-text">With this information at hand, we can tailor the best deals specifically for you and provide highlighted details in the hotel descriptions to ensure you have all the important information.</p>
+                        <p class="simple-text">Select the services that you prioritize</p>
+                    </div>
                 </div>
             </div>
-        </nav>
-        <main class="TravInfo">
-            <section>
-                <p class="main-title">Travel information</p>
-                <div class="grid-cont">
-                    <div class="column">
-                        <div class="facility-block">
-                            <div class="grid-icon-text">
-                                <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.16992 1.5H15.8199V8.2C15.812 9.20884 15.4064 10.1738 14.6911 10.8853C13.9759 11.5968 13.0088 11.9974 11.9999 12C10.9893 12 10.0197 11.6006 9.30225 10.8888C8.58485 10.1771 8.17784 9.21057 8.16992 8.2V1.5Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M8.16992 5.33008H18.6999" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M4.34964 23.5V19.67C4.347 18.6637 4.54294 17.6668 4.92621 16.7363C5.30948 15.8059 5.87256 14.9602 6.58319 14.2477C7.29382 13.5352 8.13803 12.9699 9.06748 12.5842C9.99693 12.1985 10.9933 12 11.9996 12C14.0285 12 15.9743 12.806 17.409 14.2406C18.8437 15.6753 19.6496 17.6211 19.6496 19.65V23.5" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M9.13086 17.7598H11.0409" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M9.13086 21.5898H11.0409" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M8.92969 12.6602L12.9597 15.8502V23.5002" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                </svg>
-                                <p class="text-title-block">General</p>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input  id="shuttle_service" type="checkbox"/>
-                                    <label for="shuttle_service"></label>
-                                </div>
-                                <label for="shuttle_service" class="ch-box-label simple-text">Shuttle service</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input  id="Additional_charge" type="checkbox"/>
-                                    <label for="Additional_charge"></label>
-                                </div>
-                                <label for="Additional_charge" class="ch-box-label simple-text">Additional charge</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input  id="Minimarket_on_site" type="checkbox"/>
-                                    <label for="Minimarket_on_site"></label>
-                                </div>
-                                <label for="Minimarket_on_site" class="ch-box-label simple-text">Minimarket on site</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input  id="Designated_smoking_area" type="checkbox"/>
-                                    <label for="Designated_smoking_area"></label>
-                                </div>
-                                <label for="Designated_smoking_area" class="ch-box-label simple-text">Designated smoking area</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Air_conditioning" type="checkbox"/>
-                                    <label for="Air_conditioning"></label>
-                                </div>
-                                <label for="Air_conditioning" class="ch-box-label simple-text">Air conditioning</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Mosquito_net" type="checkbox"/>
-                                    <label for="Mosquito_net"></label>
-                                </div>
-                                <label for="Mosquito_net" class="ch-box-label simple-text">Mosquito net</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Wake-up_service" type="checkbox"/>
-                                    <label for="Wake-up_service"></label>
-                                </div>
-                                <label for="Wake-up_service" class="ch-box-label simple-text">Wake-up service</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Heating" type="checkbox"/>
-                                    <label for="Heating"></label>
-                                </div>
-                                <label for="Heating" class="ch-box-label simple-text">Heating</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Interconnected_rooms_available" type="checkbox"/>
-                                    <label for="Interconnected_rooms_available"></label>
-                                </div>
-                                <label for="Interconnected_rooms_available" class="ch-box-label simple-text">Interconnected room(s) available</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Lift" type="checkbox"/>
-                                    <label for="Lift"></label>
-                                </div>
-                                <label for="Lift" class="ch-box-label simple-text">Lift</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Family_rooms" type="checkbox"/>
-                                    <label for="Family_rooms"></label>
-                                </div>
-                                <label for="Family_rooms" class="ch-box-label simple-text">Family rooms</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Barber_beauty_shop" type="checkbox"/>
-                                    <label for="Barber_beauty_shop"></label>
-                                </div>
-                                <label for="Barber_beauty_shop" class="ch-box-label simple-text">Barber/beauty shop</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Airport_shuttle" type="checkbox"/>
-                                    <label for="Airport_shuttle"></label>
-                                </div>
-                                <label for="Airport_shuttle" class="ch-box-label simple-text">Airport shuttle</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Non-smoking_rooms" type="checkbox"/>
-                                    <label for="Non-smoking_rooms"></label>
-                                </div>
-                                <label for="Non-smoking_rooms" class="ch-box-label simple-text">Non-smoking rooms</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Wake_up_service_Alarm_clock" type="checkbox"/>
-                                    <label for="Wake_up_service_Alarm_clock"></label>
-                                </div>
-                                <label for="Wake_up_service_Alarm_clock" class="ch-box-label simple-text">Wake up service/Alarm clock</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Room_service" type="checkbox"/>
-                                    <label for="Room_service"></label>
-                                </div>
-                                <label for="Room_service" class="ch-box-label simple-text">Room service</label>
-                            </div>
-                        </div>
-                        <div class="facility-block">
-                            <div class="grid-icon-text"> 
-                                <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_92_275)">
-                                    <path d="M0.5 22.54H8.17V17.75H15.83V12H23.5" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M19.6699 12V1.45996H13.9199V6.24996H19.6699" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_92_275">
-                                    <rect width="24" height="24" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                                <p class="text-title-block">Accessibility</p>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Upper_floors_stairs_only" type="checkbox"/>
-                                    <label for="Upper_floors_stairs_only"></label>
-                                </div>
-                                <label for="Upper_floors_stairs_only" class="ch-box-label simple-text">Upper floors accessible by stairs only</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Upper_floors_elevator" type="checkbox"/>
-                                    <label for="Upper_floors_elevator"></label>
-                                </div>
-                                <label for="Upper_floors_elevator" class="ch-box-label simple-text">Upper floors accessible by elevator</label>
-                            </div>
-                        </div>
-                        <div class="facility-block">
-                            <div class="grid-icon-text"> 
-                                <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_92_280)">
-                                    <path d="M0.5 3.34961H12" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M6.25 0.480469V3.35047" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M9.12094 3.34961C9.12094 6.86961 5.84094 11.5496 1.46094 13.8996" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M4.50977 7.37012C6.00523 10.1218 8.25731 12.3878 10.9998 13.9001" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M12.9609 22.5205L16.7909 11.9805H17.7509L21.5809 22.5205" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M20.4303 18.6904H15.0703" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M11.0391 22.5195H14.8791" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M19.6699 22.5195H23.4999" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_92_280">
-                                    <rect width="24" height="24" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                                <p class="text-title-block">Languages spoken</p>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Language_English" type="checkbox"/>
-                                    <label for="Language_English"></label>
-                                </div>
-                                <label for="Language_English" class="ch-box-label simple-text">English</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Language_Russian" type="checkbox"/>
-                                    <label for="Language_Russian"></label>
-                                </div>
-                                <label for="Language_Russian" class="ch-box-label simple-text">Russian</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Language_Ukrainian" type="checkbox"/>
-                                    <label for="Language_Ukrainian"></label>
-                                </div>
-                                <label for="Language_Ukrainian" class="ch-box-label simple-text">Ukrainian</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="facility-block">
-                            <div class="grid-icon-text"> 
-                                <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_92_292)">
-                                    <path d="M1.5 23.4795V9.15953L12 1.51953L22.5 9.15953V23.4795" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M7.23031 14.8896H16.7803C17.2869 14.8896 17.7727 15.0909 18.1309 15.4491C18.4891 15.8073 18.6903 16.2931 18.6903 16.7996V20.6196H5.32031V16.7996C5.32031 16.2931 5.52154 15.8073 5.87974 15.4491C6.23793 15.0909 6.72375 14.8896 7.23031 14.8896Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M10.0897 17.75H8.17969" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M15.8202 17.75H13.9102" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M8.18047 20.6104H7.23047V22.5204H8.18047V20.6104Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M16.7703 20.6104H15.8203V22.5204H16.7703V20.6104Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M16.7705 14.8903H7.23047L7.82047 12.5103C7.92336 12.098 8.16153 11.732 8.4969 11.471C8.83227 11.2099 9.24548 11.0689 9.67047 11.0703H14.3305C14.7555 11.0689 15.1687 11.2099 15.504 11.471C15.8394 11.732 16.0776 12.098 16.1805 12.5103L16.7705 14.8903Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_92_292">
-                                    <rect width="24" height="24" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                                <p class="text-title-block">Parking</p>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Parking_garage" type="checkbox"/>
-                                    <label for="Parking_garage"></label>
-                                </div>
-                                <label for="Parking_garage" class="ch-box-label simple-text">Parking garage</label>
-                            </div>
-                        </div>
-                        <div class="facility-block">
-                            <div class="grid-icon-text"> 
-                                <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_92_346)">
-                                    <path d="M22.5 22.4997H1.5V20.5897L2.46 18.6797H21.55L22.5 20.5897V22.4997Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M11.7492 5.32031H12.2392C14.7057 5.32031 17.0712 6.30013 18.8153 8.04422C20.5594 9.78831 21.5392 12.1538 21.5392 14.6203V14.8703H2.44922V14.6203C2.44922 12.1538 3.42904 9.78831 5.17313 8.04422C6.91721 6.30013 9.28271 5.32031 11.7492 5.32031Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M12 1.5V5.32" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M9.14062 1.5H14.8606" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M18.6803 14.8604H5.32031V18.6804H18.6803V14.8604Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_92_346">
-                                    <rect width="24" height="24" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                    </svg>
-                                <p class="text-title-block">Reception services</p>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Fire_extinguishers" type="checkbox"/>
-                                    <label for="Fire_extinguishers"></label>
-                                </div>
-                                <label for="Fire_extinguishers" class="ch-box-label simple-text">Fire extinguishers</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="CCTV_outside_property" type="checkbox"/>
-                                    <label for="CCTV_outside_property"></label>
-                                </div>
-                                <label for="CCTV_outside_property" class="ch-box-label simple-text">CCTV outside property</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="CCTV_common_areas" type="checkbox"/>
-                                    <label for="CCTV_common_areas"></label>
-                                </div>
-                                <label for="CCTV_common_areas" class="ch-box-label simple-text">CCTV in common areas</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Smoke_alarms" type="checkbox"/>
-                                    <label for="Smoke_alarms"></label>
-                                </div>
-                                <label for="Smoke_alarms" class="ch-box-label simple-text">Smoke alarms</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Security_alarm" type="checkbox"/>
-                                    <label for="Security_alarm"></label>
-                                </div>
-                                <label for="Security_alarm" class="ch-box-label simple-text">Security alarm</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Key_card_access" type="checkbox"/>
-                                    <label for="Key_card_access"></label>
-                                </div>
-                                <label for="Key_card_access" class="ch-box-label simple-text">Key card access</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="24-hour_security" type="checkbox"/>
-                                    <label for="24-hour_security"></label>
-                                </div>
-                                <label for="24-hour_security" class="ch-box-label simple-text">24-hour security</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Safety_deposit_box" type="checkbox"/>
-                                    <label for="Safety_deposit_box"></label>
-                                </div>
-                                <label for="Safety_deposit_box" class="ch-box-label simple-text">Safety deposit box</label>
-                            </div>
-                        </div>
-                        <div class="facility-block">
-                            <div class="grid-icon-text">
-                                <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.27016 1.5H17.7302C18.4887 1.5 19.2161 1.80132 19.7525 2.33767C20.2888 2.87403 20.5902 3.60148 20.5902 4.36V22.5H3.41016V4.36C3.41016 3.60148 3.71148 2.87403 4.24783 2.33767C4.78418 1.80132 5.51164 1.5 6.27016 1.5Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M12.0005 18.6796C14.6349 18.6796 16.7705 16.544 16.7705 13.9096C16.7705 11.2752 14.6349 9.13965 12.0005 9.13965C9.36607 9.13965 7.23047 11.2752 7.23047 13.9096C7.23047 16.544 9.36607 18.6796 12.0005 18.6796Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M6.26953 5.32031H11.0495" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M15.8203 5.32031H17.7303" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M12.9492 5.32031H14.8592" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M7.23047 13.9103C12.0005 11.0503 12.9505 15.8203 16.7705 13.9103" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    </svg> 
-                                <p class="text-title-block">Cleaning services</p>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Daily_housekeeping" type="checkbox"/>
-                                    <label for="Daily_housekeeping"></label>
-                                </div>
-                                <label for="Daily_housekeeping" class="ch-box-label simple-text">Daily housekeeping</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Laundry" type="checkbox"/>
-                                    <label for="Laundry"></label>
-                                </div>
-                                <label for="Laundry" class="ch-box-label simple-text">Laundry</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Additional_charge_laundry" type="checkbox"/>
-                                    <label for="Additional_charge_laundry"></label>
-                                </div>
-                                <label for="Additional_charge_laundry" class="ch-box-label simple-text">Additional charge</label>
-                            </div>
-                        </div>
-                        <div class="facility-block">
-                            <div class="grid-icon-text">
-                                <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 23.52C1.50264 22.2557 2.00604 21.044 2.90002 20.15C3.794 19.256 5.00573 18.7526 6.27 18.75C7.536 18.75 8.7503 19.2522 9.64644 20.1465C10.5426 21.0408 11.0474 22.254 11.05 23.52" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M6.27016 16.8401C7.84969 16.8401 9.13016 15.5597 9.13016 13.9801C9.13016 12.4006 7.84969 11.1201 6.27016 11.1201C4.69062 11.1201 3.41016 12.4006 3.41016 13.9801C3.41016 15.5597 4.69062 16.8401 6.27016 16.8401Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M13 23.52C13.0026 22.254 13.5074 21.0408 14.4036 20.1465C15.2997 19.2522 16.514 18.75 17.78 18.75C19.0443 18.7526 20.256 19.256 21.15 20.15C22.044 21.044 22.5474 22.2557 22.55 23.52" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M17.7291 16.8401C19.3087 16.8401 20.5891 15.5597 20.5891 13.9801C20.5891 12.4006 19.3087 11.1201 17.7291 11.1201C16.1496 11.1201 14.8691 12.4006 14.8691 13.9801C14.8691 15.5597 16.1496 16.8401 17.7291 16.8401Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M12.0002 3.48047L12.6202 4.73047L14.0102 4.94047L13.0002 5.91047L13.2402 7.29047L12.0002 6.64047L10.7602 7.29047L11.0002 5.91047L9.99023 4.94047L11.3802 4.73047L12.0002 3.48047Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    </svg> 
-                                <p class="text-title-block">Entertainment and family services</p>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Kids_outdoor_play_equipment" type="checkbox"/>
-                                    <label for="Kids_outdoor_play_equipment"></label>
-                                </div>
-                                <label for="Kids_outdoor_play_equipment" class="ch-box-label simple-text">Kids' outdoor play equipment</label>
-                            </div>
-                        </div>
-                        <div class="facility-block">
-                            <div class="grid-icon-text">
-                                <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.9992 22.5C9.30691 21.9634 6.88382 20.5103 5.14254 18.3879C3.40126 16.2656 2.44947 13.6053 2.44922 10.86V3.41L11.9992 1.5L21.5492 3.41V10.86C21.549 13.6053 20.5972 16.2656 18.8559 18.3879C17.1146 20.5103 14.6915 21.9634 11.9992 22.5Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    <path d="M7.23047 10.93L10.8105 14.51L16.7705 8.54004" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10"/>
-                                    </svg> 
-                                <p class="text-title-block">Safety & security</p>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Invoice_provided" type="checkbox"/>
-                                    <label for="Invoice_provided"></label>
-                                </div>
-                                <label for="Invoice_provided" class="ch-box-label simple-text">Invoice provided</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Private_check-in_check-out" type="checkbox"/>
-                                    <label for="Private_check-in_check-out"></label>
-                                </div>
-                                <label for="Private_check-in_check-out" class="ch-box-label simple-text">Private check-in/check-out</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Concierge_service" type="checkbox"/>
-                                    <label for="Concierge_service"></label>
-                                </div>
-                                <label for="Concierge_service" class="ch-box-label simple-text">Concierge service</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Luggage_storage" type="checkbox"/>
-                                    <label for="Luggage_storage"></label>
-                                </div>
-                                <label for="Luggage_storage" class="ch-box-label simple-text">Luggage storage</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="Express_check-in_check-out" type="checkbox"/>
-                                    <label for="Express_check-in_check-out"></label>
-                                </div>
-                                <label for="Express_check-in_check-out" class="ch-box-label simple-text">Express check-in/check-out</label>
-                            </div>
-                            <div class="grid-icon-text">
-                                <div class="ch-box-cont">
-                                    <input id="24-hour_front_desk" type="checkbox"/>
-                                    <label for="24-hour_front_desk"></label>
-                                </div>
-                                <label for="24-hour_front_desk" class="ch-box-label simple-text">24-hour front desk</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <p class="simple-text">With this information at hand, we can tailor the best deals specifically for you and provide highlighted details in the hotel descriptions to ensure you have all the important information.</p>
-                            <p class="simple-text">Select the services that you prioritize</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </body>
+        </section>
+    </main>
+</body>
 </html>
