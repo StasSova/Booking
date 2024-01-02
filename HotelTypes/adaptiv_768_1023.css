@@ -1,4 +1,4 @@
-@media only screen and (min-width: 320px) and (max-width: 767px){
+@media only screen and (min-width: 768px) and (max-width: 1439px){
     main{
         width: 100%;
         margin: 0px 10px 0 10px;
@@ -51,46 +51,8 @@
     margin-bottom: 30px;
     }
 
-    main content .card 
-    {
-        flex-direction: column;
-        height: auto;
-        width: 398px;
-    }
-    main content .card .hotelImg img {
-        width: 398px;
-        border-radius: 20px 20px 0 0; 
-    }
-    main content {
-        justify-content: center;
-        align-items: center;
-        margin-left: 0px;
-    }
-    main content .card .container .card-header {
-        margin-top: -70px;
-    }
-    main content .card .container .card-header .hotelName
-    {
-        margin-top: -20px;
-    }
-    main content .card .container .card-header .hotelRating 
-    {
-    flex-direction: column;
-    }
-    main content .card .container .Add-information {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    main content .card .container .Add-information div {
-        margin-top: 10px;
-    }
-    main content .card .container .description {
-        flex-direction: column;
-        justify-content: center; 
-    align-items: center;
-    }
-    main content .card .container .description p {
-        width: 100%;
+    main content .card {
+        width: 95%;
     }
 
 }
