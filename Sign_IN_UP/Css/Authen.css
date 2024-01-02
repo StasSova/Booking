@@ -7,39 +7,42 @@
     user-select:none;
     font-family:'Nunito Sans', sans-serif;
 }
-#backmain{
+#backmain3{
     position:fixed;
     width:100%;
     height:100%;
-    background:rgba(1,1,1,0.5);
+    background:rgba(1,1,1,0.75);
     display:flex;
     justify-content:center;
     align-items:center;
+    opacity:0;
+    visibility:hidden;
+    z-index:1000;
 }
-#backmain #main{
+#backmain3 #main{
     height:70vh;
     width:30%;
     background:white;
     border-radius:10px;
 }
-#backmain #main h2{
+#backmain3 #main h2{
     margin-top:10%;
     text-align:center;
     color:#581ADB;
 }
-#backmain #main img{
+#backmain3 #main img{
     position:absolute;
     top:18%;
     right:36.5%;
     width:2%;
     transition:.15s;
 }
-#backmain #main img:hover{
-    content:url(textures/hovercross.png);
+#backmain3 #main img:hover{
+    content:url(../../img/hovercross.png);
     cursor:pointer;
 }
-#backmain #main img:active{transform:scale(0.9);}
-#backmain #main input[type='number']{
+#backmain3 #main img:active{transform:scale(0.9);}
+#backmain3 #main input[type='number']{
     margin:7% 0 0 7%;
     width:85%;
     height:10%;
@@ -50,15 +53,15 @@
     font-size:1em;
     transition:.15s;
 }
-#backmain #main input[type='number']:hover{border:1px solid black;}
-#backmain #main input[type='number']:focus{border:1px solid #581ADB;}
-#backmain #main input[type='number']:active{transform:scale(0.95);}
-#backmain #main p{
+#backmain3 #main input[type='number']:hover{border:1px solid black;}
+#backmain3 #main input[type='number']:focus{border:1px solid #581ADB;}
+#backmain3 #main input[type='number']:active{transform:scale(0.95);}
+#backmain3 #main p{
     margin:2% 0 0 11%;
     width:80%;
     color:gray;
 }
-#backmain #main .but1{
+#backmain3 #main .but1{
     margin:44% 0 0 7%;
     width:85%;
     height:10%;
@@ -69,8 +72,8 @@
     color:white;
     transition:.15s;
 }
-#backmain #main .but1:hover{
+#backmain3 #main .but1:hover{
     box-shadow:0px 0px 12px #581ADB;
     cursor:pointer;
 }
-#backmain #main .but1:active{transform:scale(0.95);}
+#backmain3 #main .but1:active{transform:scale(0.95);}
