@@ -1,0 +1,141 @@
+/* ==================================================
+                      CHECK BOX
+====================================================*/
+/* скрываем стандратный чек бокс */
+.ch-box-cont input[type="checkbox"] {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+/* контейнер */
+.ch-box-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+/* круг */
+.ch-box-cont label{
+  background-color: transparent;
+  border: 1px solid var(--border-primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+
+  display: flex;
+  justify-content: center;
+}
+/* галочка */
+.ch-box-cont label:after {
+  content: "";
+  border: 2px solid var(--background-color);
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+  height: 3px;
+  width: 8px;
+  margin-top: 4px;
+  opacity: 0;
+}
+
+/* checked state background circle*/
+.ch-box-cont input[type="checkbox"]:checked + label {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+/* checked state show check*/
+.ch-box-cont input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+.ch-box-label:hover{
+  cursor: pointer;
+}
+
+
+
+/* ==================================================
+                      INPUT
+====================================================*/
+.input-border{
+  padding: 15px 30px;
+  width: 100%;
+  border-radius: 32px;
+  border: 1px solid var(--border-primary-color);
+  /* box-shadow: 0 0 5px rgba(0,0,0,0.1);  предлагаю убрать тень, если не согласны тогда добавляйте :) */
+  background-color: transparent;
+}
+/* TYPE: NUMBER  скрываем левый увеличитель значения*/
+.input-border::-webkit-inner-spin-button,
+.input-border::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* при выборе input */
+.input-border:focus {
+  border-color: #581ADB; 
+  outline: none; 
+}
+
+/* ==================================================
+                      SELECT
+====================================================*/
+.select-menu .select-btn{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+}
+.select-btn svg{
+  margin-right: 0;
+  transition: 0.3s;
+}
+.select-menu.active .select-btn svg{
+    transform: rotate(-180deg);
+}
+.select-menu.active .select-btn{
+  border-radius: 32px 32px 8px 8px;
+  border-color: #581ADB !important;
+}
+
+.select-menu .options{
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 8px 8px 32px 32px;
+  border: 1px solid var(--border-primary-color);
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+  display: none;
+  border-color: #581ADB !important;
+}
+.select-menu.active .options{
+    display: block;
+}
+.options .option{
+  display: flex;
+  height: 55px;
+  cursor: pointer;
+  padding: 0 16px;
+  border-radius: 8px;
+  align-items: center;
+}
+.options .option:hover{
+  background: #F2F2F2;
+}
+.option .option-text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primary-color);
+}
+
+.plain-text
+  {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin: 20px 0;
+  }
