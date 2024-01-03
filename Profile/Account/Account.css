@@ -2,7 +2,6 @@ main section{
     width: 75%;
     margin: 0 auto 10% auto;
 }
-
 #main #actext{
     margin-top:1.5%;
     height:30vh;
@@ -33,7 +32,7 @@ main section{
     width:75%;
     display:flex;
 }
-#main #actext .account .rightaccount #name img{
+#main #actext .account .rightaccount #name #edit{
     margin:-2% 0 0 5%;
     width:18%;
     height:85%;
@@ -55,13 +54,13 @@ main section{
 }
 #main #actext .account .rightaccount input[type='button']:active{transform:scale(0.95);}
 #main #actext .account .rightaccount #but5{
-    background-image:url(textures/photo.png);
+    background-image:url(../../svg/camera.svg);
     background-size:12%;
     background-repeat:no-repeat;
     background-position:97%;
     transition:.15s;
 }
-#main #actext .account .rightaccount #but5:hover{background-image:url(textures/actphoto.png);}
+#main #actext .account .rightaccount #but5:hover{background-image:url(../../svg/camera_hover.svg);}
 #main #actext .textik{
     margin-left:3%;
     width:35%;
@@ -170,7 +169,7 @@ main section{
     display:flex;
     align-items:center;
 }
-#main .hotel #lefthotel #lrhotel .column img{
+#main .hotel #lefthotel #lrhotel .column svg{
     height:100%;
     width:6%;
 }
@@ -188,7 +187,7 @@ main section{
     display:flex;
     align-items:center;
 }
-#main .hotel #lefthotel #lrhotel .column2 img{
+#main .hotel #lefthotel #lrhotel .column2 svg{
     height:100%;
     width:6%;
 }
@@ -196,7 +195,7 @@ main section{
     margin-left:2%;
     color:gray;
 }
-#main .hotel #lefthotel #lrhotel .column2 #image{margin-left:6%;}
+#main .hotel #lefthotel #lrhotel .column2 #image{margin-left:2%;}
 #main .hotel #righthotel{
     margin-left:2%;
     width:37%;
@@ -271,33 +270,26 @@ main section{
     justify-content:center;
     align-items:center;
 }
-#main .review img{
-    width:3%;
-}
 #main .review span{
     margin-top:1%;
     font-size:1em;
     color:gray;
 }
-
 /* ==================================================
                             ADAPTIVE 1024 1439
 ====================================================*/
-@media only screen and (min-width: 1024px) and (max-width: 1439px)
-{
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
     
 }
 /* ==================================================
                             ADAPTIVE 768 1023
 ====================================================*/
-@media only screen and (min-width: 768px) and (max-width: 1023px)
-{
+@media only screen and (min-width: 768px) and (max-width: 1023px){
    
 }
 /* ==================================================
                             ADAPTIVE 320 767
 ====================================================*/
-@media only screen and (max-width: 767px)
-{
+@media only screen and (max-width: 767px){
 
 }
