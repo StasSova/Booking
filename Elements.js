@@ -13,3 +13,16 @@ options.forEach(option =>{
         optionMenu.classList.remove("active");
     });
 });
+document.getElementById('monthDayInput').addEventListener('input', function(e) {
+    var input = e.target.value;
+  
+    if (input.length > 5) {
+      e.target.value = input.slice(0, 5);
+    }
+  
+    if (input.length === 2 && !input.includes('/')) {
+      e.target.value = input + '/';
+    }
+  
+  });
+  
