@@ -452,7 +452,8 @@ nav .panel .search svg{
     border-radius: 16px;
     border: 1px solid var(--border-primary-color);
     align-items: center;
-    transition: box-shadow 1s;
+    margin: 0 0 8px 0;
+    transition:.2s;
 }
 /* BACK */
 .profile-back-cont{
@@ -476,25 +477,15 @@ nav .panel .search svg{
     padding: 4px 4px 4px 16px;
     margin-right: 32px;
 }
-
 .hoverable-pr-item:hover{
     box-shadow: 0px 4px 4px 2px var(--border-primary-color);
     transition: 1s;
     cursor: pointer;
 }
-.active-pr-item{
-    border-color: var(--secondary-color);
-}
-.active-pr-item p{
-    color: var(--secondary-color);
-}
-.active-pr-item svg rect{
-    fill: var(--secondary-color);
-}
-
-
-
-
+.hoverable-pr-item:active{transform:scale(0.9);}
+.active-pr-item{border-color: var(--secondary-color);}
+.active-pr-item p{color: var(--secondary-color);}
+.active-pr-item svg rect{fill: var(--secondary-color);}
 /* ==================================================
                     SMALL HOTELS CARD
 ====================================================*/
@@ -619,8 +610,4 @@ footer .ftr-container{
 .ftr-container a{
     text-decoration: none;
     color: var(--primary-color);
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1150px){
-    
 }
