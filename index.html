@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Main page</title>
+    <link rel='icon' href="img/favicon.png"/>
     <link rel="stylesheet" href="generalStyles.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="Elements.css">
@@ -27,10 +28,10 @@
   <div id='backmain'>
     <section id='main'>
       <h2>Sign In</h2>
-      <img src='../img/cross.png' id='cross'>
+      <img src='img/cross.png' id='cross'>
       <input type='text' placeholder="Email">
       <input type='password' placeholder="Password">
-      <a href="../../Profile/Account/Account.html">
+      <a href="Profile/Account/Account.html">
         <input type='button' value='Continue' class='but1'>
       </a>
       <p>Do not have an account? 
@@ -45,7 +46,7 @@
   <div id='backmain2'>
       <section id='main'>
         <h2>Register</h2>
-        <img src='../img/cross.png' id='cross2'>
+        <img src='img/cross.png' id='cross2'>
         <input type='email' placeholder="Email" maxlength='50'>
         <p>We will send you an email to confirm your email address</p>
         <input type='password' placeholder="Password" maxlength='50'>
@@ -61,7 +62,7 @@
     <div id='backmain3'>
       <section id='main'>
         <h2>Authentication</h2>
-        <img src='../img/cross.png' id='cross3'>
+        <img src='img/cross.png' id='cross3'>
         <input type='number' placeholder="Code">
         <p>We have sent you an email with the code. Check your mail and enter the code for the authentication.</p>
         <input type='button' value='Continue' class='but1' id='cont2'>
@@ -71,7 +72,7 @@
     <div id='backmain4'>
       <section id='main'>
         <h2>Information</h2>
-        <img class='cross' src='../img/cross.png' id='cross4'>
+        <img class='cross' src='img/cross.png' id='cross4'>
         <p>Tell us about yourself so we can better choose options for you ;)</p>
         <select>
           <option>Country</option>
@@ -83,7 +84,7 @@
           <option>Why do you travel?</option>
         </select>
         <p class='text'>Traveling with a pet?</p>
-        <img class='check1' src='../img/yes.png' tabindex="0"><img class='check2' src='../img/no.png' tabindex="0">
+        <img class='check1' src='img/yes.png' tabindex="0"><img class='check2' src='img/no.png' tabindex="0">
         <input type='button' value='Continue' class='but1' id='cont3'>
         <input type='button' value='Later' class='but2' id='cont3'>
       </section>
@@ -92,15 +93,15 @@
     <div id='backmain5'>
       <section id='main'>
         <h2>All done!</h2>
-        <img class='cross' src='../img/cross.png' id='cross5'>
+        <img class='cross' src='img/cross.png' id='cross5'>
         <img>
         <div class='checkcont'>
-          <img class='check' src='../img/check.png'>
+          <img class='check' src='img/check.png'>
         </div>  
-        <a href="../../Profile/Account/Account.html">
+        <a href="Profile/Account/Account.html">
           <input type='button' value='Check your profile!' class='but1'>
         </a>
-        <a href="../../index.html">
+        <a href="index.html">
           <input type='button' value='Continue booking' class='but2'>
         </a>
       </section>
@@ -498,9 +499,7 @@
     <!-- BUTTON -->
     <div class="butWrap">
         <img src="svg/flag.svg" alt="">
-        <a href="Sign_IN_UP/Registration/Registration.html">
-            <button>Register an account</button>
-        </a>
+        <a id='register2'><button>Register an account</button></a>
         <img src="svg/flag.svg" id="Sec" alt="">
     </div>
 </section>
