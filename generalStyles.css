@@ -3,31 +3,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-user-drag:none;
+    user-select:none;
+    font-family: 'Nunito Sans', sans-serif;
 }
 /* ==================================================
                             BASIC STYLE
 ====================================================*/
-body{
-    font-family: 'Nunito Sans', sans-serif;
-}
-
 :root{
-    --background-color: #fff;
-    --primary-color: #717171;
-    --secondary-color: #581ADB;
+    --background-color:#fff;
+    --primary-color:#717171;
+    --secondary-color:#581ADB;
     --secondary-shadow-color:#581ADB59;
-    --box-black-shadow: rgba(0,0,0,0.36); 
-    --black-color: #222222;
+    --box-black-shadow:rgba(0,0,0,0.36); 
+    --black-color:#222222;
     --red-color:#ee0039;
-    --white-text-color: #FFFFFF;
-    --border-primary-color: #DDDDDD;
+    --white-text-color:#FFFFFF;
+    --border-primary-color:#DDDDDD;
+    --header-border-color:#ADADAD;
 }
 /* ==================================================
                         TYPOGRAPHY    
 ====================================================*/
-a{
-    text-decoration: none;
-}
+a{text-decoration: none;}
 /* HEADER */
 .header-title{
     font-size: 24px;
@@ -71,8 +69,6 @@ nav .panel p{
     letter-spacing: 0em;
     text-align: left;
 }
-
-
 /* SMALL HOTELS CARD */
 .hoteles-title{
     color: var(--black-color);
@@ -98,14 +94,12 @@ nav .panel p{
     letter-spacing: 0em;
     text-align: left;
 }
-
 .simple-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: var(--primary-color);
 }
-
 .text-title-block{
     color: var(--primary-color);
     font-size: 16px;
@@ -114,7 +108,6 @@ nav .panel p{
     letter-spacing: 0em;
     text-align: left;
 }
-
 .text-title-block-content{
     color: var(--primary-color);
     font-size: 16px;
@@ -125,7 +118,6 @@ nav .panel p{
     text-transform: uppercase;
     margin: 48px 0 24px 0;
 }
-
 /* FONT WEIGHT */
 .fw-1{font-weight: 100;}
 .fw-2{font-weight: 200;}
@@ -159,8 +151,6 @@ nav .panel p{
 .ta-e{text-align: end;}
 /* TEXT TRANSFORM */
 .tt-up{text-transform: uppercase;}
-
-
 /* ==================================================
                             ICON
 ====================================================*/
@@ -262,7 +252,6 @@ nav .panel p{
     align-items: center;
     justify-content: space-evenly;
 }
-
 /* ==================================================
                             HOVER
 ====================================================*/
@@ -283,8 +272,6 @@ nav .panel p{
     transition: 0.5s;
     cursor: pointer;
 }
-
-
 /* ==================================================
                             HEADER
 ====================================================*/
@@ -297,7 +284,6 @@ header{
     padding: 0 20px;
     border-bottom: 1px solid var(--border-primary-color);
 }
-
 /* right panel */
 header .Sign{
     display: flex;
@@ -305,10 +291,8 @@ header .Sign{
     width: inherit;
     justify-content: space-between;
 }
-
 /* Language */
 header .Sign a.lang{height: 32px;width: 32px;}
-
 /* на каждый элемент */
 header .Sign a.Reg,
 header .Sign a.SignIn{
@@ -318,8 +302,6 @@ header .Sign a.SignIn{
 }
 header .Sign .Reg{padding: 6px 16px 6px 16px;}
 header .Sign .SignIn{padding: 6px 6px 6px 16px;}
-
-
 /* ==================================================
                             NAVIGATION
 ====================================================*/
@@ -382,15 +364,9 @@ nav .panel .search svg{
     fill: var(--secondary-color); /*цвет внутри окошка*/
     stroke: var(--background-color); /*цвет бордера*/
 }
-.desktop-icon {
-    display: block !important;
-  }
+.desktop-icon {display: block !important;}
   
-.mobile-icon {
-    display: none !important;
-  }
-  
-
+.mobile-icon {display: none !important;}
 /* ==================================================
                             BOOKING
 ====================================================*/
@@ -416,10 +392,7 @@ nav .panel .search svg{
 }
 .Booking div p{margin-top: 5px;}
 .Booking div:hover p {color: var(--black-color); }
-
-.Booking img {
-  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
-}
+.Booking img {transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;}
 .Booking .first:hover img,
 .Booking .second:hover img,
 .Booking .third:hover img {
@@ -433,8 +406,6 @@ nav .panel .search svg{
     color: var(--black-color);
     transition: 0.5s ease;
 }
-
-
 /* ==================================================
                 PROFILE TABS IN MENU PROFILE
 ====================================================*/
@@ -443,7 +414,6 @@ nav .panel .search svg{
     padding: 36px 0;
     height: auto;
 }
-
 .profile-tabs{
     flex-basis: 100%;
     display: flex;
@@ -451,23 +421,19 @@ nav .panel .search svg{
     align-items: center;
     height: auto;
 }
-.profile-tabs p{
-    text-wrap: nowrap;
-}
-
+.profile-tabs p{text-wrap: nowrap;}
 .profile-item-container{
     display: flex;
     height: 100%;
 }
-.profile-item-back,
-.profile-item{
+.profile-item-back, .profile-item{
     display: grid;
     gap: 8px;
     border-radius: 16px;
     border: 1px solid var(--border-primary-color);
     align-items: center;
     margin: 0 0 8px 0;
-    transition: box-shadow 1s;
+    transition:.2s;
 }
 /* BACK */
 .profile-back-cont{
@@ -481,7 +447,6 @@ nav .panel .search svg{
     padding: 4px 16px 4px 4px;
     margin: 0 20px 8px 32px;
 }
-
 .profile-item-back img{
     align-self: center;
     justify-self: center;
@@ -492,26 +457,15 @@ nav .panel .search svg{
     padding: 4px 4px 4px 16px;
     margin-right: 32px;
 }
-
-
 .hoverable-pr-item:hover{
     box-shadow: 0px 4px 4px 2px var(--border-primary-color);
     transition: 1s;
     cursor: pointer;
 }
-.active-pr-item{
-    border-color: var(--secondary-color);
-}
-.active-pr-item p{
-    color: var(--secondary-color);
-}
-.active-pr-item svg rect{
-    fill: var(--secondary-color);
-}
-
-
-
-
+.hoverable-pr-item:active{transform:scale(0.9);}
+.active-pr-item{border-color: var(--secondary-color);}
+.active-pr-item p{color: var(--secondary-color);}
+.active-pr-item svg rect{fill: var(--secondary-color);}
 /* ==================================================
                         SMALL HOTELS CARD
 ====================================================*/
@@ -541,14 +495,8 @@ nav .panel .search svg{
     height: 10px;
     border-radius: 50%;
 }
-.sm-hotel-card i{
-    color: var(--secondary-color);
-}
-.sm-hotel-card .GDots .Selected{
-    background-color: rgb(255, 255, 255);
-}
-
-
+.sm-hotel-card i{color: var(--secondary-color);}
+.sm-hotel-card .GDots .Selected{background-color: rgb(255, 255, 255);}
 /* ==================================================
                         COMMENT
 ====================================================*/
@@ -559,21 +507,13 @@ nav .panel .search svg{
     border: 1px solid var(--border-primary-color);
     padding: 16px 32px;
 }
-
-.Comment .head-comm{
-    height: 40%;
-}
-
+.Comment .head-comm{height: 40%;}
 .Comment .flex-row-btw{
     margin-bottom: 16px;
     /* выравнивание даты и элементов в верхней части */
     align-items: start;
 }
-
-.Comment img{
-    margin-right: 12px;
-}
-
+.Comment img{margin-right: 12px;}
 .Comment-Name{
     color: var(--black-color);
     font-size: 16px;
@@ -601,21 +541,16 @@ nav .panel .search svg{
     max-height: 66px; /* Количество строк * высоту строки (22px) */
     overflow: hidden;
 }
-
-
 .Comment .main-info{
     display: flex;
     flex-direction: row;
     height: 60%;
 }
-
 .Comment i{
     margin-right: -8px;
     margin-left: 8px;
     color: var(--primary-color);
 }
-
-
 /* ==================================================
             SMALL SQUARE CARD WITH ICON AND TEXT
 ====================================================*/
@@ -624,21 +559,15 @@ nav .panel .search svg{
     height: 208px;
     border-radius: 14px;
     border: 1px solid var(--border-primary-color);
-
     display: grid;
     grid-template-rows: 1fr 1fr;
     text-align: center;
     padding: 16px;
 }
-
-.small-card-icon-text img,
-.small-card-icon-text svg{
+.small-card-icon-text img, .small-card-icon-text svg{
     align-self: center;
     justify-self: center;
 }
-
-
-
 /* ==================================================
                             FOOTER
 ====================================================*/
@@ -648,7 +577,6 @@ footer{
     background-color: white;
     border-top:1px solid #DDDDDD;
 }
-
 footer .ftr-container{
     color: #717171;
     padding-top: 2%;
@@ -657,13 +585,8 @@ footer .ftr-container{
     display: flex;
     justify-content: space-around;
 }
-.ftr-container ul{
-    list-style-type:none;
-    
-}
-.ftr-container li{
-    margin-bottom: 10px;
-}
+.ftr-container ul{list-style-type:none;}
+.ftr-container li{margin-bottom: 10px;}
 .ftr-container a{
     text-decoration: none;
     color: var(--primary-color);
