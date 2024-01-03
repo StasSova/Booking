@@ -104,19 +104,19 @@
 }
 #backmain2 #main .but2:active{transform:scale(0.95);}
 #backmain2 #main #google{
-    background-image:url(textures/google.png);
+    background-image:url(../../svg/google.svg);
     background-size:6%;
     background-repeat:no-repeat;
     background-position:4%;
 }
 #backmain2 #main #facebook{
-    background-image:url(textures/facebook.png);
+    background-image:url(../../svg/facebook.svg);
     background-size:6%;
     background-repeat:no-repeat;
     background-position:4%;
 }
 #backmain2 #main #apple{
-    background-image:url(textures/apple.png);
+    background-image:url(../../svg/apple.svg);
     background-size:6%;
     background-repeat:no-repeat;
     background-position:4%;

@@ -1,4 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+/* ==================================================
+                        FORM ANIMATION
+====================================================*/
+@keyframes appear{
+    from{
+      opacity:0;
+      visibility:hidden;
+    }
+    to{
+      opacity:1;
+      visibility:visible;
+    }
+}
+@keyframes disappear{
+    from{
+        opacity:1;
+        visibility:visible;
+    }
+    to{
+        opacity:0;
+        visibility:hidden;
+    }
+}
+/* ==================================================
+                        HTML SETTINGS
+====================================================*/
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +34,7 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 /* ==================================================
-                            BASIC STYLE
+                        BASIC STYLE
 ====================================================*/
 :root{
     --background-color:#fff;
@@ -171,10 +197,7 @@ nav .panel p{
     width: 24px;
     height: 24px;
 }
-.icon-bl{
-     stroke: var(--black-color); /* граница иконки */
-}
-
+.icon-bl{stroke: var(--black-color); /* граница иконки */}
 /* ==================================================
                             BUTTON (REMOVE)
 ====================================================*/
@@ -184,24 +207,11 @@ nav .panel p{
     border: 2px solid var(--secondary-color);
     transition: transform 0.3s ease;
 }
-.btn-fill{
-    background-color: var(--secondary-color);
-}
-.btn-shadow{
-    box-shadow: 0px 0px 10px 5px var(--secondary-shadow-color);
-}
-.btn-black-text-color{
-    color: var(--black-color);
-}
-.btn-secondary-text-color{
-    color: var(--secondary-color);
-}
-
-.btn-small-book:hover,
-.btn-big-book:hover {
-    transform: scale(1.03);
-}
-
+.btn-fill{background-color: var(--secondary-color);}
+.btn-shadow{box-shadow: 0px 0px 10px 5px var(--secondary-shadow-color);}
+.btn-black-text-color{color: var(--black-color);}
+.btn-secondary-text-color{color: var(--secondary-color);}
+.btn-small-book:hover, .btn-big-book:hover {transform: scale(1.03);}
 .btn-big-book{
     height: 72px;
     width: 181px;
@@ -231,21 +241,18 @@ nav .panel p{
     grid-template-columns: 24px 1fr;
     gap: 8px;
 }
-
 .flex-row-btw{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-
 .flex-row-start{
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
 }
-
 .flex-col-cent{
     display: flex;
     flex-direction: column;
@@ -255,18 +262,13 @@ nav .panel p{
 /* ==================================================
                             HOVER
 ====================================================*/
-.hoverable-1{
-    transition: box-shadow 0.5s;
-}
+.hoverable-1{transition: box-shadow 0.5s;}
 .hoverable-1:hover{
     box-shadow: 0px 4px 4px 2px var(--border-primary-color);
     transition: 0.5s;
     cursor: pointer;
 }
-
-.hoverable-2{
-    transition: transform 0.5s;
-}
+.hoverable-2{ transition: transform 0.5s;}
 .hoverable-2:hover{
     transform: scale(1.1);
     transition: 0.5s;
@@ -327,16 +329,12 @@ nav .panel{
     background-color: var(--background-color);
 }
 /* container */
-nav .panel div{
-    margin-left: 50px;
-}
+nav .panel div{margin-left: 50px;}
 nav .panel div span{
     margin-right: 8px;
     margin-left: 8px;
 }
-nav .panel span{
-     white-space: nowrap;
-}
+nav .panel span{white-space: nowrap;}
 /* separator */
 nav .panel .br{
     height: 80%;
@@ -365,7 +363,6 @@ nav .panel .search svg{
     stroke: var(--background-color); /*цвет бордера*/
 }
 .desktop-icon {display: block !important;}
-  
 .mobile-icon {display: none !important;}
 /* ==================================================
                             BOOKING

@@ -3,21 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About hotel</title>
+    <link rel='icon' href="../img/favicon.png"/>
     <link rel="stylesheet" href="../generalStyles.css">
     <link rel="stylesheet" href="aboutHotel.css">
     <link rel="stylesheet" href="../Elements.css">
-    
     <link rel="stylesheet" href="adapt1024_1439.css">
     <link rel="stylesheet" href="adapt768_1023.css">
     <link rel="stylesheet" href="adapt320_765.css">
-
     <link rel="stylesheet" href="../Adaptive/adaptive_1024_1439.css">
     <link rel="stylesheet" href="../Adaptive/adaptive_768_1023.css">
     <link rel="stylesheet" href="../Adaptive/adaptive_0_765.css">
     <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Sign_IN_UP/Css/SignIn.css"/>
+    <link rel="stylesheet" href="../Sign_IN_UP/Css/Registration.css"/>
+    <link rel="stylesheet" href="../Sign_IN_UP/Css/Authen.css"/>
+    <link rel="stylesheet" href="../Sign_IN_UP/Css/Inform.css"/>
+    <link rel="stylesheet" href="../Sign_IN_UP/Css/AllDone.css"/>
+    <script src="../Sign_IN_UP/Js/FormScripts.js"></script>
+    <script src="../Sign_IN_UP/Js/Inform.js"></script>
 </head>
 <body>
+    <!--Вход-->
+  <div id='backmain'>
+    <section id='main'>
+      <h2>Sign In</h2>
+      <img src='../img/cross.png' id='cross'>
+      <input type='text' placeholder="Email">
+      <input type='password' placeholder="Password">
+      <a href="../Profile/Account/Account.html">
+        <input type='button' value='Continue' class='but1'>
+      </a>
+      <p>Do not have an account? 
+        <a id='openreg'>Register</a>
+      </p>
+      <input type='button' value='Sign In with Google' class='but2' id='google'>
+      <input type='button' value='Sign In with Facebook' class='but2' id='facebook'>
+      <input type='button' value='Sign In with Apple' class='but2' id='apple'>
+    </section>
+  </div>
+  <!--Регистрация-->
+  <div id='backmain2'>
+      <section id='main'>
+        <h2>Register</h2>
+        <img src='../img/cross.png' id='cross2'>
+        <input type='email' placeholder="Email" maxlength='50'>
+        <p>We will send you an email to confirm your email address</p>
+        <input type='password' placeholder="Password" maxlength='50'>
+        <input type='password' placeholder="Repeat password" maxlength='50'>
+        <p>*Get acquainted with our <a>Privacy policy</a></p>
+        <input type='button' value='Continue' class='but1' id='cont1'>
+        <input type='button' value='Sign In with Google' class='but2' id='google'>
+        <input type='button' value='Sign In with Facebook' class='but2' id='facebook'>
+        <input type='button' value='Sign In with Apple' class='but2' id='apple'>
+      </section>
+    </div>
+    <!--Аутентификация-->
+    <div id='backmain3'>
+      <section id='main'>
+        <h2>Authentication</h2>
+        <img src='../img/cross.png' id='cross3'>
+        <input type='number' placeholder="Code">
+        <p>We have sent you an email with the code. Check your mail and enter the code for the authentication.</p>
+        <input type='button' value='Continue' class='but1' id='cont2'>
+      </section>
+    </div>
+    <!--Информация-->
+    <div id='backmain4'>
+      <section id='main'>
+        <h2>Information</h2>
+        <img class='cross' src='../img/cross.png' id='cross4'>
+        <p>Tell us about yourself so we can better choose options for you ;)</p>
+        <select>
+          <option>Country</option>
+        </select>
+        <select>
+          <option>City</option>
+        </select>
+        <select>
+          <option>Why do you travel?</option>
+        </select>
+        <p class='text'>Traveling with a pet?</p>
+        <img class='check1' src='../img/yes.png' tabindex="0"><img class='check2' src='../img/no.png' tabindex="0">
+        <input type='button' value='Continue' class='but1' id='cont3'>
+        <input type='button' value='Later' class='but2' id='cont3'>
+      </section>
+    </div>
+    <!--Все сделано!-->
+    <div id='backmain5'>
+      <section id='main'>
+        <h2>All done!</h2>
+        <img class='cross' src='../img/cross.png' id='cross5'>
+        <img>
+        <div class='checkcont'>
+          <img class='check' src='../img/check.png'>
+        </div>  
+        <a href="../Profile/Account/Account.html">
+          <input type='button' value='Check your profile!' class='but1'>
+        </a>
+        <a href=../index.html">
+          <input type='button' value='Continue booking' class='but2'>
+        </a>
+      </section>
+    </div>
     <header>
         <h3 class="header-title">Hotel for 
           <a href="../index.html">you.</a>
@@ -26,10 +114,10 @@
             <a class="lang hoverable-2">
               <img src="../svg/color_lang_circle.svg" alt="icon">
             </a>
-            <a class="Reg hoverable-1" href="../Sign_IN_UP/Registration/Registration.html">
+            <a class="Reg hoverable-1" id='register'>
               <p class="header-button-text">Register</p>
             </a>
-            <a class="SignIn hoverable-1 grid-text-icon" href="../Sign_IN_UP/SignIn/SignIn.html">
+            <a class="SignIn hoverable-1 grid-text-icon" id='signin'>
               <p class="header-button-text">Sign In</p>
               <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="24" height="24" rx="12" fill="#717171"/>
@@ -964,7 +1052,9 @@
                                 </div>
                             </div>
                             <div class="last prev-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0008 13.5998L15.9008 7.6998C16.0841 7.51647 16.3174 7.4248 16.6008 7.4248C16.8841 7.4248 17.1174 7.51647 17.3008 7.6998C17.4841 7.88314 17.5758 8.11647 17.5758 8.3998C17.5758 8.68314 17.4841 8.91647 17.3008 9.0998L10.7008 15.6998C10.5008 15.8998 10.2674 15.9998 10.0008 15.9998C9.73411 15.9998 9.50078 15.8998 9.30078 15.6998L6.70078 13.0998C6.51745 12.9165 6.42578 12.6831 6.42578 12.3998C6.42578 12.1165 6.51745 11.8831 6.70078 11.6998C6.88411 11.5165 7.11745 11.4248 7.40078 11.4248C7.68411 11.4248 7.91745 11.5165 8.10078 11.6998L10.0008 13.5998Z" fill="#581ADB"/>
+                                </svg>
                                 <p class="simple-text fc-sc">FREE cancellation</p>
                             </div>
                         </div>
@@ -1025,7 +1115,9 @@
                                 </div>
                             </div>
                             <div class="last prev-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0008 13.5998L15.9008 7.6998C16.0841 7.51647 16.3174 7.4248 16.6008 7.4248C16.8841 7.4248 17.1174 7.51647 17.3008 7.6998C17.4841 7.88314 17.5758 8.11647 17.5758 8.3998C17.5758 8.68314 17.4841 8.91647 17.3008 9.0998L10.7008 15.6998C10.5008 15.8998 10.2674 15.9998 10.0008 15.9998C9.73411 15.9998 9.50078 15.8998 9.30078 15.6998L6.70078 13.0998C6.51745 12.9165 6.42578 12.6831 6.42578 12.3998C6.42578 12.1165 6.51745 11.8831 6.70078 11.6998C6.88411 11.5165 7.11745 11.4248 7.40078 11.4248C7.68411 11.4248 7.91745 11.5165 8.10078 11.6998L10.0008 13.5998Z" fill="#581ADB"/>
+                                </svg>
                                 <p class="simple-text fc-sc">FREE cancellation</p>
                             </div>
                         </div>
@@ -1085,7 +1177,9 @@
                                 </div>
                             </div>
                             <div class="last prev-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0008 13.5998L15.9008 7.6998C16.0841 7.51647 16.3174 7.4248 16.6008 7.4248C16.8841 7.4248 17.1174 7.51647 17.3008 7.6998C17.4841 7.88314 17.5758 8.11647 17.5758 8.3998C17.5758 8.68314 17.4841 8.91647 17.3008 9.0998L10.7008 15.6998C10.5008 15.8998 10.2674 15.9998 10.0008 15.9998C9.73411 15.9998 9.50078 15.8998 9.30078 15.6998L6.70078 13.0998C6.51745 12.9165 6.42578 12.6831 6.42578 12.3998C6.42578 12.1165 6.51745 11.8831 6.70078 11.6998C6.88411 11.5165 7.11745 11.4248 7.40078 11.4248C7.68411 11.4248 7.91745 11.5165 8.10078 11.6998L10.0008 13.5998Z" fill="#581ADB"/>
+                                </svg>
                                 <p class="simple-text fc-sc">FREE cancellation</p>
                             </div>
                         </div>
@@ -1145,7 +1239,9 @@
                                 </div>
                             </div>
                             <div class="last prev-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0008 13.5998L15.9008 7.6998C16.0841 7.51647 16.3174 7.4248 16.6008 7.4248C16.8841 7.4248 17.1174 7.51647 17.3008 7.6998C17.4841 7.88314 17.5758 8.11647 17.5758 8.3998C17.5758 8.68314 17.4841 8.91647 17.3008 9.0998L10.7008 15.6998C10.5008 15.8998 10.2674 15.9998 10.0008 15.9998C9.73411 15.9998 9.50078 15.8998 9.30078 15.6998L6.70078 13.0998C6.51745 12.9165 6.42578 12.6831 6.42578 12.3998C6.42578 12.1165 6.51745 11.8831 6.70078 11.6998C6.88411 11.5165 7.11745 11.4248 7.40078 11.4248C7.68411 11.4248 7.91745 11.5165 8.10078 11.6998L10.0008 13.5998Z" fill="#581ADB"/>
+                                </svg>
                                 <p class="simple-text fc-sc">FREE cancellation</p>
                             </div>
                         </div>
