@@ -22,6 +22,31 @@
     --border-primary-color:#DDDDDD;
     --header-border-color:#ADADAD;
 }
+
+/* ==================================================
+                        SCROLLBAR    
+====================================================*/
+::-webkit-scrollbar-track
+ {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+     border-radius: 10px;
+     background-color: var(--background-color);
+ }
+ 
+::-webkit-scrollbar
+ {
+     width: 6px;
+     height: 0;
+     background-color: transparent;
+ }
+ 
+::-webkit-scrollbar-thumb
+ {
+     border-radius: 3px;
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+     background-color: var(--secondary-color);
+ }
+
 /* ==================================================
                         TYPOGRAPHY    
 ====================================================*/
@@ -425,6 +450,7 @@ nav .panel .search svg{
 .profile-item-container{
     display: flex;
     height: 100%;
+    align-items: center;
 }
 .profile-item-back, .profile-item{
     display: grid;
@@ -432,8 +458,7 @@ nav .panel .search svg{
     border-radius: 16px;
     border: 1px solid var(--border-primary-color);
     align-items: center;
-    margin: 0 0 8px 0;
-    transition:.2s;
+    transition: box-shadow 1s;
 }
 /* BACK */
 .profile-back-cont{
@@ -445,7 +470,7 @@ nav .panel .search svg{
     grid-template-columns: 24px 1fr;
     gap: 8px;
     padding: 4px 16px 4px 4px;
-    margin: 0 20px 8px 32px;
+    margin: 0 20px 0 32px;
 }
 .profile-item-back img{
     align-self: center;
@@ -457,15 +482,25 @@ nav .panel .search svg{
     padding: 4px 4px 4px 16px;
     margin-right: 32px;
 }
+
 .hoverable-pr-item:hover{
     box-shadow: 0px 4px 4px 2px var(--border-primary-color);
     transition: 1s;
     cursor: pointer;
 }
-.hoverable-pr-item:active{transform:scale(0.9);}
-.active-pr-item{border-color: var(--secondary-color);}
-.active-pr-item p{color: var(--secondary-color);}
-.active-pr-item svg rect{fill: var(--secondary-color);}
+.active-pr-item{
+    border-color: var(--secondary-color);
+}
+.active-pr-item p{
+    color: var(--secondary-color);
+}
+.active-pr-item svg rect{
+    fill: var(--secondary-color);
+}
+
+
+
+
 /* ==================================================
                         SMALL HOTELS CARD
 ====================================================*/
