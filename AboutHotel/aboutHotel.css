@@ -1,7 +1,4 @@
-.btn-show-all{
-    display: none;
-}
-
+.btn-show-all{display: none;}
 /* ==================================================
                             HEADER
 ====================================================*/
@@ -10,12 +7,10 @@
     margin: 64px auto 0 auto;
     background-color: var(--background-color);
 }
-
 .header{
     height: auto;
     width: 100%;
 }
-
 /* ==================================================
                             HEADER LEFT
 ====================================================*/
@@ -23,27 +18,23 @@
     flex-basis: 30%;
     height: 100%;
 }
-
 /* item box */
 .header .left-part .header-item-box{
     width: 30%;
     height: 88px;
     border-radius: 13px;
     border: 1px solid var(--border-primary-color);
-    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
 }
-
 /* circle`s box */
 .header .left-part .header-item-box .elipse-box{
     width: 40%;
     padding: 0 10%;
 }
-
 /* circle */
 .header .left-part .header-item-box .elipse-box .circle-3{
     width: 5px;
@@ -51,8 +42,6 @@
     border-radius: 50%;
     background-color: var(--secondary-color);
 }
-
-
 /* ==================================================
                             HEADER CENTER
 ====================================================*/
@@ -65,14 +54,8 @@
     align-items: center;
 }
 /* star container */
-.header .center-part .star-container{
-    margin: -8px 0 8px 0;
-}
-.header .center-part .star-container i{
-    color: var(--secondary-color);
-}
-
-
+.header .center-part .star-container{margin: -8px 0 8px 0;}
+.header .center-part .star-container i{color: var(--secondary-color);}
 /* ==================================================
                             HEADER RIGHT
 ====================================================*/
@@ -83,7 +66,6 @@
     align-items: center;
     justify-content: end; 
 }
-
 /* CHECK BOX */
 .header .right-part .check-box{
     width: auto;
@@ -92,28 +74,20 @@
     flex-direction: column;
     align-items: center;
 }
-
 .header .right-part .check-box i{ color: var(--secondary-color);}
-
 /* REVIEW BOX */
 .header .right-part .reviews-box{ width: auto; height: 48px; }
-
 .header .right-part .circle-border-text{
     height: 48px;
     width: 48px;
     border: 1px solid #581ADB;
     border-radius: 50%;
     color: #581ADB;
-
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .header .right-part .reviews-box .reviews-text{ text-align: center; margin: 0 16px 0 8px; }
-
-
-
 /* ==================================================
                             HOTEL
 ====================================================*/
@@ -130,19 +104,14 @@
     grid-template-rows: auto auto 1fr;
     gap: 8px;
 }
-.main-im{
-    width: 100%;
-}
+.main-im{width: 100%;}
 .im-cont{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
 }
-.im-cont img{
-    width: 100%;
-}
-
+.im-cont img{width: 100%;}
 /* descr */
 .descr{
     height: auto;
@@ -164,7 +133,6 @@
     margin-top: 16px;
     align-items: center;
 }
-
 .price{
     width: 100%;
     display: grid;
@@ -172,10 +140,7 @@
     gap: 16px;
     margin-bottom: 16px;
 }
-.price .Sub-title-primary{
-    text-align: start;
-}
-
+.price .Sub-title-primary{text-align: start;}
 .descr .btn-big-book{
     height: 72px;
     border-radius: 36px;
@@ -188,29 +153,20 @@
     width: 100%;
     align-self: center;
 }
-
-.btn-big-book:hover {
-    transform: scale(1.03);
-}
-
-
-
+.btn-big-book:hover {transform: scale(1.03);}
 /* ==================================================
                             GUEST REVIEWS
 ====================================================*/
-
 .Reviews{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .Reviews .flex-row-btw{
     width: 80%;
     align-items: start;
     text-align: center;
 }
-
 .Reviews .custom-svg {
     width: 100px;
     height: 100px;
@@ -245,32 +201,17 @@ text.percentage{
     font-size: 32px;
     font-weight: 600;
 }
-
-
 /* ==================================================
                             FACILITIES
 ====================================================*/
-
-.Facilities .flex-row-btw{
-    align-items: start;
-}
-
-.Facilities .column{
-    flex-basis: 30%;
-}
-
-.Facilities .facility-block{
-    margin: 24px 0;
-}
-
+.Facilities .flex-row-btw{align-items: start;}
+.Facilities .column{flex-basis: 30%;}
+.Facilities .facility-block{margin: 24px 0;}
 .Facilities .facility-item{
     display: grid;
     grid-template-columns: 24px auto;
     gap: 8px;
 }
-
-
-
 /* ==================================================
                         IMPORTANT INFORMATION
 ====================================================*/
@@ -279,7 +220,6 @@ text.percentage{
     grid-template-columns: repeat(5, 1fr);
     gap: 24px;
 }
-
 /* ==================================================
                                 BOOK
 ====================================================*/
@@ -301,7 +241,6 @@ text.percentage{
     width: auto;
     align-self: center;
 }
-
 /* DESCRIPTION */
 .book-item .descr{
     padding: 8px 0;
@@ -316,15 +255,12 @@ text.percentage{
     margin-bottom: 8px;
     text-align: left;
 }
-
-
 .book-item .descr-3-item{
     display: grid;
     grid-template-columns: 24px 68px auto;
     gap: 8px;
     margin-bottom: 8px;
 }
-
 .book-item .prev-cont{
     display: flex;
     flex-wrap: wrap;
@@ -334,7 +270,6 @@ text.percentage{
     grid-template-columns: 24px auto;
     margin-right: 32px;
 }
-
 /* ORDER */
 .book-item .order{
     display: grid;
@@ -343,7 +278,6 @@ text.percentage{
     padding: 16px;
     align-self: center;
 }
-
 .book-price-cont p.book-price{
     color: var(--secondary-color);
     font-size: 20px;
@@ -352,35 +286,25 @@ text.percentage{
     letter-spacing: 0em;
     text-align: center;
 }
-
-
-
-
 /* ==================================================
                                 NEARBY
 ====================================================*/
-.Nearby{
-    width: 100%;
-}
+.Nearby{width: 100%;}
 .Nearby .column{
     flex-basis: 25%;
     align-self: start;
 }
-
 .nearby-title-item{
     display: grid;
     grid-template-columns: 24px auto;
     gap: 8px;
     margin: 16px 0 8px 0;
 }
-
 .nearby-item{
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 8px;
 }
-
-
 /* ==================================================
                                 GOOGLE MAP
 ====================================================*/
@@ -389,8 +313,6 @@ text.percentage{
     width: 100%;
     height: 208px;
 }
-
-
 /* ==================================================
                                 COMMENTS
 ====================================================*/
@@ -400,19 +322,12 @@ text.percentage{
     grid-auto-rows: 208px;
     gap: 24px;
 }
-
 .comm-sep{
     width: 38%;
     margin: 32px auto 8px auto;
     border: 1px solid var(--border-primary-color);
 }
-
-.comm-more a{
-    text-decoration: none;
-}
-
-
-
+.comm-more a{text-decoration: none;}
 /* ==================================================
                                 FAQs
 ====================================================*/
@@ -426,7 +341,6 @@ text.percentage{
     font-size: 128px;
     color: var(--border-primary-color);
 }
-
 .FAQ .details-item{
     width: 100%;
     padding: 8px;
@@ -435,10 +349,7 @@ text.percentage{
     border-bottom: 1px solid var(--border-primary-color);
     transition: max-height 0.5s ease;
 }
-
-.FAQ .details-item p{
-    margin-top: 8px;
-}
+.FAQ .details-item p{margin-top: 8px;}
 .FAQ .cust-icon{
     text-align: end;
     margin: 0;

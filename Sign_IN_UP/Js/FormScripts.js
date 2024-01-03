@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let backmainLink = document.getElementById('backmain');
     let crossLink = document.getElementById('cross');
     let registrationLink = document.getElementById('register');
+    let registration2Link = document.getElementById('register2');
     let backmain2Link = document.getElementById('backmain2');
     let cross2Link = document.getElementById('cross2');
     let opregLink = document.getElementById('openreg');
@@ -25,6 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
       backmainLink.style.animation = '.25s disappear linear forwards';
     });
     registrationLink.addEventListener('click', function(event){
+      document.body.style.overflow = 'hidden';
+      backmain2Link.style.animation = '.25s appear linear forwards';
+    });
+    registration2Link.addEventListener('click', function(event){
       document.body.style.overflow = 'hidden';
       backmain2Link.style.animation = '.25s appear linear forwards';
     });
