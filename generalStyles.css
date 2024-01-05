@@ -1,3 +1,6 @@
+/* ==================================================
+                        BASIC FONT
+====================================================*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
 /* ==================================================
                         FORM ANIMATION
@@ -26,12 +29,12 @@
                         HTML SETTINGS
 ====================================================*/
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
     -webkit-user-drag:none;
     user-select:none;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family:'Nunito Sans', sans-serif;
 }
 /* ==================================================
                         BASIC STYLE
@@ -48,31 +51,24 @@
     --border-primary-color:#DDDDDD;
     --header-border-color:#ADADAD;
 }
-
 /* ==================================================
                         SCROLLBAR    
 ====================================================*/
-::-webkit-scrollbar-track
- {
+::-webkit-scrollbar-track{
      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
      border-radius: 10px;
      background-color: var(--background-color);
  }
- 
-::-webkit-scrollbar
- {
+::-webkit-scrollbar{
      width: 6px;
      height: 0;
      background-color: transparent;
  }
- 
-::-webkit-scrollbar-thumb
- {
+::-webkit-scrollbar-thumb{
      border-radius: 3px;
      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
      background-color: var(--secondary-color);
  }
-
 /* ==================================================
                         TYPOGRAPHY    
 ====================================================*/
@@ -204,7 +200,7 @@ nav .panel p{
 /* TEXT TRANSFORM */
 .tt-up{text-transform: uppercase;}
 /* ==================================================
-                            ICON
+                        ICON
 ====================================================*/
 .icon-bl,
 .cust-icon{
@@ -225,7 +221,7 @@ nav .panel p{
 }
 .icon-bl{stroke: var(--black-color); /* граница иконки */}
 /* ==================================================
-                            BUTTON (REMOVE)
+                        BUTTON (REMOVE)
 ====================================================*/
 .btn-small-book{
     background-color: transparent;
@@ -286,7 +282,7 @@ nav .panel p{
     justify-content: space-evenly;
 }
 /* ==================================================
-                            HOVER
+                        HOVER
 ====================================================*/
 .hoverable-1{transition: box-shadow 0.5s;}
 .hoverable-1:hover{
@@ -301,7 +297,7 @@ nav .panel p{
     cursor: pointer;
 }
 /* ==================================================
-                            HEADER
+                        HEADER
 ====================================================*/
 header{
     height: 80px;
@@ -331,7 +327,7 @@ header .Sign a.SignIn{
 header .Sign .Reg{padding: 6px 16px 6px 16px;}
 header .Sign .SignIn{padding: 6px 6px 6px 16px;}
 /* ==================================================
-                            NAVIGATION
+                        NAVIGATION
 ====================================================*/
 nav{
     display: flex;
@@ -391,7 +387,7 @@ nav .panel .search svg{
 .desktop-icon {display: block !important;}
 .mobile-icon {display: none !important;}
 /* ==================================================
-                            BOOKING
+                        BOOKING
 ====================================================*/
 .Booking{
     display: flex;
@@ -491,7 +487,7 @@ nav .panel .search svg{
 .active-pr-item p{color: var(--secondary-color);}
 .active-pr-item svg rect{fill: var(--secondary-color);}
 /* ==================================================
-                        SMALL HOTELS CARD
+                    SMALL HOTELS CARD
 ====================================================*/
 .sm-hotel-card{
     display: flex;
@@ -522,7 +518,7 @@ nav .panel .search svg{
 .sm-hotel-card i{color: var(--secondary-color);}
 .sm-hotel-card .GDots .Selected{background-color: rgb(255, 255, 255);}
 /* ==================================================
-                        COMMENT
+                    COMMENT
 ====================================================*/
 .Comment{
     width: 100%;
@@ -593,7 +589,7 @@ nav .panel .search svg{
     justify-self: center;
 }
 /* ==================================================
-                            FOOTER
+                        FOOTER
 ====================================================*/
 footer{
     margin-top: 300px;
