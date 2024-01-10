@@ -55,10 +55,10 @@
     {
         flex-direction: column;
         height: auto;
-        width: 398px;
+        width: 280px;
     }
     main content .card .hotelImg img {
-        width: 398px;
+        width: 280px;
         border-radius: 20px 20px 0 0; 
     }
     main content {

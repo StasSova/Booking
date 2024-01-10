@@ -2,43 +2,29 @@ main section{
     width: 75%;
     margin: 0 auto 10% auto;
 }
-
 .grid-cont{
     margin-top: 24px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
 }
-.facility-block{
-    margin: 24px 0;
-}
-
+.facility-block{margin: 24px 0;}
 p.text-title-block{
     font-weight: 700;
     margin-bottom: 8px;
 }
-
 .TravInfo .card{
     width: 100%;
     border: 1px solid var(--border-primary-color);
     border-radius: 13px;
     padding: 48px 36px;
 }
-
-.TravInfo .card p{
-    margin: 8px 0;
-}
-
-.nav-profile a {
-    text-decoration: none;
-}
-
-
+.TravInfo .card p{margin: 8px 0;}
+.nav-profile a {text-decoration: none;}
 /* ==================================================
                             ADAPTIVE 1024 1439
 ====================================================*/
-@media only screen and (min-width: 1024px) and (max-width: 1439px)
-{
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
 
 }
 /* ==================================================

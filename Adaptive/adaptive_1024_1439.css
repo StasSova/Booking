@@ -1,26 +1,19 @@
-@media only screen and (min-width: 1024px) and (max-width: 1439px)
-{
-/* ==================================================
-                PROFILE TABS IN MENU PROFILE
-====================================================*/
-.profile-item{
-    margin-right: 16px;
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
+    /* ==================================================
+                    PROFILE TABS IN MENU PROFILE
+    ====================================================*/
+    .profile-item{margin-right: 16px;}
+    .profile-item-back{margin: 0 16px 0 20px;}
+    /* ==================================================
+                SMALL SQUARE CARD WITH ICON AND TEXT
+    ====================================================*/
+    .imp-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
 }
-.profile-item-back{
-    margin: 0 16px 0 20px;
-}
-
-/* ==================================================
-            SMALL SQUARE CARD WITH ICON AND TEXT
-====================================================*/
-.imp-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-}
-}
-@media only screen and (min-width: 768px) and (max-width: 1439px)
-{
+@media only screen and (min-width: 768px) and (max-width: 1439px){
     /* ==================================================
                             HEADER
 ====================================================*/
@@ -44,12 +37,8 @@
         width: 90%;
         padding-left: 30px;
     }
-    .text-name {
-        display: none;
-    }
-    .Booking div {
-        padding-top: 0px;
-    }
+    .text-name {display: none;}
+    .Booking div {padding-top: 0px;}
     .adap {
         background-image: url('/img/Back_img_Main.png') !important;
         background-position: 1180px center;

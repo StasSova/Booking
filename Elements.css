@@ -23,7 +23,6 @@
   cursor: pointer;
   height: 16px;
   width: 16px;
-
   display: flex;
   justify-content: center;
 }
@@ -39,23 +38,14 @@
   margin-top: 4px;
   opacity: 0;
 }
-
 /* checked state background circle*/
 .ch-box-cont input[type="checkbox"]:checked + label {
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
 }
 /* checked state show check*/
-.ch-box-cont input[type="checkbox"]:checked + label:after {
-  opacity: 1;
-}
-
-.ch-box-label:hover{
-  cursor: pointer;
-}
-
-
-
+.ch-box-cont input[type="checkbox"]:checked + label:after{opacity:1;}
+.ch-box-label:hover{cursor: pointer;}
 /* ==================================================
                       INPUT
 ====================================================*/
@@ -68,8 +58,7 @@
   background-color: transparent;
 }
 /* TYPE: NUMBER  скрываем левый увеличитель значения*/
-.input-border::-webkit-inner-spin-button,
-.input-border::-webkit-outer-spin-button {
+.input-border::-webkit-inner-spin-button, .input-border::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -78,7 +67,6 @@
   border-color: #581ADB; 
   outline: none; 
 }
-
 /* ==================================================
                       SELECT
 ====================================================*/
@@ -92,14 +80,11 @@
   margin-right: 0;
   transition: 0.3s;
 }
-.select-menu.active .select-btn svg{
-    transform: rotate(-180deg);
-}
+.select-menu.active .select-btn svg{transform: rotate(-180deg);}
 .select-menu.active .select-btn{
   border-radius: 32px 32px 8px 8px;
   border-color: #581ADB !important;
 }
-
 .select-menu .options{
   position: relative;
   padding: 20px;
@@ -110,9 +95,7 @@
   display: none;
   border-color: #581ADB !important;
 }
-.select-menu.active .options{
-    display: block;
-}
+.select-menu.active .options{display: block;}
 .options .option{
   display: flex;
   height: 55px;
@@ -121,18 +104,14 @@
   border-radius: 8px;
   align-items: center;
 }
-.options .option:hover{
-  background: #F2F2F2;
-}
+.options .option:hover{background: #F2F2F2;}
 .option .option-text{
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: var(--primary-color);
 }
-
-.plain-text
-  {
+.plain-text{
     width: 100%;
     font-size: 16px;
     font-weight: 400;
