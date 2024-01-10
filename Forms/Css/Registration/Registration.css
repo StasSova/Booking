@@ -7,7 +7,7 @@
     user-select:none;
     font-family:'Nunito Sans', sans-serif;
 }
-#backmain{
+#backmain2{
     position:fixed;
     width:100%;
     height:100%;
@@ -15,35 +15,35 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    z-index:1000;
     opacity:0;
     visibility:hidden;
+    z-index:1000;
 }
-#backmain #main{
+#backmain2 #main{
     height:90vh;
     width:30%;
     background:white;
     border-radius:10px;
 }
-#backmain #main h2{
-    margin-top:10%;
+#backmain2 #main h2{
+    margin-top:4%;
     text-align:center;
     color:#581ADB;
 }
-#backmain #main img{
+#backmain2 #main img{
     position:absolute;
-    top:8%;
-    right:36.5%;
+    top:7%;
+    right:36%;
     width:2%;
     transition:.15s;
 }
-#backmain #main img:hover{
-    content:url(../../img/hovercross.png);
+#backmain2 #main img:hover{
+    content:url(../../../img/hovercross.png);
     cursor:pointer;
 }
-#backmain #main img:active{transform:scale(0.9);}
-#backmain #main input[type='text'], input[type='password']{
-    margin:5% 0 0 7%;
+#backmain2 #main img:active{transform:scale(0.9);}
+#backmain2 #main input[type='email'], input[type='password']{
+    margin:3% 0 0 7%;
     width:85%;
     height:8%;
     padding-left:1em;
@@ -53,26 +53,26 @@
     font-size:1em;
     transition:.15s;
 }
-#backmain #main input[type='text']:hover{border:1px solid black;}
-#backmain #main input[type='text']:focus{border:1px solid #581ADB;}
-#backmain #main input[type='text']:active{transform:scale(0.95);}
-#backmain #main input[type='password']:hover{border:1px solid black;}
-#backmain #main input[type='password']:focus{border:1px solid #581ADB;}
-#backmain #main input[type='password']:active{transform:scale(0.95);}
-#backmain #main p{
-    margin-top:2%;
+#backmain2 #main input[type='email']:hover{border:1px solid black;}
+#backmain2 #main input[type='email']:focus{border:1px solid #581ADB;}
+#backmain2 #main input[type='email']:active{transform:scale(0.95);}
+#backmain2 #main input[type='password']:hover{border:1px solid black;}
+#backmain2 #main input[type='password']:focus{border:1px solid #581ADB;}
+#backmain2 #main input[type='password']:active{transform:scale(0.95);}
+#backmain2 #main p{
+    margin:2% 0 0 10.5%;
+    width:80%;
     color:gray;
-    text-align:center;
 }
-#backmain #main p a{
+#backmain2 #main p a{
     color:#581ADB;
     transition:.15s;
 }
-#backmain #main p a:hover{
+#backmain2 #main p a:hover{
     text-decoration:underline;
     cursor:pointer;
 }
-#backmain #main .but1{
+#backmain2 #main .but1{
     margin:5% 0 0 7%;
     width:85%;
     height:8%;
@@ -83,12 +83,12 @@
     color:white;
     transition:.15s;
 }
-#backmain #main .but1:hover{
+#backmain2 #main .but1:hover{
     box-shadow:0px 0px 12px #581ADB;
     cursor:pointer;
 }
-#backmain #main .but1:active{transform:scale(0.95);}
-#backmain #main .but2{
+#backmain2 #main .but1:active{transform:scale(0.95);}
+#backmain2 #main .but2{
     margin:3.5% 0 0 7%;
     width:85%;
     height:8%;
@@ -98,26 +98,25 @@
     font-size:1em;
     transition:.15s;
 }
-#backmain #main .but2:hover{
+#backmain2 #main .but2:hover{
     border:1px solid black;
     cursor:pointer;
 }
-#backmain #main .but2:active{transform:scale(0.95);}
-#backmain #main #google{
-    margin:8% 0 0 7%;
-    background-image:url(../../svg/google.svg);
+#backmain2 #main .but2:active{transform:scale(0.95);}
+#backmain2 #main #google{
+    background-image:url(../../../svg/google.svg);
     background-size:6%;
     background-repeat:no-repeat;
     background-position:4%;
 }
-#backmain #main #facebook{
-    background-image:url(../../svg/facebook.svg);
+#backmain2 #main #facebook{
+    background-image:url(../../../svg/facebook.svg);
     background-size:6%;
     background-repeat:no-repeat;
     background-position:4%;
 }
-#backmain #main #apple{
-    background-image:url(../../svg/apple.svg);
+#backmain2 #main #apple{
+    background-image:url(../../../svg/apple.svg);
     background-size:6%;
     background-repeat:no-repeat;
     background-position:4%;

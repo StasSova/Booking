@@ -38,7 +38,7 @@
     transition:.15s;
 }
 #backmain3 #main img:hover{
-    content:url(../../img/hovercross.png);
+    content:url(../../../img/hovercross.png);
     cursor:pointer;
 }
 #backmain3 #main img:active{transform:scale(0.9);}
