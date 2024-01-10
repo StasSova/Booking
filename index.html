@@ -1,574 +1,546 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page</title>
-    <link rel='icon' href="img/favicon.png"/>
-    <link rel="stylesheet" href="generalStyles.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="Elements.css">
-    <!-- Адаптив для общего nav -->
-    <link rel="stylesheet" href="../Adaptive/adaptiv_768_1439_for_nav.css">
-    <link rel="stylesheet" href="../Adaptive/adaptive_320_765_for_nav.css">
-    <link rel="stylesheet" href="Adaptive/adaptive_1024_1439.css">
-    <link rel="stylesheet" href="Adaptive/adaptive_768_1023.css">
-    <link rel="stylesheet" href="Adaptive/adaptive_0_765.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="Sign_IN_UP/Css/SignIn.css"/>
-    <link rel="stylesheet" href="Sign_IN_UP/Css/Registration.css"/>
-    <link rel="stylesheet" href="Sign_IN_UP/Css/Authen.css"/>
-    <link rel="stylesheet" href="Sign_IN_UP/Css/Inform.css"/>
-    <link rel="stylesheet" href="Sign_IN_UP/Css/AllDone.css"/>
-    <script src="Sign_IN_UP/Js/FormScripts.js"></script>
-    <script src="Sign_IN_UP/Js/Inform.js"></script>
-</head>
-<body>
-    <!--Вход-->
-    <div id='backmain'>
-        <section id='main'>
-            <h2>Sign In</h2>
-            <img src='img/cross.png' id='cross'>
-            <input type='text' placeholder="Email">
-            <input type='password' placeholder="Password">
-            <a href="Profile/Account/Account.html">
-                <input type='button' value='Continue' class='but1'>
-            </a>
-            <p>Do not have an account? 
-                <a id='openreg'>Register</a>
-            </p>
-            <input type='button' value='Sign In with Google' class='but2' id='google'>
-            <input type='button' value='Sign In with Facebook' class='but2' id='facebook'>
-            <input type='button' value='Sign In with Apple' class='but2' id='apple'>
-        </section>
-    </div>
-    <!--Регистрация-->
-    <div id='backmain2'>
-        <section id='main'>
-            <h2>Register</h2>
-            <img src='img/cross.png' id='cross2'>
-            <input type='email' placeholder="Email" maxlength='50'>
-            <p>We will send you an email to confirm your email address</p>
-            <input type='password' placeholder="Password" maxlength='50'>
-            <input type='password' placeholder="Repeat password" maxlength='50'>
-            <p>*Get acquainted with our <a>Privacy policy</a></p>
-            <input type='button' value='Continue' class='but1' id='cont1'>
-            <input type='button' value='Sign In with Google' class='but2' id='google'>
-            <input type='button' value='Sign In with Facebook' class='but2' id='facebook'>
-            <input type='button' value='Sign In with Apple' class='but2' id='apple'>
-        </section>
-    </div>
-    <!--Аутентификация-->
-    <div id='backmain3'>
-        <section id='main'>
-            <h2>Authentication</h2>
-            <img src='img/cross.png' id='cross3'>
-            <input type='number' placeholder="Code">
-            <p>We have sent you an email with the code. Check your mail and enter the code for the authentication.</p>
-            <input type='button' value='Continue' class='but1' id='cont2'>
-        </section>
-    </div>
-    <!--Информация-->
-    <div id='backmain4'>
-        <section id='main'>
-            <h2>Information</h2>
-            <img class='cross' src='img/cross.png' id='cross4'>
-            <p>Tell us about yourself so we can better choose options for you ;)</p>
-            <select>
-                <option>Country</option>
-            </select>
-            <select>
-                <option>City</option>
-            </select>
-            <select>
-                <option>Why do you travel?</option>
-            </select>
-            <p class='text'>Traveling with a pet?</p>
-            <img class='check1' src='img/yes.png' tabindex="0"><img class='check2' src='img/no.png' tabindex="0">
-            <input type='button' value='Continue' class='but1' id='cont3'>
-            <input type='button' value='Later' class='but2' id='cont3'>
-        </section>
-    </div>
-    <!--Все сделано!-->
-    <div id='backmain5'>
-        <section id='main'>
-            <h2>All done!</h2>
-            <img class='cross' src='img/cross.png' id='cross5'>
-            <div class='checkcont'>
-                <img class='check' src='img/check.png'>
-            </div>  
-            <a href="Profile/Account/Account.html">
-                <input type='button' value='Check your profile!' class='but1'>
-            </a>
-            <a href="index.html">
-                <input type='button' value='Continue booking' class='but2'>
-            </a>
-        </section>
-    </div>
-    <header>
-        <h3 class="header-title">Hotel for 
-            <a href="#!">you.</a>
-        </h3>
-        <div class="Sign">
-            <a class="lang hoverable-2">
-              <img src="svg/color_lang_circle.svg" alt="icon">
-            </a>
-            <a class="Reg hoverable-1" id='register'>
-              <p class="header-button-text">Register</p>
-            </a>
-            <a class="SignIn hoverable-1 grid-text-icon" id='signin'>
-              <p class="header-button-text">Sign In</p>
-              <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="24" height="24" rx="12" fill="#717171"/>
-                <path d="M12.0007 4.5C10.0357 4.5 8.4382 6.0975 8.4382 8.0625C8.4382 9.99 9.9457 11.55 11.9107 11.6175C11.9707 11.61 12.0307 11.61 12.0757 11.6175H12.1282C13.0502 11.5867 13.9241 11.1986 14.5652 10.5352C15.2062 9.87175 15.5641 8.98503 15.5632 8.0625C15.5632 6.0975 13.9657 4.5 12.0007 4.5ZM15.8107 13.6117C13.7182 12.2168 10.3057 12.2168 8.1982 13.6117C7.2457 14.2493 6.7207 15.1117 6.7207 16.0343C6.7207 16.9567 7.2457 17.8118 8.1907 18.4418C9.2407 19.1468 10.6207 19.4993 12.0007 19.4993C13.3807 19.4993 14.7607 19.1468 15.8107 18.4418C16.7557 17.8043 17.2807 16.9492 17.2807 16.0192C17.2732 15.0967 16.7557 14.2417 15.8107 13.6117Z" fill="white"/>
-              </svg>
-            </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Main page</title>
+        <link rel='icon' href="img/favicon.png"/>
+        <link rel="stylesheet" href="generalStyles.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="Elements.css">
+        <!-- Адаптив для общего nav -->
+        <link rel="stylesheet" href="../Adaptive/adaptiv_768_1439_for_nav.css">
+        <link rel="stylesheet" href="../Adaptive/adaptive_320_765_for_nav.css">
+        <link rel="stylesheet" href="Adaptive/adaptive_1024_1439.css">
+        <link rel="stylesheet" href="Adaptive/adaptive_768_1023.css">
+        <link rel="stylesheet" href="Adaptive/adaptive_0_765.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="Forms/Css/SignIn/SignIn.css"/>
+        <link rel="stylesheet" href="Forms/Css/Registration/Registration.css"/>
+        <link rel="stylesheet" href="Forms/Css/Authentication/Authen.css"/>
+        <link rel="stylesheet" href="Forms/Css/Information/Inform.css"/>
+        <link rel="stylesheet" href="Forms/Css/AllDone/AllDone.css"/>
+        <script src="Forms/Js/FormScripts.js"></script>
+        <script src="Forms/Js/Inform.js"></script>
+    </head>
+    <body>
+        <!--Вход-->
+        <div id='backmain'>
+            <section id='main'>
+                <h2>Sign In</h2>
+                <img src='img/cross.png' id='cross'>
+                <input type='text' placeholder="Email">
+                <input type='password' placeholder="Password">
+                <a href="Profile/Account/Account.html">
+                    <input type='button' value='Continue' class='but1'>
+                </a>
+                <p>Do not have an account? 
+                    <a id='openreg'>Register</a>
+                </p>
+                <input type='button' value='Sign In with Google' class='but2' id='google'>
+                <input type='button' value='Sign In with Facebook' class='but2' id='facebook'>
+                <input type='button' value='Sign In with Apple' class='but2' id='apple'>
+            </section>
         </div>
-    </header>
-     <nav class="adap">
-        <div class="wrap">
-            <img src="" alt="">
+        <!--Регистрация-->
+        <div id='backmain2'>
+            <section id='main'>
+                <h2>Register</h2>
+                <img src='img/cross.png' id='cross2'>
+                <input type='email' placeholder="Email" maxlength='50'>
+                <p>We will send you an email to confirm your email address</p>
+                <input type='password' placeholder="Password" maxlength='50'>
+                <input type='password' placeholder="Repeat password" maxlength='50'>
+                <p>*Get acquainted with our <a>Privacy policy</a></p>
+                <input type='button' value='Continue' class='but1' id='cont1'>
+                <input type='button' value='Sign In with Google' class='but2' id='google'>
+                <input type='button' value='Sign In with Facebook' class='but2' id='facebook'>
+                <input type='button' value='Sign In with Apple' class='but2' id='apple'>
+            </section>
         </div>
-        <div class="panel hoverable-1">
-            <!-- Wheare -->
-            <div>
-                <p>
-                    <svg class="icon-bl" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.03023 21.6898L11.3602 19.7298C11.7102 19.4298 12.2902 19.4298 12.6402 19.7298L14.9702 21.6898C15.5102 21.9598 16.1702 21.6898 16.3702 21.1098L16.8102 19.7798C16.9202 19.4598 16.8102 18.9898 16.5702 18.7498L14.3002 16.4698C14.1302 16.3098 14.0002 15.9898 14.0002 15.7598V12.9098C14.0002 12.4898 14.3102 12.2898 14.7002 12.4498L19.6102 14.5698C20.3802 14.8998 21.0102 14.4898 21.0102 13.6498V12.3598C21.0102 11.6898 20.5102 10.9198 19.8902 10.6598L14.3002 8.24977C14.2146 8.20578 14.1418 8.14022 14.0892 8.05956C14.0366 7.97889 14.0059 7.8859 14.0002 7.78977V4.78977C14.0002 3.84977 13.3102 2.73977 12.4702 2.30977C12.1702 2.15977 11.8202 2.15977 11.5202 2.30977C10.6802 2.73977 9.99023 3.85977 9.99023 4.79977V7.79977C9.99023 7.97977 9.85023 8.18977 9.69023 8.25977L4.11023 10.6698C3.49023 10.9198 2.99023 11.6898 2.99023 12.3598V13.6498C2.99023 14.4898 3.62023 14.8998 4.39023 14.5698L9.30023 12.4498C9.68023 12.2798 10.0002 12.4898 10.0002 12.9098V15.7598C10.0002 15.9898 9.87023 16.3098 9.71023 16.4698L7.44023 18.7498C7.20023 18.9898 7.09023 19.4498 7.20023 19.7798L7.64023 21.1098C7.82023 21.6898 8.48023 21.9698 9.03023 21.6898Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <!--Аутентификация-->
+        <div id='backmain3'>
+            <section id='main'>
+                <h2>Authentication</h2>
+                <img src='img/cross.png' id='cross3'>
+                <input type='number' placeholder="Code">
+                <p>We have sent you an email with the code. Check your mail and enter the code for the authentication.</p>
+                <input type='button' value='Continue' class='but1' id='cont2'>
+            </section>
+        </div>
+        <!--Информация-->
+        <div id='backmain4'>
+            <section id='main'>
+                <h2>Information</h2>
+                <img class='cross' src='img/cross.png' id='cross4'>
+                <p>Tell us about yourself so we can better choose options for you ;)</p>
+                <select>
+                    <option>Country</option>
+                </select>
+                <select>
+                    <option>City</option>
+                </select>
+                <select>
+                    <option>Why do you travel?</option>
+                </select>
+                <p class='text'>Traveling with a pet?</p>
+                <img class='check1' src='img/yes.png' tabindex="0"><img class='check2' src='img/no.png' tabindex="0">
+                <input type='button' value='Continue' class='but1' id='cont3'>
+                <input type='button' value='Later' class='but2' id='cont3'>
+            </section>
+        </div>
+        <!--Все сделано!-->
+        <div id='backmain5'>
+            <section id='main'>
+                <h2>All done!</h2>
+                <img class='cross' src='img/cross.png' id='cross5'>
+                <div class='checkcont'>
+                    <img class='check' src='img/check.png'>
+                </div>  
+                <a href="Profile/Account/Account.html">
+                    <input type='button' value='Check your profile!' class='but1'>
+                </a>
+                <a href="index.html">
+                    <input type='button' value='Continue booking' class='but2'>
+                </a>
+            </section>
+        </div>
+        <header>
+            <h3 class="header-title">Hotel for 
+                <a href="#!">you.</a>
+            </h3>
+            <div class="Sign">
+                <a class="lang hoverable-2">
+                    <img src="svg/color_lang_circle.svg" alt="icon">
+                </a>
+                <a class="Reg hoverable-1" id='register'>
+                    <p class="header-button-text">Register</p>
+                </a>
+                <a class="SignIn hoverable-1 grid-text-icon" id='signin'>
+                    <p class="header-button-text">Sign In</p>
+                    <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="12" fill="#717171"/>
+                        <path d="M12.0007 4.5C10.0357 4.5 8.4382 6.0975 8.4382 8.0625C8.4382 9.99 9.9457 11.55 11.9107 11.6175C11.9707 11.61 12.0307 11.61 12.0757 11.6175H12.1282C13.0502 11.5867 13.9241 11.1986 14.5652 10.5352C15.2062 9.87175 15.5641 8.98503 15.5632 8.0625C15.5632 6.0975 13.9657 4.5 12.0007 4.5ZM15.8107 13.6117C13.7182 12.2168 10.3057 12.2168 8.1982 13.6117C7.2457 14.2493 6.7207 15.1117 6.7207 16.0343C6.7207 16.9567 7.2457 17.8118 8.1907 18.4418C9.2407 19.1468 10.6207 19.4993 12.0007 19.4993C13.3807 19.4993 14.7607 19.1468 15.8107 18.4418C16.7557 17.8043 17.2807 16.9492 17.2807 16.0192C17.2732 15.0967 16.7557 14.2417 15.8107 13.6117Z" fill="white"/>
                     </svg>
-                    <span>Wheare are you going?</span>
-                </p>
-            </div>
-
-            <div class="hide-on-mobile" class="br" ></div>
-
-            <!-- Check in|out -->
-            <div class="hide-on-mobile">  
-                <p>
-                    <svg class="icon-bl" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 2V5M16 2V5M3.5 9.09H20.5M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M15.6959 13.7002H15.7049M15.6959 16.7002H15.7049M11.9959 13.7002H12.0059M11.9959 16.7002H12.0059M8.29492 13.7002H8.30492M8.29492 16.7002H8.30492" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span> Chack in - Check out</span>
-                </p>
-            </div>
-
-            <div  class="hide-on-mobile" class="br"></div>
-
-            <!-- Peoples -->
-            <div class="hide-on-mobile">  
-                <p>
-                    <svg class="icon-bl" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.4107 3.99975C18.3507 3.99975 19.9107 5.56975 19.9107 7.49975C19.9107 9.38975 18.4107 10.9297 16.5407 10.9997C16.4543 10.9897 16.3671 10.9897 16.2807 10.9997M18.3407 19.9997C19.0607 19.8497 19.7407 19.5597 20.3007 19.1297C21.8607 17.9597 21.8607 16.0297 20.3007 14.8597C19.7507 14.4397 19.0807 14.1597 18.3707 13.9997M9.1607 10.8697C9.0607 10.8597 8.9407 10.8597 8.8307 10.8697C7.68291 10.8308 6.59535 10.3466 5.79833 9.51971C5.00132 8.69283 4.55744 7.5882 4.5607 6.43975C4.5607 3.98975 6.5407 1.99975 9.0007 1.99975C10.1769 1.97853 11.3134 2.42544 12.1602 3.24216C13.0069 4.05888 13.4945 5.17851 13.5157 6.35475C13.5369 7.53098 13.09 8.66747 12.2733 9.5142C11.4566 10.3609 10.3369 10.8485 9.1607 10.8697ZM4.1607 14.5597C1.7407 16.1797 1.7407 18.8197 4.1607 20.4297C6.9107 22.2697 11.4207 22.2697 14.1707 20.4297C16.5907 18.8097 16.5907 16.1697 14.1707 14.5597C11.4307 12.7297 6.9207 12.7297 4.1607 14.5597Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span> 2 adults 0 children 1 room </span> 
-                    <svg class="icon-bl" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.4498 6.72L6.72977 3M6.72977 3L3.00977 6.72M6.72977 3V21M13.5498 17.28L17.2698 21M17.2698 21L20.9898 17.28M17.2698 21V3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </p>
-            </div>
-
-            <!-- Search -->
-            <div> 
-                <a class="search hoverable-2" href="HotelTypes/Hoteltypes.html">
-                    <svg class="desktop-icon" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.002 18.998C12.3889 18.998 14.6781 18.0498 16.3659 16.362C18.0537 14.6742 19.002 12.385 19.002 9.99805C19.002 7.6111 18.0537 5.32191 16.3659 3.63409C14.6781 1.94626 12.3889 0.998047 10.002 0.998047C7.615 0.998047 5.32582 1.94626 3.63799 3.63409C1.95016 5.32191 1.00195 7.6111 1.00195 9.99805C1.00195 12.385 1.95016 14.6742 3.63799 16.362C5.32582 18.0498 7.615 18.998 10.002 18.998ZM17.932 19.688C18.462 21.288 19.672 21.448 20.602 20.048C21.452 18.768 20.892 17.718 19.352 17.718C18.212 17.708 17.572 18.598 17.932 19.688Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <img src="../svg/widgets.svg" class="mobile-icon">
                 </a>
             </div>
+        </header>
+        <nav class="adap">
+            <div class="wrap">
+                <img src="" alt="">
+            </div>
+            <div class="panel hoverable-1">
+                <!-- Wheare -->
+                <div>
+                    <p>
+                        <svg class="icon-bl" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.03023 21.6898L11.3602 19.7298C11.7102 19.4298 12.2902 19.4298 12.6402 19.7298L14.9702 21.6898C15.5102 21.9598 16.1702 21.6898 16.3702 21.1098L16.8102 19.7798C16.9202 19.4598 16.8102 18.9898 16.5702 18.7498L14.3002 16.4698C14.1302 16.3098 14.0002 15.9898 14.0002 15.7598V12.9098C14.0002 12.4898 14.3102 12.2898 14.7002 12.4498L19.6102 14.5698C20.3802 14.8998 21.0102 14.4898 21.0102 13.6498V12.3598C21.0102 11.6898 20.5102 10.9198 19.8902 10.6598L14.3002 8.24977C14.2146 8.20578 14.1418 8.14022 14.0892 8.05956C14.0366 7.97889 14.0059 7.8859 14.0002 7.78977V4.78977C14.0002 3.84977 13.3102 2.73977 12.4702 2.30977C12.1702 2.15977 11.8202 2.15977 11.5202 2.30977C10.6802 2.73977 9.99023 3.85977 9.99023 4.79977V7.79977C9.99023 7.97977 9.85023 8.18977 9.69023 8.25977L4.11023 10.6698C3.49023 10.9198 2.99023 11.6898 2.99023 12.3598V13.6498C2.99023 14.4898 3.62023 14.8998 4.39023 14.5698L9.30023 12.4498C9.68023 12.2798 10.0002 12.4898 10.0002 12.9098V15.7598C10.0002 15.9898 9.87023 16.3098 9.71023 16.4698L7.44023 18.7498C7.20023 18.9898 7.09023 19.4498 7.20023 19.7798L7.64023 21.1098C7.82023 21.6898 8.48023 21.9698 9.03023 21.6898Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Wheare are you going?</span>
+                    </p>
+                </div>
+                <div class="hide-on-mobile" class="br" ></div>
+                <!-- Check in|out -->
+                <div class="hide-on-mobile">  
+                    <p>
+                        <svg class="icon-bl" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 2V5M16 2V5M3.5 9.09H20.5M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.6959 13.7002H15.7049M15.6959 16.7002H15.7049M11.9959 13.7002H12.0059M11.9959 16.7002H12.0059M8.29492 13.7002H8.30492M8.29492 16.7002H8.30492" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span> Chack in - Check out</span>
+                    </p>
+                </div>
+                <div  class="hide-on-mobile" class="br"></div>
+                <!-- Peoples -->
+                <div class="hide-on-mobile">  
+                    <p>
+                        <svg class="icon-bl" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.4107 3.99975C18.3507 3.99975 19.9107 5.56975 19.9107 7.49975C19.9107 9.38975 18.4107 10.9297 16.5407 10.9997C16.4543 10.9897 16.3671 10.9897 16.2807 10.9997M18.3407 19.9997C19.0607 19.8497 19.7407 19.5597 20.3007 19.1297C21.8607 17.9597 21.8607 16.0297 20.3007 14.8597C19.7507 14.4397 19.0807 14.1597 18.3707 13.9997M9.1607 10.8697C9.0607 10.8597 8.9407 10.8597 8.8307 10.8697C7.68291 10.8308 6.59535 10.3466 5.79833 9.51971C5.00132 8.69283 4.55744 7.5882 4.5607 6.43975C4.5607 3.98975 6.5407 1.99975 9.0007 1.99975C10.1769 1.97853 11.3134 2.42544 12.1602 3.24216C13.0069 4.05888 13.4945 5.17851 13.5157 6.35475C13.5369 7.53098 13.09 8.66747 12.2733 9.5142C11.4566 10.3609 10.3369 10.8485 9.1607 10.8697ZM4.1607 14.5597C1.7407 16.1797 1.7407 18.8197 4.1607 20.4297C6.9107 22.2697 11.4207 22.2697 14.1707 20.4297C16.5907 18.8097 16.5907 16.1697 14.1707 14.5597C11.4307 12.7297 6.9207 12.7297 4.1607 14.5597Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span> 2 adults 0 children 1 room </span> 
+                        <svg class="icon-bl" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.4498 6.72L6.72977 3M6.72977 3L3.00977 6.72M6.72977 3V21M13.5498 17.28L17.2698 21M17.2698 21L20.9898 17.28M17.2698 21V3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </p>
+                </div>
+                <!-- Search -->
+                <div> 
+                    <a class="search hoverable-2" href="HotelTypes/Hoteltypes.html">
+                        <svg class="desktop-icon" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.002 18.998C12.3889 18.998 14.6781 18.0498 16.3659 16.362C18.0537 14.6742 19.002 12.385 19.002 9.99805C19.002 7.6111 18.0537 5.32191 16.3659 3.63409C14.6781 1.94626 12.3889 0.998047 10.002 0.998047C7.615 0.998047 5.32582 1.94626 3.63799 3.63409C1.95016 5.32191 1.00195 7.6111 1.00195 9.99805C1.00195 12.385 1.95016 14.6742 3.63799 16.362C5.32582 18.0498 7.615 18.998 10.002 18.998ZM17.932 19.688C18.462 21.288 19.672 21.448 20.602 20.048C21.452 18.768 20.892 17.718 19.352 17.718C18.212 17.708 17.572 18.598 17.932 19.688Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <img src="../svg/widgets.svg" class="mobile-icon">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- Элементы под полосой поиска -->
+        <div class="Booking">
+        <div class="first">
+            <img src="svg/briefcase.svg" alt="">
+            <p class="simple-text"><span class="text-name">Easy booking</span></p>
         </div>
-    </nav>
-
-    <!-- Элементы под полосой поиска -->
-    <div class="Booking">
-      <div class="first">
-          <img src="svg/briefcase.svg" alt="">
-          <p class="simple-text"><span class="text-name">Easy booking</span></p>
-      </div>
-      <div class="second">
-          <img src="svg/lock1.svg" alt="">
-          <p class="simple-text"><span class="text-name">Secure payment</span></p>
-      </div>
-      <div class="third">
-          <img src="svg/receipt2.svg" alt="">
-          <p class="simple-text"><span class="text-name">Relevant information </span></p>
-      </div>
-  </div>
-
-    
-<section>
-    <!-- SMALL HOTELS CARD 9 -->
-    <div class="Hotels">
-        
-        <div class="sm-hotel-card">
-            <div class="star">
-                <img src="svg/Star.svg" alt="">
-            </div>
-            <div class="GDots">
-                <div class="Selected"></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="pic">
-                <img src="img/pic/Rectangle 6.png" alt="">
-            </div>
-            <div class="description-hotel">
-                <p class="hoteles-title">Hotel name | City | Country</p>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                <p class="hotels-descr">the city center:116 m </p>
-                <p class="hotels-price"> $ 130 night</p>
-            </div>
+        <div class="second">
+            <img src="svg/lock1.svg" alt="">
+            <p class="simple-text"><span class="text-name">Secure payment</span></p>
         </div>
-
-        
-        <div class="sm-hotel-card">
-            <div class="star">
-                <img src="svg/Star.svg" alt="">
-            </div>
-            <div class="GDots">
-                <div class="Selected"></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="pic">
-                <img src="img/pic/Rectangle 7.png" alt="">
-            </div>
-            <div class="description-hotel">
-                <p class="hoteles-title">Hotel name | City | Country</p>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                <p class="hotels-descr">the city center:116 m </p>
-                <p class="hotels-price"> $ 130 night</p>
-            </div>
-        </div>
-        
-        <div class="sm-hotel-card">
-            <div class="star">
-                <img src="svg/Star.svg" alt="">
-            </div>
-            <div class="GDots">
-                <div class="Selected"></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="pic">
-                <img src="img/pic/Rectangle 7.png" alt="">
-            </div>
-            <div class="description-hotel">
-                <p class="hoteles-title">Hotel name | City | Country</p>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                <p class="hotels-descr">the city center:116 m </p>
-                <p class="hotels-price"> $ 130 night</p>
-            </div>
-        </div>
-        
-        <div class="sm-hotel-card">
-            <div class="star">
-                <img src="svg/Star.svg" alt="">
-            </div>
-            <div class="GDots">
-                <div class="Selected"></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="pic">
-                <img src="img/pic/Rectangle 9.png" alt="">
-            </div>
-            <div class="description-hotel">
-                <p class="hoteles-title">Hotel name | City | Country</p>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                <p class="hotels-descr">the city center:116 m </p>
-                <p class="hotels-price"> $ 130 night</p>
-            </div>
-        </div>
-        
-        <div class="sm-hotel-card">
-            <div class="star">
-                <img src="svg/Star.svg" alt="">
-            </div>
-            <div class="GDots">
-                <div class="Selected"></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="pic">
-                <img src="img/pic/Rectangle 10.png" alt="">
-            </div>
-            <div class="description-hotel">
-                <p class="hoteles-title">Hotel name | City | Country</p>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                <p class="hotels-descr">the city center:116 m </p>
-                <p class="hotels-price"> $ 130 night</p>
-            </div>
-        </div>
-        
-        <div class="sm-hotel-card">
-            <div class="star">
-                <img src="svg/Star.svg" alt="">
-            </div>
-            <div class="GDots">
-                <div class="Selected"></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="pic">
-                <img src="img/pic/Rectangle 11.png" alt="">
-            </div>
-            <div class="description-hotel">
-                <p class="hoteles-title">Hotel name | City | Country</p>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                <p class="hotels-descr">the city center:116 m </p>
-                <p class="hotels-price"> $ 130 night</p>
-            </div>
-        </div>
-        
-        <div class="sm-hotel-card">
-            <div class="star">
-                <img src="svg/Star.svg" alt="">
-            </div>
-            <div class="GDots">
-                <div class="Selected"></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="pic">
-                <img src="img/pic/Rectangle 12.png" alt="">
-            </div>
-            <div class="description-hotel">
-                <p class="hoteles-title">Hotel name | City | Country</p>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                <p class="hotels-descr">the city center:116 m </p>
-                <p class="hotels-price"> $ 130 night</p>
-            </div>
-        </div>
-        
-        <div class="sm-hotel-card">
-            <div class="star">
-                <img src="svg/Star.svg" alt="">
-            </div>
-            <div class="GDots">
-                <div class="Selected"></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="pic">
-                <img src="img/pic/Rectangle 13.png" alt="">
-            </div>
-            <div class="description-hotel">
-                <p class="hoteles-title">Hotel name | City | Country</p>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                <p class="hotels-descr">the city center:116 m </p>
-                <p class="hotels-price"> $ 130 night</p>
-            </div>
+        <div class="third">
+            <img src="svg/receipt2.svg" alt="">
+            <p class="simple-text"><span class="text-name">Relevant information </span></p>
         </div>
     </div>
-
-    <!-- COMMENT -->
-    <p class="text-title-block-content">Review</p>
-    <div class="Comment-sect flex-row-btw">
-        <!-- ONE OF COMMENTS -->
-        <div class="Comment">
-            <div class="head-comm flex-row-btw">
-                <div class=" flex-row-btw">
-                    <!-- Imamge -->
-                    <img src="img/Com.png" alt="img">
-                    <div class="Name-box">
-                        <!-- Name -->
-                        <p class="Comment-Name">Name</p>
-                        <!-- Name hotel -->
-                        <p class="Comment-hotel-name">Hotel Name</p>
+        <section>
+            <!-- SMALL HOTELS CARD 9 -->
+            <div class="Hotels">
+                <div class="sm-hotel-card">
+                    <div class="star">
+                        <img src="svg/Star.svg" alt="">
+                    </div>
+                    <div class="GDots">
+                        <div class="Selected"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="pic">
+                        <img src="img/pic/Rectangle 6.png" alt="">
+                    </div>
+                    <div class="description-hotel">
+                        <p class="hoteles-title">Hotel name | City | Country</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <p class="hotels-descr">the city center:116 m </p>
+                        <p class="hotels-price"> $ 130 night</p>
                     </div>
                 </div>
-                <!-- Date -->
-                <p class="Comment-date">19 days ago</p>
-            </div>
-            <!-- Message -->
-            <div class="main-info">
-                <p class="Comment-text">
-                    Lorem ipsum dolor sit amet consectetur. Facilisis nulla eun. Ac netus tincidunt sed.
-                </p>
-            </div>
-        </div>
-        <!-- ONE OF COMMENTS -->
-        <div class="Comment">
-            <div class="head-comm flex-row-btw">
-                <div class=" flex-row-btw">
-                    <!-- Imamge -->
-                    <img src="img/Com.png" alt="img">
-                    <div class="Name-box">
-                        <!-- Name -->
-                        <p class="Comment-Name">Name</p>
-                        <!-- Name hotel -->
-                        <p class="Comment-hotel-name">Hotel Name</p>
+                <div class="sm-hotel-card">
+                    <div class="star">
+                        <img src="svg/Star.svg" alt="">
+                    </div>
+                    <div class="GDots">
+                        <div class="Selected"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="pic">
+                        <img src="img/pic/Rectangle 7.png" alt="">
+                    </div>
+                    <div class="description-hotel">
+                        <p class="hoteles-title">Hotel name | City | Country</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <p class="hotels-descr">the city center:116 m </p>
+                        <p class="hotels-price"> $ 130 night</p>
                     </div>
                 </div>
-                <!-- Date -->
-                <p class="Comment-date">19 days ago</p>
-            </div>
-            <!-- Message -->
-            <div class="main-info">
-                <p class="Comment-text">
-                    Lorem ipsum dolor sit amet consectetur. Facilisis nulla eun. Ac netus tincidunt sed.
-                </p>
-            </div>
-        </div>
-        <!-- ONE OF COMMENTS -->
-        <div class="Comment">
-            <div class="head-comm flex-row-btw">
-                <div class=" flex-row-btw">
-                    <!-- Imamge -->
-                    <img src="img/Com.png" alt="img">
-                    <div class="Name-box">
-                        <!-- Name -->
-                        <p class="Comment-Name">Name</p>
-                        <!-- Name hotel -->
-                        <p class="Comment-hotel-name">Hotel Name</p>
+                <div class="sm-hotel-card">
+                    <div class="star">
+                        <img src="svg/Star.svg" alt="">
+                    </div>
+                    <div class="GDots">
+                        <div class="Selected"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="pic">
+                        <img src="img/pic/Rectangle 7.png" alt="">
+                    </div>
+                    <div class="description-hotel">
+                        <p class="hoteles-title">Hotel name | City | Country</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <p class="hotels-descr">the city center:116 m </p>
+                        <p class="hotels-price"> $ 130 night</p>
                     </div>
                 </div>
-                <!-- Date -->
-                <p class="Comment-date">19 days ago</p>
+                <div class="sm-hotel-card">
+                    <div class="star">
+                        <img src="svg/Star.svg" alt="">
+                    </div>
+                    <div class="GDots">
+                        <div class="Selected"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="pic">
+                        <img src="img/pic/Rectangle 9.png" alt="">
+                    </div>
+                    <div class="description-hotel">
+                        <p class="hoteles-title">Hotel name | City | Country</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <p class="hotels-descr">the city center:116 m </p>
+                        <p class="hotels-price"> $ 130 night</p>
+                    </div>
+                </div>
+                <div class="sm-hotel-card">
+                    <div class="star">
+                        <img src="svg/Star.svg" alt="">
+                    </div>
+                    <div class="GDots">
+                        <div class="Selected"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="pic">
+                        <img src="img/pic/Rectangle 10.png" alt="">
+                    </div>
+                    <div class="description-hotel">
+                        <p class="hoteles-title">Hotel name | City | Country</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <p class="hotels-descr">the city center:116 m </p>
+                        <p class="hotels-price"> $ 130 night</p>
+                    </div>
+                </div>
+                <div class="sm-hotel-card">
+                    <div class="star">
+                        <img src="svg/Star.svg" alt="">
+                    </div>
+                    <div class="GDots">
+                        <div class="Selected"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="pic">
+                        <img src="img/pic/Rectangle 11.png" alt="">
+                    </div>
+                    <div class="description-hotel">
+                        <p class="hoteles-title">Hotel name | City | Country</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <p class="hotels-descr">the city center:116 m </p>
+                        <p class="hotels-price"> $ 130 night</p>
+                    </div>
+                </div>
+                <div class="sm-hotel-card">
+                    <div class="star">
+                        <img src="svg/Star.svg" alt="">
+                    </div>
+                    <div class="GDots">
+                        <div class="Selected"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="pic">
+                        <img src="img/pic/Rectangle 12.png" alt="">
+                    </div>
+                    <div class="description-hotel">
+                        <p class="hoteles-title">Hotel name | City | Country</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <p class="hotels-descr">the city center:116 m </p>
+                        <p class="hotels-price"> $ 130 night</p>
+                    </div>
+                </div>
+                <div class="sm-hotel-card">
+                    <div class="star">
+                        <img src="svg/Star.svg" alt="">
+                    </div>
+                    <div class="GDots">
+                        <div class="Selected"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="pic">
+                        <img src="img/pic/Rectangle 13.png" alt="">
+                    </div>
+                    <div class="description-hotel">
+                        <p class="hoteles-title">Hotel name | City | Country</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <p class="hotels-descr">the city center:116 m </p>
+                        <p class="hotels-price"> $ 130 night</p>
+                    </div>
+                </div>
             </div>
-            <!-- Message -->
-            <div class="main-info">
-                <p class="Comment-text">
-                    Lorem ipsum dolor sit amet consectetur. Facilisis nulla eun. Ac netus tincidunt sed.
-                </p>
+            <!-- COMMENT -->
+            <p class="text-title-block-content">Review</p>
+            <div class="Comment-sect flex-row-btw">
+                <!-- ONE OF COMMENTS -->
+                <div class="Comment">
+                    <div class="head-comm flex-row-btw">
+                        <div class=" flex-row-btw">
+                            <!-- Imamge -->
+                            <img src="img/Com.png" alt="img">
+                            <div class="Name-box">
+                                <!-- Name -->
+                                <p class="Comment-Name">Name</p>
+                                <!-- Name hotel -->
+                                <p class="Comment-hotel-name">Hotel Name</p>
+                            </div>
+                        </div>
+                        <!-- Date -->
+                        <p class="Comment-date">19 days ago</p>
+                    </div>
+                    <!-- Message -->
+                    <div class="main-info">
+                        <p class="Comment-text">
+                            Lorem ipsum dolor sit amet consectetur. Facilisis nulla eun. Ac netus tincidunt sed.
+                        </p>
+                    </div>
+                </div>
+                <!-- ONE OF COMMENTS -->
+                <div class="Comment">
+                    <div class="head-comm flex-row-btw">
+                        <div class=" flex-row-btw">
+                            <!-- Imamge -->
+                            <img src="img/Com.png" alt="img">
+                            <div class="Name-box">
+                                <!-- Name -->
+                                <p class="Comment-Name">Name</p>
+                                <!-- Name hotel -->
+                                <p class="Comment-hotel-name">Hotel Name</p>
+                            </div>
+                        </div>
+                        <!-- Date -->
+                        <p class="Comment-date">19 days ago</p>
+                    </div>
+                    <!-- Message -->
+                    <div class="main-info">
+                        <p class="Comment-text">
+                            Lorem ipsum dolor sit amet consectetur. Facilisis nulla eun. Ac netus tincidunt sed.
+                        </p>
+                    </div>
+                </div>
+                <!-- ONE OF COMMENTS -->
+                <div class="Comment">
+                    <div class="head-comm flex-row-btw">
+                        <div class=" flex-row-btw">
+                            <!-- Imamge -->
+                            <img src="img/Com.png" alt="img">
+                            <div class="Name-box">
+                                <!-- Name -->
+                                <p class="Comment-Name">Name</p>
+                                <!-- Name hotel -->
+                                <p class="Comment-hotel-name">Hotel Name</p>
+                            </div>
+                        </div>
+                        <!-- Date -->
+                        <p class="Comment-date">19 days ago</p>
+                    </div>
+                    <!-- Message -->
+                    <div class="main-info">
+                        <p class="Comment-text">
+                            Lorem ipsum dolor sit amet consectetur. Facilisis nulla eun. Ac netus tincidunt sed.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-
-    <!-- SAFE WITH US -->
-    <p class="text-title-block-content">Safe with us</p>
-    <div class="Safe">
-
-        <div class="small-card-icon-text">
-            <img src="svg/buildings.svg" alt="">
-            <p class="simple-text">We choose hotels that meet our standards</p>
-        </div>
-
-        <div class="small-card-icon-text">
-            <img src="svg/convertcard.svg" alt="">
-            <p class="simple-text">We choose</p>
-        </div>
-
-        <div class="small-card-icon-text">
-            <img src="svg/tag.svg" alt="">
-            <p class="simple-text">We choose hotels that meet our standards</p>
-        </div>
-
-        <div class="small-card-icon-text">
-            <img src="svg/clock.svg" alt="">
-            <p class="simple-text">We choose hotels that meet our standards</p>
-        </div>
-
-        <div class="small-card-icon-text">
-            <img src="svg/directinbox.svg" alt="">
-            <p class="simple-text">We choose hotels that meet our standards</p>
-        </div>
-    </div>
-
-    <!-- BE OUR REGULAR -->
-    <p class="text-title-block-content">Be Our Regular</p>
-    <div class="BeOurRegular">
-        <div class="wrap">
-            <img src="img/Be.png" alt="">
-        </div>
-        <div class="box">
-            <p class="simple-text fc-bl">We believe that every customer deserves the best, and we're committed to providing top-class services to all of our clients. When you book with us, you can enjoy not only great deals on your travel arrangements, but also exclusive discounts and special offers. We value your loyalty and want to show our appreciation by giving back.</p>
-            <p class="simple-text fc-bl">So start your search today and discover the amazing rewards waiting for you on our website!</p>
-        </div>
-    </div>
-
-    <!-- BUTTON -->
-    <div class="butWrap">
-        <img src="svg/flag.svg" alt="">
-        <a id='register2'><button>Register an account</button></a>
-        <img src="svg/flag.svg" id="Sec" alt="">
-    </div>
-</section>
-
-<footer>
-    <div class="ftr-container">
-        <div class="ftr-column">
-            <ul>
-                <li><a href="#">Countries</a></li>
-                <li><a href="#">Regions</a></li>
-                <li><a href="#">Cities</a></li>
-                <li><a href="#">Districts</a></li>
-                <li><a href="#">Airports</a></li>
-                <li><a href="#">Hotels</a></li>
-                <li><a href="#">Places of interest</a></li>
-            </ul>
-        </div>
-        <div class="ftr-column">
-            <ul>
-                <li><a href="#">Homes</a></li>
-                <li><a href="#">Apartments</a></li>
-                <li><a href="#">Resorts</a></li>
-                <li><a href="#">Villas</a></li>
-                <li><a href="#">Hostels</a></li>
-                <li><a href="#">B&amp;Bs</a></li>
-                <li><a href="#">Guest houses</a></li>
-            </ul>
-        </div>
-        <div class="ftr-column">
-            <ul>
-                <li><a href="#">Unique places to stay</a></li>
-                <li><a href="#">All destinations</a></li>
-                <li><a href="#">All flight destinations</a></li>
-                <li><a href="#">All car hire locations</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Awards</a></li>
-            </ul>
-        </div>
-        <div class="ftr-column">
-            <ul>
-                <li><a href="#">Car hire</a></li>
-                <li><a href="#">Flight finder</a></li>
-                <li><a href="#">Restaurant reservations</a></li>
-                <li><a href="#">For Travel Agents</a></li>
-            </ul>
-        </div>
-        <div class="ftr-column">
-            <ul>
-                <li><a href="#">Coronavirus (COVID-19) FAQs</a></li>
-                <li><a href="#">About Booking.com</a></li>
-                <li><a href="#">Customer Service help</a></li>
-                <li><a href="#">Partner help</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Sustainability</a></li>
-                <li><a href="#">Press centre</a></li>
-                <li><a href="#">Safety resource centre</a></li>
-                <li><a href="#">Investor relations</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Partner dispute</a></li>
-                <li><a href="#">How we work</a></li>
-                <li><a href="#">Privacy & Cookie Statement</a></li>
-                <li><a href="#">MSA Statement</a></li>
-                <li><a href="#">Corporate contact</a></li>
-                <li><a href="#">We Price Match</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-</body>
+            <!-- SAFE WITH US -->
+            <p class="text-title-block-content">Safe with us</p>
+            <div class="Safe">
+                <div class="small-card-icon-text">
+                    <img src="svg/buildings.svg" alt="">
+                    <p class="simple-text">We choose hotels that meet our standards</p>
+                </div>
+                <div class="small-card-icon-text">
+                    <img src="svg/convertcard.svg" alt="">
+                    <p class="simple-text">We choose</p>
+                </div>
+                <div class="small-card-icon-text">
+                    <img src="svg/tag.svg" alt="">
+                    <p class="simple-text">We choose hotels that meet our standards</p>
+                </div>
+                <div class="small-card-icon-text">
+                    <img src="svg/clock.svg" alt="">
+                    <p class="simple-text">We choose hotels that meet our standards</p>
+                </div>
+                <div class="small-card-icon-text">
+                    <img src="svg/directinbox.svg" alt="">
+                    <p class="simple-text">We choose hotels that meet our standards</p>
+                </div>
+            </div>
+            <!-- BE OUR REGULAR -->
+            <p class="text-title-block-content">Be Our Regular</p>
+            <div class="BeOurRegular">
+                <div class="wrap">
+                    <img src="img/Be.png" alt="">
+                </div>
+                <div class="box">
+                    <p class="simple-text fc-bl">We believe that every customer deserves the best, and we're committed to providing top-class services to all of our clients. When you book with us, you can enjoy not only great deals on your travel arrangements, but also exclusive discounts and special offers. We value your loyalty and want to show our appreciation by giving back.</p>
+                    <p class="simple-text fc-bl">So start your search today and discover the amazing rewards waiting for you on our website!</p>
+                </div>
+            </div>
+            <!-- BUTTON -->
+            <div class="butWrap">
+                <img src="svg/flag.svg" alt="">
+                <a id='register2'><button>Register an account</button></a>
+                <img src="svg/flag.svg" id="Sec" alt="">
+            </div>
+        </section>
+        <footer>
+            <div class="ftr-container">
+                <div class="ftr-column">
+                    <ul>
+                        <li><a href="#">Countries</a></li>
+                        <li><a href="#">Regions</a></li>
+                        <li><a href="#">Cities</a></li>
+                        <li><a href="#">Districts</a></li>
+                        <li><a href="#">Airports</a></li>
+                        <li><a href="#">Hotels</a></li>
+                        <li><a href="#">Places of interest</a></li>
+                    </ul>
+                </div>
+                <div class="ftr-column">
+                    <ul>
+                        <li><a href="#">Homes</a></li>
+                        <li><a href="#">Apartments</a></li>
+                        <li><a href="#">Resorts</a></li>
+                        <li><a href="#">Villas</a></li>
+                        <li><a href="#">Hostels</a></li>
+                        <li><a href="#">B&amp;Bs</a></li>
+                        <li><a href="#">Guest houses</a></li>
+                    </ul>
+                </div>
+                <div class="ftr-column">
+                    <ul>
+                        <li><a href="#">Unique places to stay</a></li>
+                        <li><a href="#">All destinations</a></li>
+                        <li><a href="#">All flight destinations</a></li>
+                        <li><a href="#">All car hire locations</a></li>
+                        <li><a href="#">Discover</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Awards</a></li>
+                    </ul>
+                </div>
+                <div class="ftr-column">
+                    <ul>
+                        <li><a href="#">Car hire</a></li>
+                        <li><a href="#">Flight finder</a></li>
+                        <li><a href="#">Restaurant reservations</a></li>
+                        <li><a href="#">For Travel Agents</a></li>
+                    </ul>
+                </div>
+                <div class="ftr-column">
+                    <ul>
+                        <li><a href="#">Coronavirus (COVID-19) FAQs</a></li>
+                        <li><a href="#">About Booking.com</a></li>
+                        <li><a href="#">Customer Service help</a></li>
+                        <li><a href="#">Partner help</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Press centre</a></li>
+                        <li><a href="#">Safety resource centre</a></li>
+                        <li><a href="#">Investor relations</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Partner dispute</a></li>
+                        <li><a href="#">How we work</a></li>
+                        <li><a href="#">Privacy & Cookie Statement</a></li>
+                        <li><a href="#">MSA Statement</a></li>
+                        <li><a href="#">Corporate contact</a></li>
+                        <li><a href="#">We Price Match</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>

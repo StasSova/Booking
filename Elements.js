@@ -17,4 +17,3 @@ document.getElementById('monthDayInput').addEventListener('input', function(e) {
     if (input.length > 5) e.target.value = input.slice(0, 5);
     if (input.length === 2 && !input.includes('/')) e.target.value = input + '/';
 });
-  

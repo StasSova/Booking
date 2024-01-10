@@ -4,14 +4,12 @@
         margin: 0px 10px 0 10px;
         display: grid;
         grid-template-columns: 100%;
-      }
-      main aside
-      {
+    }
+    main aside{
         display: flex;
         flex-direction: column;
-      }
-    main aside .adapt
-    {
+    }
+    main aside .adapt{
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -34,25 +32,16 @@
         margin-right: 5px;
         margin-left: 10px;
     }
-    main .filter-button img 
-    {
-        filter: brightness(0) saturate(100%) invert(58%) sepia(0%) saturate(0%) hue-rotate(359deg) brightness(70%) contrast(90%);
-    }
+    main .filter-button img {filter: brightness(0) saturate(100%) invert(58%) sepia(0%) saturate(0%) hue-rotate(359deg) brightness(70%) contrast(90%);}
     main .map-button {
         width: 100%;
         margin-left: 5px;
         margin-right: 10px;
     }
-    main aside{
-        margin-top: -30px;
-    }
+    main aside{margin-top: -30px;}
     section{
-    display: none;
-    margin-bottom: 30px;
+        display: none;
+        margin-bottom: 30px;
     }
-
-    main content .card {
-        width: 95%;
-    }
-
+    main content .card {width: 95%;}
 }
