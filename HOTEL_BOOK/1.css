@@ -13,6 +13,18 @@
     left: 93%;
     top: 15%;
 }
+.back{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-primary-color);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    left: 10%;
+    top: 15%;
+}
 .wrap{
     width: 75%;
     margin: auto;
@@ -46,13 +58,16 @@ aside .box .circle-3
     margin: 0 1px 0 1px;
 }
 
-
+main{
+    width: 75%;
+}
 main .regBox{
     height: auto;
     border-radius: 13px;
     width: 100%;
     border: 1px solid var(--border-primary-color);
     margin-top: 25px;
+    padding-bottom: 30px;
 }
 main .regBox .header span{
     padding-left: 30px;
@@ -68,23 +83,53 @@ main .regBox .header{
 }
 main .regBox .inputWrap{
     display: flex;
-    justify-content: center;
+    
+    align-items: center;
     width: 90%;
     margin:50px auto;
+    margin-bottom: 0;
 }
+main .regBox .inputWrap2{
+
+    display: flex;
+  
+    width: 90%;
+    margin:10px auto;
+}
+main .regBox .inputWrap2 input{
+    width: 25%;
+    margin:0;
+
+}
+main .regBox .inputWrap3{
+
+    display: flex;
+  
+    width: 90%;
+    margin:10px auto;
+}
+main .regBox .inputWrap3 input{
+    width: 45%;
+    margin:0;
+}
+
+
+
 main .regBox .inputWrap input{
     width: 45%;
-    margin:0 auto;
+    margin:0;
+    margin-right: 25px;
 }
 main .regBox .inputWrap p{
     width: 45%;
-    margin: 0 auto;
+   
 }
 main .regBox .inputWrap .smallWrap{
     display: flex;
     flex-direction: column;
     width: 45%;
     margin: 0 auto;
+    justify-content: center;
 }
 main .regBox .inputWrap .smallWrap input{
     width: 100%;
@@ -145,11 +190,49 @@ main .checkWrap{
    
 }
 
+main .checkWrap2 .box{
+    
+    display: flex;
+    width: 100%;
+  
+    align-items: center;
+    border-radius: 13px;
+    padding: 20px;
+    border: 1px solid var(--border-primary-color);
+}
+main .checkWrap2 .box p{
+    width: auto;
+    margin-left: 20%;
+}
+main .checkWrap2 .box p span{
+   color: var(--secondary-color);
+}
+main .checkWrap2{
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+   
+}
+main .checkWrap2 .box a{
+    color:var(--secondary-color);
+}
+main .checkWrap2 .box .wrap{
+    display: flex;
+    justify-content: flex-end;
+   width: 10px;
+}
+
 .butWrap{
     width: 50%;
-    margin:50px auto;
+    margin:50px auto 0px auto;
+}
+.butWrap button img{
+    margin-left: 25px;
 }
 .butWrap button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
   
     height: 56px;
@@ -160,6 +243,74 @@ main .checkWrap{
     color: white;
     font-size: 16px;
     border: none;
-
+    margin: 10px;
     transition: width 0.2s ease;
+}
+.butWrap .b2{
+    box-shadow: none;
+    background-color: white;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+main .mwrap h2, main .mwrap p{
+
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+main .mwrap h2{
+    color:var(--secondary-color)
+}
+main .mwrap span{
+    margin-right: 10px;
+}
+main .mwrap{
+    padding: 25px;
+}
+main .mwrap .smwrap{
+   
+    margin-bottom: 20px;
+}
+
+main .regBox .header2 span{
+    padding-left: 30px;
+    color: var(--secondary-color);
+    font-size: 24px;
+    font-weight: 800;
+}
+main .regBox .header2{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 10px 25px;
+    width: 50%;
+}
+
+
+main .TouristHotel{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main .TouristHotel h2{
+    color: var(--secondary-color);
+}
+main .TouristHotel i{
+    color: var(--secondary-color);
+}
+main .TouristHotel h2{
+    font-size: 32px;
+}
+main .TouristHotel p{
+    margin-bottom: 25px;
+}
+
+main .TouristHotel a{
+   display: flex;
+   align-items: center;
+}
+main .TouristHotel span{
+    margin-left: 10px;
 }
