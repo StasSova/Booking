@@ -3,24 +3,166 @@ main section{
     margin: 0 auto 10% auto;
 }
 
+.create-card-cont{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 32px;
+    margin-top: 20px;
+}
+.card-cont,
+.card-info{
+    border: 1px solid var(--border-primary-color);
+    box-shadow: 0px 4px 69px 0px #0000000D;
+    box-shadow: 0px 1px 8px 0px #00000014;
+    border-radius: 13px;
+    padding: 24px;
+    height: 300px;
+}
+.card-cont {
+    min-height: 300px; /* Минимальная начальная высота */
+    height: max-content; /* Высота изменяется в зависимости от содержимого, но не меньше min-height */
+}
+
+.card-cont-main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.input-text-cont{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto max-content;
+    grid-row-gap: 44px;
+    grid-column-gap: 16px;
+    align-items: start;
+}
+
+.input-text-cont a.simple-text{
+    margin-top: 15px;
+}
+#monthDayInput {
+    width: 35% !important; 
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center; 
+    margin-top: 20px;
+}
+
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.img-card
+{
+    margin-left: 48% ;
+}
+
+.input-border
+{
+    width: 100% !important ;
+}
+.card-info div p:nth-of-type(2) {
+   margin-top: 20px;
+}
+.context.fc-sc {
+    display: flex;
+    align-items: center; 
+    margin-top: 30px;
+}
+.arrow_
+{
+    margin-left: 10px;
+
+}
+
+.gray-text
+{
+    display: flex;
+    color: var(--primary-color);
+    align-items: center;
+    margin-left: 15px;
+}
+.main-text{
+    width: 49%;
+  }
+  .main-text p{
+    margin-top: 30px;
+    font-weight: 400;
+    margin-left: 0px;
+  }
 /* ==================================================
                             ADAPTIVE 1024 1439
 ====================================================*/
 @media only screen and (min-width: 1024px) and (max-width: 1439px)
 {
-    
+    .card-cont-main {
+        width: 100%;
+    }
+    .create-card-cont {
+        grid-template-columns: 60% 40%;
+    }
+    #monthDayInput {
+        width: auto !important;
+    }
 }
 /* ==================================================
                             ADAPTIVE 768 1023
 ====================================================*/
 @media only screen and (min-width: 768px) and (max-width: 1023px)
 {
-   
+    .create-card-cont {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 20px;
+    }
+    .card-cont-main {
+        width: 100%;
+    }
+    .main-text {
+        width: 100%;
+    }
+    #monthDayInput {
+        width: auto !important;
+    }
 }
 /* ==================================================
                             ADAPTIVE 320 767
 ====================================================*/
 @media only screen and (max-width: 767px)
 {
+    .create-card-cont {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 20px;
+    }
+    .card-cont-main {
+        width: 100%;
+    }
+    .main-text {
+        width: 100%;
+    }
+    #monthDayInput {
+        width: auto !important;
+    }
+    .input-text-cont {
+        grid-template-columns: auto;
+        grid-row-gap: 10px;
+    }
+    .create-card-cont .fc-sc:first-of-type {
+        margin-left: 30px;
+    }
+    
+    .card-info div
+    {
+        margin: 0px 10px;
+    }
+    main {
+        margin-left: -40px;
+        margin-right: -40px;
+    }
 
 }

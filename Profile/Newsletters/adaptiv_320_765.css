@@ -1,0 +1,55 @@
+@media only screen and (max-width: 767px){
+    nav {
+        background: none !important;
+    }
+    .main-foto
+    {
+        flex-direction: column;
+        height: auto;
+    }
+    .main-foto .photo {
+        flex: 0 0 100%;
+        margin: 0px;
+        margin-bottom: 15px;
+    }
+    .main-foto .card 
+    {
+        flex: 0 0 100%;
+        margin-top: 15px;
+    }
+
+    .News .vertical-cards .v-card {
+        width: 300px; 
+        min-width: 300px;
+    }
+    .News .vertical-cards
+    {
+        padding-bottom: 10px;
+        padding-top: 10px;
+
+    }
+    .footer-foto
+    {
+        display: flex;
+        border-radius: 14px;
+        flex-direction: column;
+        height: auto;
+    }
+    .footer-foto .footer-card {
+      height: auto;
+    }
+
+    .footer-foto .column{
+        width: 100%;
+        margin: 0px;
+    }
+    .footer-foto .footer-photo {
+        width: 100%;
+        margin-top: 30px;
+    }
+    main {
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+
+}

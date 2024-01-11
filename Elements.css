@@ -60,12 +60,11 @@
                       INPUT
 ====================================================*/
 .input-border{
-  padding: 32px;
-  height: 64px;
+  padding: 15px 30px;
   width: 100%;
   border-radius: 32px;
   border: 1px solid var(--border-primary-color);
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  /* box-shadow: 0 0 5px rgba(0,0,0,0.1);  предлагаю убрать тень, если не согласны тогда добавляйте :) */
   background-color: transparent;
 }
 /* TYPE: NUMBER  скрываем левый увеличитель значения*/
@@ -73,6 +72,11 @@
 .input-border::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+/* при выборе input */
+.input-border:focus {
+  border-color: #581ADB; 
+  outline: none; 
 }
 
 /* ==================================================
@@ -93,6 +97,7 @@
 }
 .select-menu.active .select-btn{
   border-radius: 32px 32px 8px 8px;
+  border-color: #581ADB !important;
 }
 
 .select-menu .options{
@@ -103,6 +108,7 @@
   border: 1px solid var(--border-primary-color);
   box-shadow: 0 0 3px rgba(0,0,0,0.1);
   display: none;
+  border-color: #581ADB !important;
 }
 .select-menu.active .options{
     display: block;
@@ -124,3 +130,12 @@
   line-height: 24px;
   color: var(--primary-color);
 }
+
+.plain-text
+  {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin: 20px 0;
+  }
