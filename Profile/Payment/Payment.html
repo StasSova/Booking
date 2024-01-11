@@ -81,49 +81,78 @@
         <section>
             <p class="main-title">Payment method</p>
             <div class="create-card-cont">
+                
+                
                 <form class="card-cont">
-                    
-                    
-                    <div class="select-menu">
-                        <div class="select-btn input-border">
-                            <span class="simple-text">Select your option</span>
-                            <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502" stroke="#581ADB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                    <div class="card-cont-main">
+                        <div class="input-text-cont">
+                            <!-- https://www.codingnepalweb.com/dropdown-select-menu-javascript/ -->
+                            <!-- type_card_i -->
+                            <div class="select-menu" id="sel-payment">
+                                <div class="select-btn input-border">
+                                    <span class="simple-text sBtn-text">Type of your debit card</span>
+                                    <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502" stroke="#581ADB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <ul class="options">
+                                    <li class="option">
+                                        <span class="option-text">Visa</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="option-text">MasterCard</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="option-text">American Express</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="option-text">UnionPay</span>
+                                    </li>
+                                    <li class="option">
+                                        <span class="option-text">JCB</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <a class="simple-text fc-sc">No card?</a>
+                            
+                            <input type="number" class="input-border simple-text" placeholder="Сredit or debit card number">
+
                         </div>
+                        <input type="text" id="monthDayInput" class="input-border simple-text" placeholder="Month | Date">
 
-                        <ul class="options">
-                            <li class="option">
-                                <span class="option-text">Github</span>
-                            </li>
-                            <li class="option">
-                                <span class="option-text">Instagram</span>
-                            </li>
-                            <li class="option">
-                                <span class="option-text">Linkedin</span>
-                            </li>
-                            <li class="option">
-                                <span class="option-text">Facebook</span>
-                            </li>
-                            <li class="option">
-                                <span class="option-text">Twitter</span>
-                            </li>
-                        </ul>
                     </div>
-
-                    
-                    <input type="number" class="input-border simple-text" placeholder="Сredit or debit card number">
                 </form>
+                
+                
                 <div class="card-info">
-
+                    <div>
+                    <p class="simple-text">This information will be kept private and confidential. </p>
+                    <p class="simple-text">Once your booking is confirmed, the payment details will be automatically filled in for your convenience.</p>
+                    </div>
                 </div>
             </div>
+
+            <p class="plain-text">SAVED PAYMENT METHODS</p>
+            <div class="card-info">
+                <div>
+                    <img class="img-card" src="/svg/cardremove1.svg" alt="card">
+                <p class="simple-text">You have no saved payment methods</p>
+                </div>
+            </div>
+            <div class="main-text">
+                <p class="gray-text">Rest assured that the payment information you enter on our site is meticulously protected to ensure your utmost security. We prioritize the safety of your transactions, employing robust encryption protocols and industry-standard security measures. With our steadfast commitment to providing a completely safe payment process, you can confidently book with us knowing that your financial information is in trusted hands.</p>
+            </div>
+            <a class="simple-text fc-sc context">See privacy policy
+                <img class="arrow_" src="/svg/long_purple_arrow.svg" alt="purple arrow">
+            </a>
 
             
         </section>
     </main>
-    <script src="../../Elements.js"></script>
+    <script src="/Elements.js"></script>
 </body>
 </html>
 
-    
+
+
