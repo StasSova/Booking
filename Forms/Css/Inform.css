@@ -1,12 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    -webkit-user-drag:none;
-    user-select:none;
-    font-family:'Nunito Sans', sans-serif;
-}
 #backmain4{
     position:fixed;
     width:100%;
@@ -15,9 +6,9 @@
     display:flex;
     justify-content:center;
     align-items:center;
+    z-index:1000;
     opacity:0;
     visibility:hidden;
-    z-index:1000;
 }
 #backmain4 #main{
     height:90vh;
@@ -38,7 +29,7 @@
     transition:.15s;
 }
 #backmain4 #main .cross:hover{
-    content:url(../../../img/hovercross.png);
+    content:url(../../img/hovercross.png);
     cursor:pointer;
 }
 #backmain4 #main .cross:active{transform:scale(0.9);}
@@ -106,3 +97,36 @@
     cursor:pointer;
 }
 #backmain4 #main .but2:active{transform:scale(0.95);}
+/* ==================================================
+                    ADAPTIVE 1024-1439
+====================================================*/
+@media only screen and (min-width:1024px) and (max-width:1439px){
+    #backmain4 #main{width:35%;}
+    #backmain4 #main .cross{
+        top:7%;
+        right:34%;
+        width:2.3%;
+    }
+}
+/* ==================================================
+                    ADAPTIVE 768-1023
+====================================================*/
+@media only screen and (min-width:768px) and (max-width:1023px){
+    #backmain4 #main{width:45%;}
+    #backmain4 #main .cross{
+        right:29.5%;
+        width:3%;
+    }
+}
+/* ==================================================
+                    ADAPTIVE 320-767
+====================================================*/
+@media only screen and (max-width:767px){
+    #backmain4 #main{width:50%;}
+    #backmain4 #main .cross{
+        top:20%;
+        right:27%;
+        width:4%;
+    }
+    #backmain4 #main .but1{margin:24% 0 0 7%;}
+}
