@@ -29,6 +29,7 @@
     }
     .mobile-icon {
         display: block !important;
+        filter: brightness(0) invert(1);
     }
     nav .panel div {
         margin-left: 0px;

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 768px){
     /* ==================================================
                     PROFILE TABS IN MENU PROFILE
     ====================================================*/
@@ -32,8 +32,9 @@ header .Sign .Reg {
     .desktop-icon {
         display: none !important;; 
     }
-    .mobile-icon {
+    .mobile-icon{
         display: block !important;
+        filter: brightness(0) invert(1);
     }
     nav .panel div {
         margin-left: 0px;
