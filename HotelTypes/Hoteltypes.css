@@ -1,6 +1,4 @@
-nav{
-  background-image: url('../img/Back_img_HotelTypes.png') !important;
-}
+nav{background-image: url('../img/Back_img_HotelTypes.png') !important;}
 /* ==================================================
                               MAIN
 ====================================================*/
@@ -10,27 +8,22 @@ main{
   display: grid;
   grid-template-columns: 24% 76%;
 }
-
 /* Стилизация боковой панели */
 main aside{
   background-color: var(--background-color);
   margin-right: 15px;
 }
-main aside section .Box
-{
+main aside section .Box{
   margin: 20px;
   position: relative;
 }
-
 /* Рамка для боковой панели */
 main aside section{
   border: 1px solid var(--border-primary-color);
   border-radius: 13px;
 }
-
 /* Стилизация меток в разделах боковой панели */
-main aside section label, .accordion-toggle
-{
+main aside section label, .accordion-toggle{
   color: var(--primary-color);
   font-weight: 700;
   font-size: 16px;
@@ -46,10 +39,8 @@ main aside section .accordion-toggle .pur-arrow{
   vertical-align: middle;
   margin-top: 5px;
 }
-
 /* Расположение элементов в блоке .Number внутри Price */
-main aside section .Number
-{
+main aside section .Number{
   display: flex;
   justify-content: space-between;
 }
@@ -58,7 +49,6 @@ main aside section .Number p{
   margin-bottom: 5px;
   margin-top: 5px;
 }
-
 /* Стилизация кнопки ползунка */
 main aside input[type="range"] {
   -webkit-appearance: none;
@@ -70,7 +60,6 @@ main aside input[type="range"] {
   opacity: 0.7;
   transition: opacity .2s;
 }
-
 main aside input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -81,11 +70,8 @@ main aside input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
   border-radius: 50%; 
 }
-
 /*BUTTOM MAP*/
-main .filter-button {
-  display: none; 
-}
+main .filter-button {display: none; }
 /* Стилизация кнопки с округлыми краями и границей */
 main .map-button {
   position: relative; 
@@ -106,7 +92,6 @@ main .map-button:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
   transition: box-shadow 0.3s ease; 
 }
-
 /* Позиционирование иконки внутри кнопки справа */
 main .button-icon {
   position: absolute;
@@ -114,7 +99,6 @@ main .button-icon {
   right: 10px; 
   transform: translateY(-50%);
 }
-
 /* Оформление текстового поля с округлыми краями и границей */
 main .Box input[type="text"] {
   position: relative; 
@@ -127,11 +111,9 @@ main .Box input[type="text"] {
   color: var(--primary-color);
   font-size: 16px;
   font-weight: 400;
-
   padding-left: 20px;
   box-sizing: border-box;
 }
-
 /* Позиционирование иконки внутри текстового поля справа */
 main .Box .text-icon {
   position: absolute;
@@ -139,31 +121,20 @@ main .Box .text-icon {
   right: 20px; 
   transform: translateY(-50%);
 }
-
 /* Стилизация горизонтального разделителя */
 .custom-hr{
     border: 0;
     height: 1px;
     background-color: var(--border-primary-color); 
 }
-
 /* RATING */
-
 main aside section .Box .Block{
   display: flex;
   justify-content: space-between;
 }
-
 /* Стилизация блока с чекбоксом*/
-main .checkbox-container {
-  display: flex;
-}
-
-aside section .Box .Rating, .Popular, .Stars, .Facilities, .Typeofhotel, .Chainhotels
-{
-  margin-top: 5px;
-}
-
+main .checkbox-container {display: flex;}
+aside section .Box .Rating, .Popular, .Stars, .Facilities, .Typeofhotel, .Chainhotels{margin-top: 5px;}
 /* Скрытие стандартного чекбокса и стилизация кастомного */
 main input[type="checkbox"] {
   appearance: none;
@@ -172,7 +143,6 @@ main input[type="checkbox"] {
   opacity: 0;
   position: absolute;
 }
-
 main input[type="checkbox"] + label {
   width: 15px;
   height: 15px;
@@ -187,9 +157,7 @@ main input[type="checkbox"] + label {
   margin-bottom: 5px;
   margin-top: 5px;
   transition: background-color 0.3s; 
-  
 }
-
 main input[type="checkbox"] + label::after {
   content: '';
   position: absolute;
@@ -203,21 +171,12 @@ main input[type="checkbox"] + label::after {
   transition: transform 0.3s; 
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
 }
-
-main input[type="checkbox"]:checked + label {
-  background-color: var(--secondary-color);
-}
-
-main input[type="checkbox"]:checked + label::after {
-  transform: translate(-50%, -50%) scale(1); 
-}
-
-main aside section .Box .Block p
-{
+main input[type="checkbox"]:checked + label {background-color: var(--secondary-color);}
+main input[type="checkbox"]:checked + label::after {transform: translate(-50%, -50%) scale(1); }
+main aside section .Box .Block p{
   color: var(--primary-color);
   font-size: 16px;
   font-weight: 400;
-
   margin-bottom: 4px;
   margin-top: 4px;
 }
@@ -226,22 +185,15 @@ main aside section .pur {
   transform: rotate(-90deg);
   margin-top: 5px;
 }
-
-main aside section .accordion-toggle.active .pur{
-  transform: rotate(0deg);
-}
-
+main aside section .accordion-toggle.active .pur{transform: rotate(0deg);}
 /* Карточки */
-
 main content{
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-left: 15px;
 }
-
-main content .card
-{
+main content .card{
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -251,19 +203,16 @@ main content .card
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); 
   margin-bottom: 30px ;
 }
-main content .card .hotelImg
-{
+main content .card .hotelImg{
   height: 100%;
   width: 320px;
 }
-main content .card .container 
-{
+main content .card .container {
   width: 100%;
   height: 100%;
   padding: 0px 20px 20px 20px;
 }
-main content .card .container .card-header
-{
+main content .card .container .card-header{
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -271,40 +220,32 @@ main content .card .container .card-header
   border: none;
   background-color: var(--background-color);
 }
-main content .card .container .card-header .hotelName h1
-{
+main content .card .container .card-header .hotelName h1{
   font-size: 20px;
   font-weight: 700;
   color: var(--black-color);
   margin: 0;
 }
-main content .card .container .card-header .hotelName img:first-of-type{
-  margin-left: 2px; 
-}
-main content .card .container .card-header .hotelRating
-{
+main content .card .container .card-header .hotelName img:first-of-type{margin-left: 2px;}
+main content .card .container .card-header .hotelRating{
   display: flex;
   flex-direction: row;
   align-items:center;
 }
-main content .card .container .card-header .hotelRating .reviews
-{
+main content .card .container .card-header .hotelRating .reviews{
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-main content .card .container .card-header .hotelRating .reviews p
-{
+main content .card .container .card-header .hotelRating .reviews p{
   font-size: 16px;
   font-weight: 400;
   color: var(--primary-color);
   margin: 0px;
   margin-bottom: -3px;
 }
-
-main content .card .container .Add-information
-{
+main content .card .container .Add-information{
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -316,8 +257,7 @@ main content .card .container .Add-information img{
   height: 24px;
   margin-right: 8px;
 }
-main content .card .container .Add-information div
-{
+main content .card .container .Add-information div{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -325,9 +265,7 @@ main content .card .container .Add-information div
   margin-right: 21px;
   color: var(--primary-color);
 }
-
-main content .card .container .places-nearby
-{
+main content .card .container .places-nearby{
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -341,8 +279,7 @@ main content .card .container .places-nearby p{
   margin-bottom: 5px;
   margin-top: 15px;
 }
-main content .card .container .see-map
-{
+main content .card .container .see-map{
   display: flex;
   flex-direction: row;
   align-items:center;
@@ -355,14 +292,8 @@ main content .card .container .see-map p{
   margin-bottom: 5px;
   margin-top: 15px;
 }
-
-main content .card .container .see-map .arrow {
-   margin-top: 10px;
-}
-
-
-main content .card .container .description
-{
+main content .card .container .see-map .arrow {margin-top: 10px;}
+main content .card .container .description{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -375,8 +306,7 @@ main content .card .container .description p{
   color: var(--primary-color);
   margin-top: 15px;
 }
-main content .card .container .description .price
-{
+main content .card .container .description .price{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -391,7 +321,6 @@ main content .card .container .description .price p{
   font-weight: 500;
   text-align: center;
 }
-
 main content .card .container .description .price a {
   color: var(--white-text-color);
   font-weight: 700;
@@ -403,18 +332,12 @@ main content .card .container .description .price a {
   border-radius: 20px;
   font-family: 'Nunito Sans', sans-serif;
   transition: transform  0.3s ease; 
-  
   display: flex;
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
 }
-
-main content .card .container .description .price a:hover {
-  transform: scale(1.1);
-}
-
-
+main content .card .container .description .price a:hover {transform: scale(1.1);}
 main content .card .container .description .price span{
   color: var(--secondary-color);
   font-weight: 700;
@@ -422,11 +345,7 @@ main content .card .container .description .price span{
   text-align: center;
   margin: 5px 0;
 }
-
-main content .card .container .circle {
-  position: relative;
-}
-
+main content .card .container .circle {position: relative;}
 main content .card .container .crown-icon {
   position: absolute;
   left: 50%;

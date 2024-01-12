@@ -1,22 +1,109 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="Hoteltypes.css" rel="stylesheet" type="text/css" />
-  <link href="../generalStyles.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="../Elements.css">
-
-  <link rel="stylesheet" href="../HotelTypes/adaptiv_320_765.css">
-  <link rel="stylesheet" href="../HotelTypes/adaptiv_768_1023.css">
-  <link rel="stylesheet" href="../Adaptive/adaptive_1024_1439.css">
-  <link rel="stylesheet" href="../Adaptive/adaptive_768_1023.css">
-  <link rel="stylesheet" href="../Adaptive/adaptive_0_765.css">
-</head>
-
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Hotel Types</title>
+    <link rel='icon' href="../img/favicon.png"/>
+    <link href="Hoteltypes.css" rel="stylesheet" type="text/css" />
+    <link href="../generalStyles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../Elements.css">
+    <link rel="stylesheet" href="../HotelTypes/adaptiv_320_765.css">
+    <link rel="stylesheet" href="../HotelTypes/adaptiv_768_1023.css">
+    <link rel="stylesheet" href="../Adaptive/adaptive_1024_1439.css">
+    <link rel="stylesheet" href="../Adaptive/adaptive_768_1023.css">
+    <link rel="stylesheet" href="../Adaptive/adaptive_0_765.css">
+    <link rel="stylesheet" href="../Forms/Css/SignIn.css"/>
+    <link rel="stylesheet" href="../Forms/Css/Registration.css"/>
+    <link rel="stylesheet" href="../Forms/Css/Authen.css"/>
+    <link rel="stylesheet" href="../Forms/Css/Inform.css"/>
+    <link rel="stylesheet" href="../Forms/Css/AllDone.css"/>
+    <script src="Hoteltypes.js"></script>
+    <script src="../Forms/Js/FormScripts2.js"></script>
+    <script src="../Forms/Js/Inform.js"></script>
+  </head>
+  <body>
+    <!--Вход-->
+    <div id='backmain'>
+      <section id='main'>
+        <h2>Sign In</h2>
+        <img src='../img/cross.png' id='cross'>
+        <input type='text' placeholder="Email">
+        <input type='password' placeholder="Password">
+        <a href="../Profile/Account/Account.html">
+          <input type='button' value='Continue' class='but1'>
+        </a>
+        <p>Do not have an account? 
+          <a id='openreg'>Register</a>
+        </p>
+        <input type='button' value='Sign In with Google' class='but2' id='google'>
+        <input type='button' value='Sign In with Facebook' class='but2' id='facebook'>
+        <input type='button' value='Sign In with Apple' class='but2' id='apple'>
+      </section>
+    </div>
+    <!--Регистрация-->
+    <div id='backmain2'>
+      <section id='main'>
+        <h2>Register</h2>
+        <img src='../img/cross.png' id='cross2'>
+        <input type='email' placeholder="Email" maxlength='50'>
+        <p>We will send you an email to confirm your email address</p>
+        <input type='password' placeholder="Password" maxlength='50'>
+        <input type='password' placeholder="Repeat password" maxlength='50'>
+        <p>*Get acquainted with our <a>Privacy policy</a></p>
+        <input type='button' value='Continue' class='but1' id='cont1'>
+        <input type='button' value='Sign In with Google' class='but2' id='google'>
+        <input type='button' value='Sign In with Facebook' class='but2' id='facebook'>
+        <input type='button' value='Sign In with Apple' class='but2' id='apple'>
+      </section>
+    </div>
+    <!--Аутентификация-->
+    <div id='backmain3'>
+      <section id='main'>
+        <h2>Authentication</h2>
+        <img src='../img/cross.png' id='cross3'>
+        <input type='number' placeholder="Code">
+        <p>We have sent you an email with the code. Check your mail and enter the code for the authentication.</p>
+        <input type='button' value='Continue' class='but1' id='cont2'>
+      </section>
+    </div>
+    <!--Информация-->
+    <div id='backmain4'>
+      <section id='main'>
+        <h2>Information</h2>
+        <img class='cross' src='../img/cross.png' id='cross4'>
+        <p>Tell us about yourself so we can better choose options for you ;)</p>
+        <select>
+          <option>Country</option>
+        </select>
+        <select>
+          <option>City</option>
+        </select>
+        <select>
+          <option>Why do you travel?</option>
+        </select>
+        <p class='text'>Traveling with a pet?</p>
+        <img class='check1' src='../img/yes.png' tabindex="0"><img class='check2' src='../img/no.png' tabindex="0">
+        <input type='button' value='Continue' class='but1' id='cont3'>
+        <input type='button' value='Later' class='but2' id='cont3'>
+      </section>
+    </div>
+    <!--Все сделано!-->
+    <div id='backmain5'>
+      <section id='main'>
+        <h2>All done!</h2>
+        <img class='cross' src='../img/cross.png' id='cross5'>
+        <div class='checkcont'>
+          <img class='check' src='../img/check.png'>
+        </div>  
+        <a href="../Profile/Account/Account.html">
+          <input type='button' value='Check your profile!' class='but1'>
+        </a>
+        <a href=../index.html">
+          <input type='button' value='Continue booking' class='but2'>
+        </a>
+      </section>
+    </div>
     <header>
         <h3 class="header-title">Hotel for 
           <a href="../index.html">you.</a>
@@ -25,10 +112,10 @@
             <a class="lang hoverable-2">
               <img src="../svg/color_lang_circle.svg" alt="icon">
             </a>
-            <a class="Reg hoverable-1" href="../Sign_IN_UP/Registration/Registration.html">
+            <a class="Reg hoverable-1" id='register'>
               <p class="header-button-text">Register</p>
             </a>
-            <a class="SignIn hoverable-1 grid-text-icon" href="../Sign_IN_UP/SignIn/SignIn.html">
+            <a class="SignIn hoverable-1 grid-text-icon" id='signin'>
               <p class="header-button-text">Sign In</p>
               <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="24" height="24" rx="12" fill="#717171"/>
@@ -39,7 +126,7 @@
     </header>
     <nav class="adap">
         <div class="wrap">
-            <img src="" alt="">
+          <img src="" alt="">
         </div>
         <div class="panel hoverable-1">
             <!-- Wheare -->
@@ -51,9 +138,7 @@
                     <span>Wheare are you going?</span>
                 </p>
             </div>
-
             <div class="hide-on-mobile" class="br" ></div>
-
             <!-- Check in|out -->
             <div class="hide-on-mobile">  
                 <p>
@@ -64,9 +149,7 @@
                     <span> Chack in - Check out</span>
                 </p>
             </div>
-
             <div  class="hide-on-mobile" class="br"></div>
-
             <!-- Peoples -->
             <div class="hide-on-mobile">  
                 <p>
@@ -79,19 +162,17 @@
                     </svg>
                 </p>
             </div>
-
             <!-- Search -->
             <div> 
                 <a class="search hoverable-2">
                     <svg class="desktop-icon" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.002 18.998C12.3889 18.998 14.6781 18.0498 16.3659 16.362C18.0537 14.6742 19.002 12.385 19.002 9.99805C19.002 7.6111 18.0537 5.32191 16.3659 3.63409C14.6781 1.94626 12.3889 0.998047 10.002 0.998047C7.615 0.998047 5.32582 1.94626 3.63799 3.63409C1.95016 5.32191 1.00195 7.6111 1.00195 9.99805C1.00195 12.385 1.95016 14.6742 3.63799 16.362C5.32582 18.0498 7.615 18.998 10.002 18.998ZM17.932 19.688C18.462 21.288 19.672 21.448 20.602 20.048C21.452 18.768 20.892 17.718 19.352 17.718C18.212 17.708 17.572 18.598 17.932 19.688Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                    <img src="../svg/widgets.svg" class="mobile-icon">
+                    <img src="/svg/setting4.svg" class="mobile-icon">
                 </a>
             </div>
         </div>
     </nav>
-
     <!-- Элементы под полосой поиска -->
     <div class="Booking">
       <div class="first">
@@ -106,92 +187,77 @@
           <img src="../svg/buildings2.svg" alt="">
           <p class="simple-text"><span class="text-name">Hotels </span><span class="numbers">1323</span></p>
       </div>
-  </div>
-  
-  
-  
-  <main>
-    <aside>
-<div class="adapt">
-      <button type="button" class="filter-button" onclick="toggleSection()">
-        Filter
-        <img src="../svg/widgets.svg" alt="Filter Icon" class="button-icon">
-     </button>
-
-      <button type="button" name="map" class="map-button">
-        See the map
-        <img src="../svg/location.svg" alt="Icon" class="button-icon">
-      </button>
     </div>
-      <section>
-        <div class="Box">
-        <label for="Number">Price</label>
-          <div class="Number">
-            <p>76$ night</p>
-            <p>230$ night</p>
-          </div>
-          <input type="range" id="Slider" min="0" max="100">
-        </div>
-        <hr class="custom-hr">
-        
-        <div class="Box">
-          <input type="text" value="Attraction near...">
-          <img src="../svg/Monocle.svg" alt="Icon" class="text-icon">
-        </div>        
-        <hr class="custom-hr">        
-        
-        <div class="Box">
-          <button class="accordion-toggle">Rating
-          <img src="../svg/arrowdown2.svg" alt="arrow" class="pur">
+    <main>
+      <aside>
+        <div class="adapt">
+          <button type="button" class="filter-button" onclick="toggleSection()">Filter
+            <img src="../svg/widgets.svg" alt="Filter Icon" class="button-icon">
           </button>
-          <div class="Rating" style="display: none;">
-            
-            <div class="Block">
-              <div class="checkbox-container">
-                <input type="checkbox" id="checkbox1">
-                <label for="checkbox1"></label>
-                <p>9+</p>
-              </div>
-              <p>99</p>
-            </div>
-            
-            <div class="Block">
-            <div class="checkbox-container">
-              <input type="checkbox" id="checkbox2">
-              <label for="checkbox2"></label>
-              <p>8+</p>
-            </div>
-              <p>124</p>
-              </div>
-            
-            <div class="Block">
-            <div class="checkbox-container">
-              <input type="checkbox" id="checkbox3">
-              <label for="checkbox3"></label>
-              <p>7+</p>
-            </div>
-              <p>198</p>
-              </div>
-            
-            <div class="Block">
-            <div class="checkbox-container">
-              <input type="checkbox" id="checkbox4">
-              <label for="checkbox4"></label>
-              <p>6+</p>
-            </div>
-              <p>345</p>
-              </div>
-            
-          </div>
+          <button type="button" name="map" class="map-button">See the map
+            <img src="../svg/location.svg" alt="Icon" class="button-icon">
+          </button>
         </div>
-        <hr class="custom-hr">
-
-        <div class="Box">
-            <button class="accordion-toggle">Popular
+        <section>
+          <div class="Box">
+            <label for="Number">Price</label>
+            <div class="Number">
+              <p>76$ night</p>
+              <p>230$ night</p>
+            </div>
+            <input type="range" id="Slider" min="0" max="100">
+          </div>
+          <hr class="custom-hr">
+          <div class="Box">
+            <input type="text" value="Attraction near...">
+            <img src="../svg/Monocle.svg" alt="Icon" class="text-icon">
+          </div>    
+          <hr class="custom-hr">        
+          <div class="Box">
+            <button class="accordion-toggle">Rating
               <img src="../svg/arrowdown2.svg" alt="arrow" class="pur">
             </button>
-            <div class="Popular" style="display: none;">
-              
+            <div class="Rating" style="display: none;">
+              <div class="Block">
+                <div class="checkbox-container">
+                  <input type="checkbox" id="checkbox1">
+                  <label for="checkbox1"></label>
+                  <p>9+</p>
+                </div>
+                <p>99</p>
+              </div>
+              <div class="Block">
+                <div class="checkbox-container">
+                  <input type="checkbox" id="checkbox2">
+                  <label for="checkbox2"></label>
+                  <p>8+</p>
+                </div>
+                <p>124</p>
+              </div>
+              <div class="Block">
+                <div class="checkbox-container">
+                  <input type="checkbox" id="checkbox3">
+                  <label for="checkbox3"></label>
+                  <p>7+</p>
+                </div>
+                <p>198</p>
+              </div>
+              <div class="Block">
+                <div class="checkbox-container">
+                  <input type="checkbox" id="checkbox4">
+                  <label for="checkbox4"></label>
+                  <p>6+</p>
+                </div>
+                <p>345</p>
+              </div>
+            </div>
+          </div>
+          <hr class="custom-hr">
+          <div class="Box">
+          <button class="accordion-toggle">Popular
+            <img src="../svg/arrowdown2.svg" alt="arrow" class="pur">
+          </button>
+          <div class="Popular" style="display: none;">
             <div class="Block">
               <div class="checkbox-container">
                 <input type="checkbox" id="checkbox5">
@@ -200,35 +266,30 @@
               </div>
               <p>435</p>
             </div>
-
             <div class="Block">
-            <div class="checkbox-container">
-              <input type="checkbox" id="checkbox6">
-              <label for="checkbox6"></label>
-              <p>Popular places</p>
-            </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox6">
+                <label label for="checkbox6"></label>
+                <p>Popular places</p>
+              </div>
               <p>937</p>
-              </div>
-
-            <div class="Block">
-            <div class="checkbox-container">
-              <input type="checkbox" id="checkbox7">
-              <label for="checkbox7"></label>
-              <p>Best rating</p>
             </div>
-              <p>45</p>
+            <div class="Block">
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox7">
+                <label for="checkbox7"></label>
+                <p>Best rating</p>
               </div>
-
+              <p>45</p>
+            </div>
           </div>
         </div>
         <hr class="custom-hr">
-
         <div class="Box">
-            <button class="accordion-toggle">Stars
+          <button class="accordion-toggle">Stars
             <img src="../svg/arrowdown2.svg" alt="arrow" class="pur">
-            </button>
-            <div class="Stars" style="display: none;">
-
+          </button>
+          <div class="Stars" style="display: none;">
             <div class="Block">
               <div class="checkbox-container">
                 <input type="checkbox" id="checkbox8">
@@ -243,46 +304,42 @@
               </div>
               <p>135</p>
             </div>
-
             <div class="Block">
-            <div class="checkbox-container">
-              <input type="checkbox" id="checkbox9">
-              <label for="checkbox9"></label>
-              <p>
-                <img src="../svg/stars.svg" alt="star">
-                <img src="../svg/stars.svg" alt="star">
-                <img src="../svg/stars.svg" alt="star">
-                <img src="../svg/stars.svg" alt="star">
-              </p>
-            </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox9">
+                <label for="checkbox9"></label>
+                <p>
+                  <img src="../svg/stars.svg" alt="star">
+                  <img src="../svg/stars.svg" alt="star">
+                  <img src="../svg/stars.svg" alt="star">
+                  <img src="../svg/stars.svg" alt="star">
+                </p>
+              </div>
               <p>37</p>
-              </div>
-
-            <div class="Block">
-            <div class="checkbox-container">
-              <input type="checkbox" id="checkbox10">
-              <label for="checkbox10"></label>
-              <p>
-                <img src="../svg/stars.svg" alt="star">
-                <img src="../svg/stars.svg" alt="star">
-                <img src="../svg/stars.svg" alt="star">
-              </p>
             </div>
+            <div class="Block">
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox10">
+                <label for="checkbox10"></label>
+                <p>
+                  <img src="../svg/stars.svg" alt="star">
+                  <img src="../svg/stars.svg" alt="star">
+                  <img src="../svg/stars.svg" alt="star">
+                </p>
+              </div>
               <p>45</p>
-              </div>
-
-            <div class="Block">
-            <div class="checkbox-container">
-              <input type="checkbox" id="checkbox11">
-              <label for="checkbox11"></label>
-              <p>
-                <img src="../svg/stars.svg" alt="star">
-                <img src="../svg/stars.svg" alt="star">
-              </p>
             </div>
-              <p>89</p>
+            <div class="Block">
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox11">
+                <label for="checkbox11"></label>
+                <p>
+                  <img src="../svg/stars.svg" alt="star">
+                  <img src="../svg/stars.svg" alt="star">
+                </p>
               </div>
-
+              <p>89</p>
+            </div>
             <div class="Block">
               <div class="checkbox-container">
                 <input type="checkbox" id="checkbox12">
@@ -291,18 +348,16 @@
                   <img src="../svg/stars.svg" alt="star">
                 </p>
               </div>
-                <p>112</p>
-                </div>
+              <p>112</p>
+            </div>
           </div>
         </div>
         <hr class="custom-hr">
-
         <div class="Box">
-            <button class="accordion-toggle">Near
-              <img src="../svg/arrowdown2.svg" alt="arrow" class="pur">
-            </button>
-            <div class="Near" style="display: none;">
-
+          <button class="accordion-toggle">Near
+            <img src="../svg/arrowdown2.svg" alt="arrow" class="pur">
+          </button>
+          <div class="Near" style="display: none;">
             <div class="Block">
               <div class="checkbox-container">
                 <input type="checkbox" id="checkbox13">
@@ -311,35 +366,30 @@
               </div>
               <p>56</p>
             </div>
-
             <div class="Block">
-            <div class="checkbox-container">
-              <input type="checkbox" id="checkbox14">
-              <label for="checkbox14"></label>
-              <p>Airoport</p>
-            </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox14">
+                <label for="checkbox14"></label>
+                <p>Airoport</p>
+              </div>
               <p>34</p>
-              </div>
-
-            <div class="Block">
-            <div class="checkbox-container">
-              <input type="checkbox" id="checkbox15">
-              <label for="checkbox15"></label>
-              <p>Station</p>
             </div>
-              <p>89</p>
+            <div class="Block">
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox15">
+                <label for="checkbox15"></label>
+                <p>Station</p>
               </div>
-
+              <p>89</p>
+            </div>
           </div>
         </div>
         <hr class="custom-hr">
-
         <div class="Box">
           <button class="accordion-toggle">Facilities
             <img src="../svg/arrowdown2.svg" alt="arrow" class="pur">
           </button>
           <div class="Facilities" style="display: none;">
-
             <div class="Block">
               <div class="checkbox-container">
                 <input type="checkbox" id="checkbox16">
@@ -348,61 +398,54 @@
               </div>
               <p>1135</p>
             </div>
-
             <div class="Block">
-            <div class="checkbox-container">
-              <input type="checkbox" id="checkbox17">
-              <label for="checkbox17"></label>
-              <p>Restaurants</p>
-            </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox17">
+                <label for="checkbox17"></label>
+                <p>Restaurants</p>
+              </div>
               <p>337</p>
-              </div>
-
-            <div class="Block">
-            <div class="checkbox-container">
-              <input type="checkbox" id="checkbox18">
-              <label for="checkbox18"></label>
-              <p>24/7</p>
             </div>
-              <p>345</p>
+            <div class="Block">
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox18">
+                <label for="checkbox18"></label>
+                <p>24/7</p>
               </div>
-
+              <p>345</p>
+            </div>
             <div class="Block">
               <div class="checkbox-container">
                 <input type="checkbox" id="checkbox19">
                 <label for="checkbox19"></label>
                 <p>Food in the hotel</p>
               </div>
-                <p>589</p>
-                </div>
-
+              <p>589</p>
+            </div>
             <div class="Block">
               <div class="checkbox-container">
                 <input type="checkbox" id="checkbox20">
                 <label for="checkbox20"></label>
                 <p>Bar</p>
               </div>
-                <p>112</p>
-                </div>
-
+              <p>112</p>
+            </div>
             <div class="Block">
               <div class="checkbox-container">
                 <input type="checkbox" id="checkbox21">
                 <label for="checkbox21"></label>
                 <p>Children's area</p>
               </div>
-                <p>155</p>
-                </div>            
+              <p>155</p>
+            </div>            
           </div>
         </div>
         <hr class="custom-hr">
-
         <div class="Box">
           <button class="accordion-toggle">Type of hotel
             <img src="../svg/arrowdown2.svg" alt="arrow" class="pur">
           </button>
           <div class="Typeofhotel" style="display: none;">
-
             <div class="Block">
               <div class="checkbox-container">
                 <input type="checkbox" id="checkbox22">
@@ -411,74 +454,65 @@
               </div>
               <p>37</p>
             </div>
-
             <div class="Block">
-            <div class="checkbox-container">
-              <input type="checkbox" id="checkbox23">
-              <label for="checkbox23"></label>
-              <p>Inn</p>
-            </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox23">
+                <label for="checkbox23"></label>
+                <p>Inn</p>
+              </div>
               <p>45</p>
-              </div>
-
-            <div class="Block">
-            <div class="checkbox-container">
-              <input type="checkbox" id="checkbox24">
-              <label for="checkbox24"></label>
-              <p>All-suite</p>
             </div>
-              <p>89</p>
+            <div class="Block">
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox24">
+                <label for="checkbox24"></label>
+                <p>All-suite</p>
               </div>
-
+              <p>89</p>
+            </div>
             <div class="Block">
               <div class="checkbox-container">
                 <input type="checkbox" id="checkbox25">
                 <label for="checkbox25"></label>
                 <p>Conference center</p>
               </div>
-                <p>112</p>
-                </div>
-
+              <p>112</p>
+            </div>
             <div class="Block">
               <div class="checkbox-container">
                 <input type="checkbox" id="checkbox26">
                 <label for="checkbox26"></label>
                 <p>Extended stay</p>
               </div>
-                <p>55</p>
-                </div>
-
+              <p>55</p>
+            </div>
             <div class="Block">
               <div class="checkbox-container">
                 <input type="checkbox" id="checkbox27">
                 <label for="checkbox27"></label>
                 <p>Boutique</p>
               </div>
-                <p>66</p>
-                </div>   
-
+              <p>66</p>
+            </div>   
             <div class="Block">
               <div class="checkbox-container">
                 <input type="checkbox" id="checkbox28">
                 <label for="checkbox28"></label>
                 <p>Bunkhous</p>
               </div>
-                <p>210</p>
-                </div> 
-
+              <p>210</p>
+            </div> 
             <div class="Block">
               <div class="checkbox-container">
                 <input type="checkbox" id="checkbox29">
                 <label for="checkbox29"></label>
                 <p>Bed and breakfasts</p>
               </div>
-                <p>99</p>
-                </div> 
-            
+              <p>99</p>
+            </div> 
           </div>
         </div>
         <hr class="custom-hr">
-
         <div class="Box">
           <button class="accordion-toggle">Chain hotels
             <img src="../svg/arrowdown2.svg" alt="arrow" class="pur">
@@ -492,85 +526,74 @@
               </div>
               <p>1</p>
             </div>
-
             <div class="Block">
-            <div class="checkbox-container">
-              <input type="checkbox" id="checkbox31">
-              <label for="checkbox31"></label>
-              <p>Ocean View Hotel</p>
-            </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox31">
+                <label for="checkbox31"></label>
+                <p>Ocean View Hotel</p>
+              </div>
               <p>2</p>
-              </div>
-
-            <div class="Block">
-            <div class="checkbox-container">
-              <input type="checkbox" id="checkbox32">
-              <label for="checkbox32"></label>
-              <p>Sunflower Resort</p>
             </div>
-              <p>1</p>
+            <div class="Block">
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox32">
+                <label for="checkbox32"></label>
+                <p>Sunflower Resort</p>
               </div>
-
+              <p>1</p>
+            </div>
             <div class="Block">
               <div class="checkbox-container">
                 <input type="checkbox" id="checkbox33">
                 <label for="checkbox33"></label>
                 <p>Starlight Lodge</p>
               </div>
-                <p>3</p>
-                </div>
-
+              <p>3</p>
+            </div>
             <div class="Block">
               <div class="checkbox-container">
                 <input type="checkbox" id="checkbox34">
                 <label for="checkbox34"></label>
                 <p>Paradise Plaza</p>
               </div>
-                <p>1</p>
-                </div>
-
+              <p>1</p>
+            </div>
             <div class="Block">
               <div class="checkbox-container">
                 <input type="checkbox" id="checkbox35">
                 <label for="checkbox35"></label>
                 <p>Golden Sands Inn</p>
               </div>
-                <p>1</p>
-                </div>   
-
+              <p>1</p>
+            </div>   
             <div class="Block">
               <div class="checkbox-container">
                 <input type="checkbox" id="checkbox36">
                 <label for="checkbox36"></label>
                 <p>Moonlight Manor</p>
               </div>
-                <p>1</p>
-                </div> 
-
+              <p>1</p>
+            </div> 
             <div class="Block">
               <div class="checkbox-container">
                 <input type="checkbox" id="checkbox37">
                 <label for="checkbox37"></label>
                 <p>Sunset Suites</p>
               </div>
-                <p>1</p>
-                </div> 
-
+              <p>1</p>
+            </div> 
             <div class="Block">
               <div class="checkbox-container">
                 <input type="checkbox" id="checkbox38">
                 <label for="checkbox38"></label>
                 <p>Skyline Hotel</p>
               </div>
-                <p>1</p>
-                </div> 
-            
+              <p>1</p>
+            </div> 
           </div>
         </div>
-        
       </section>
     </aside>
-
     <content>
       <article class="card">
         <div class="hotelImg">
@@ -619,9 +642,7 @@
             <img src="../svg/arrowright2.svg" class="arrow">
           </div>
           <div class="description">
-            
             <p>Located in the heart of Kiev, our hotel offers a prime location for exploring the city's rich history and culture...</p>
-            
             <div class="price">
               <p>prices form</p>
               <span>85$</span>
@@ -630,7 +651,6 @@
           </div>
         </div>
       </article>
-      
       <article class="card">
         <div class="hotelImg">
           <img src="../img/Foto1.svg" alt="foto">
@@ -677,9 +697,7 @@
             <img src="../svg/arrowright2.svg">
           </div>
           <div class="description">
-
             <p>Located in the heart of Kiev, our hotel offers a prime location for exploring the city's rich history and culture...</p>
-
             <div class="price">
               <p>prices form</p>
               <span>85$</span>
@@ -688,7 +706,6 @@
           </div>
         </div>
       </article>
-
       <article class="card">
         <div class="hotelImg">
           <img src="../img/Foto2.svg" alt="foto">
@@ -743,9 +760,7 @@
             <img src="../svg/arrowright2.svg">
           </div>
           <div class="description">
-
             <p>Located in the heart of Kiev, our hotel offers a prime location for exploring the city's rich history and culture...</p>
-
             <div class="price">
               <p>prices form</p>
               <span>85$</span>
@@ -754,7 +769,6 @@
           </div>
         </div>
       </article>
-
       <article class="card">
         <div class="hotelImg">
           <img src="../img/Foto3.svg" alt="foto">
@@ -802,9 +816,7 @@
             <img src="../svg/arrowright2.svg">
           </div>
           <div class="description">
-
             <p>Located in the heart of Kiev, our hotel offers a prime location for exploring the city's rich history and culture...</p>
-
             <div class="price">
               <p>prices form</p>
               <span>85$</span>
@@ -813,7 +825,6 @@
           </div>
         </div>
       </article>
-
       <article class="card">
         <div class="hotelImg">
           <img src="../img/Foto4.svg" alt="foto">
@@ -860,9 +871,7 @@
             <img src="../svg/arrowright2.svg">
           </div>
           <div class="description">
-
             <p>Located in the heart of Kiev, our hotel offers a prime location for exploring the city's rich history and culture...</p>
-
             <div class="price">
               <p>prices form</p>
               <span>85$</span>
@@ -871,7 +880,6 @@
           </div>
         </div>
       </article>
-
       <article class="card">
         <div class="hotelImg">
           <img src="../img/Foto5.svg" alt="foto">
@@ -918,9 +926,7 @@
             <img src="../svg/arrowright2.svg">
           </div>
           <div class="description">
-
             <p>Located in the heart of Kiev, our hotel offers a prime location for exploring the city's rich history and culture...</p>
-
             <div class="price">
               <p>prices form</p>
               <span>85$</span>
@@ -929,7 +935,6 @@
           </div>
         </div>
       </article>
-
       <article class="card">
         <div class="hotelImg">
           <img src="../img/Foto6.svg" alt="foto">
@@ -977,9 +982,7 @@
             <img src="../svg/arrowright2.svg">
           </div>
           <div class="description">
-
             <p>Located in the heart of Kiev, our hotel offers a prime location for exploring the city's rich history and culture...</p>
-
             <div class="price">
               <p>prices form</p>
               <span>85$</span>
@@ -988,79 +991,81 @@
           </div>
         </div>
       </article>
-      
     </content>
-    
-  </main>
-
-  <footer>
+    </main>
+    <footer>
       <div class="ftr-container">
           <div class="ftr-column">
               <ul>
-                  <li><a href="#">Countries</a></li>
-                  <li><a href="#">Regions</a></li>
-                  <li><a href="#">Cities</a></li>
-                  <li><a href="#">Districts</a></li>
-                  <li><a href="#">Airports</a></li>
-                  <li><a href="#">Hotels</a></li>
-                  <li><a href="#">Places of interest</a></li>
+                  <li class="accordion-toggle2"><a>Countries</a></li>
+                  <li><a>Regions</a></li>
+                  <li><a>Cities</a></li>
+                  <li><a>Districts</a></li>
+                  <li><a>Airports</a></li>
+                  <li><a>Hotels</a></li>
+                  <li><a>Places of interest</a></li>
               </ul>
           </div>
           <div class="ftr-column">
               <ul>
-                  <li><a href="#">Homes</a></li>
-                  <li><a href="#">Apartments</a></li>
-                  <li><a href="#">Resorts</a></li>
-                  <li><a href="#">Villas</a></li>
-                  <li><a href="#">Hostels</a></li>
-                  <li><a href="#">B&amp;Bs</a></li>
-                  <li><a href="#">Guest houses</a></li>
+                  <li class="accordion-toggle2"><a>Homes</a></li>
+                  <li><a>Apartments</a></li>
+                  <li><a>Resorts</a></li>
+                  <li><a>Villas</af=></li>
+                  <li><a>Hostels</a></li>
+                  <li><a>B&amp;Bs</a></li>
+                  <li><a>Guest houses</a></li>
               </ul>
           </div>
           <div class="ftr-column">
               <ul>
-                  <li><a href="#">Unique places to stay</a></li>
-                  <li><a href="#">All destinations</a></li>
-                  <li><a href="#">All flight destinations</a></li>
-                  <li><a href="#">All car hire locations</a></li>
-                  <li><a href="#">Discover</a></li>
-                  <li><a href="#">Reviews</a></li>
-                  <li><a href="#">Awards</a></li>
+                  <li class="accordion-toggle2"><a>Unique places to stay</a></li>
+                  <li><a>All destinations</a></li>
+                  <li><a>All flight destinations</a></li>
+                  <li><a>All car hire locations</a></li>
+                  <li><a>Discover</a></li>
+                  <li><a>Reviews</a></li>
+                  <li><a>Awards</a></li>
               </ul>
           </div>
           <div class="ftr-column">
               <ul>
-                  <li><a href="#">Car hire</a></li>
-                  <li><a href="#">Flight finder</a></li>
-                  <li><a href="#">Restaurant reservations</a></li>
-                  <li><a href="#">For Travel Agents</a></li>
+                  <li class="accordion-toggle2"><a>Car hire</a></li>
+                  <li><a>Flight finder</a></li>
+                  <li><a>Restaurant reservations</a></li>
+                  <li><a>For Travel Agents</a></li>
               </ul>
           </div>
           <div class="ftr-column">
               <ul>
-                  <li><a href="#">Coronavirus (COVID-19) FAQs</a></li>
-                  <li><a href="#">About Booking.com</a></li>
-                  <li><a href="#">Customer Service help</a></li>
-                  <li><a href="#">Partner help</a></li>
-                  <li><a href="#">Careers</a></li>
-                  <li><a href="#">Sustainability</a></li>
-                  <li><a href="#">Press centre</a></li>
-                  <li><a href="#">Safety resource centre</a></li>
-                  <li><a href="#">Investor relations</a></li>
-                  <li><a href="#">Terms & Conditions</a></li>
-                  <li><a href="#">Partner dispute</a></li>
-                  <li><a href="#">How we work</a></li>
-                  <li><a href="#">Privacy & Cookie Statement</a></li>
-                  <li><a href="#">MSA Statement</a></li>
-                  <li><a href="#">Corporate contact</a></li>
-                  <li><a href="#">We Price Match</a></li>
+                  <li class="accordion-toggle2"><a>Coronavirus (COVID-19) FAQs</a></li>
+                  <li><a>About Booking.com</a></li>
+                  <li><a>Customer Service help</a></li>
+                  <li><a>Partner help</a></li>
+                  <li><a>Careers</a></li>
+                  <li><a>Sustainability</a></li>
+                  <li><a>Press centre</a=></li>
+                  <li><a>Safety resource centre</a></li>
+                  <li><a>Investor relations</af=></li>
+                  <li><a>Terms & Conditions</a></li>
+                  <li><a>Partner dispute</a></li>
+                  <li><a>How we work</a=></li>
+                  <li><a>Privacy & Cookie Statement</a></li>
+                  <li><a>MSA Statement</a></li>
+                  <li><a>Corporate contact</a></li>
+                  <li><a>We Price Match</a></li>
               </ul>
           </div>
+          <ul>
+            <li class="mobile-only"><a>Support</a></li>
+            <li class="mobile-only"><a>Privacy policy</a></li>
+        </ul>
       </div>
   </footer>
 
-  <script src="Hoteltypes.js"></script>
+  <script src="../Elements.js"></script>
 
+  <script src="Hoteltypes.js"></script>
 </body>
 
 </html>
