@@ -3,19 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Main page</title>
+    <link rel='icon' href="img/favicon.png"/>
     <link rel="stylesheet" href="generalStyles.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="Elements.css">
-
-
+    <!-- Адаптив для общего nav -->
+    <link rel="stylesheet" href="../Adaptive/adaptiv_768_1439_for_nav.css">
+    <link rel="stylesheet" href="../Adaptive/adaptive_320_765_for_nav.css">
     <link rel="stylesheet" href="Adaptive/adaptive_1024_1439.css">
     <link rel="stylesheet" href="Adaptive/adaptive_768_1023.css">
     <link rel="stylesheet" href="Adaptive/adaptive_0_765.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="Forms/Css/SignIn.css"/>
+    <link rel="stylesheet" href="Forms/Css/Registration.css"/>
+    <link rel="stylesheet" href="Forms/Css/Authen.css"/>
+    <link rel="stylesheet" href="Forms/Css/Inform.css"/>
+    <link rel="stylesheet" href="Forms/Css/AllDone.css"/>
+    <script src="Forms/Js/FormScripts.js"></script>
+    <script src="Forms/Js/Inform.js"></script>
 </head>
 <body>
+    <!--Вход-->
+    <div id='backmain'>
+        <section id='main'>
+            <h2>Sign In</h2>
+            <img src='img/cross.png' id='cross'>
+            <input type='text' placeholder="Email">
+            <input type='password' placeholder="Password">
+            <a href="Profile/Account/Account.html">
+                <input type='button' value='Continue' class='but1'>
+            </a>
+            <p>Do not have an account? 
+                <a id='openreg'>Register</a>
+            </p>
+            <input type='button' value='Sign In with Google' class='but2' id='google'>
+            <input type='button' value='Sign In with Facebook' class='but2' id='facebook'>
+            <input type='button' value='Sign In with Apple' class='but2' id='apple'>
+        </section>
+    </div>
+    <!--Регистрация-->
+    <div id='backmain2'>
+        <section id='main'>
+            <h2>Register</h2>
+            <img src='img/cross.png' id='cross2'>
+            <input type='email' placeholder="Email" maxlength='50'>
+            <p>We will send you an email to confirm your email address</p>
+            <input type='password' placeholder="Password" maxlength='50'>
+            <input type='password' placeholder="Repeat password" maxlength='50'>
+            <p>*Get acquainted with our <a>Privacy policy</a></p>
+            <input type='button' value='Continue' class='but1' id='cont1'>
+            <input type='button' value='Sign In with Google' class='but2' id='google'>
+            <input type='button' value='Sign In with Facebook' class='but2' id='facebook'>
+            <input type='button' value='Sign In with Apple' class='but2' id='apple'>
+        </section>
+    </div>
+    <!--Аутентификация-->
+    <div id='backmain3'>
+        <section id='main'>
+            <h2>Authentication</h2>
+            <img src='img/cross.png' id='cross3'>
+            <input type='number' placeholder="Code">
+            <p>We have sent you an email with the code. Check your mail and enter the code for the authentication.</p>
+            <input type='button' value='Continue' class='but1' id='cont2'>
+        </section>
+    </div>
+    <!--Информация-->
+    <div id='backmain4'>
+        <section id='main'>
+            <h2>Information</h2>
+            <img class='cross' src='img/cross.png' id='cross4'>
+            <p>Tell us about yourself so we can better choose options for you ;)</p>
+            <select>
+                <option>Country</option>
+            </select>
+            <select>
+                <option>City</option>
+            </select>
+            <select>
+                <option>Why do you travel?</option>
+            </select>
+            <p class='text'>Traveling with a pet?</p>
+            <img class='check1' src='img/yes.png' tabindex="0"><img class='check2' src='img/no.png' tabindex="0">
+            <input type='button' value='Continue' class='but1' id='cont3'>
+            <input type='button' value='Later' class='but2' id='cont3'>
+        </section>
+    </div>
+    <!--Все сделано!-->
+    <div id='backmain5'>
+        <section id='main'>
+            <h2>All done!</h2>
+            <img class='cross' src='img/cross.png' id='cross5'>
+            <div class='checkcont'>
+                <img class='check' src='img/check.png'>
+            </div>  
+            <a href="Profile/Account/Account.html">
+                <input type='button' value='Check your profile!' class='but1'>
+            </a>
+            <a href="index.html">
+                <input type='button' value='Continue booking' class='but2'>
+            </a>
+        </section>
+    </div>
     <header>
         <h3 class="header-title">Hotel for 
             <a href="#!">you.</a>
@@ -420,67 +510,73 @@
     <div class="ftr-container">
         <div class="ftr-column">
             <ul>
-                <li><a href="#">Countries</a></li>
-                <li><a href="#">Regions</a></li>
-                <li><a href="#">Cities</a></li>
-                <li><a href="#">Districts</a></li>
-                <li><a href="#">Airports</a></li>
-                <li><a href="#">Hotels</a></li>
-                <li><a href="#">Places of interest</a></li>
+                <li class="accordion-toggle2"><a>Countries</a></li>
+                <li><a>Regions</a></li>
+                <li><a>Cities</a></li>
+                <li><a>Districts</a></li>
+                <li><a>Airports</a></li>
+                <li><a>Hotels</a></li>
+                <li><a>Places of interest</a></li>
             </ul>
         </div>
         <div class="ftr-column">
             <ul>
-                <li><a href="#">Homes</a></li>
-                <li><a href="#">Apartments</a></li>
-                <li><a href="#">Resorts</a></li>
-                <li><a href="#">Villas</a></li>
-                <li><a href="#">Hostels</a></li>
-                <li><a href="#">B&amp;Bs</a></li>
-                <li><a href="#">Guest houses</a></li>
+                <li class="accordion-toggle2"><a>Homes</a></li>
+                <li><a>Apartments</a></li>
+                <li><a>Resorts</a></li>
+                <li><a>Villas</af=></li>
+                <li><a>Hostels</a></li>
+                <li><a>B&amp;Bs</a></li>
+                <li><a>Guest houses</a></li>
             </ul>
         </div>
         <div class="ftr-column">
             <ul>
-                <li><a href="#">Unique places to stay</a></li>
-                <li><a href="#">All destinations</a></li>
-                <li><a href="#">All flight destinations</a></li>
-                <li><a href="#">All car hire locations</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Awards</a></li>
+                <li class="accordion-toggle2"><a>Unique places to stay</a></li>
+                <li><a>All destinations</a></li>
+                <li><a>All flight destinations</a></li>
+                <li><a>All car hire locations</a></li>
+                <li><a>Discover</a></li>
+                <li><a>Reviews</a></li>
+                <li><a>Awards</a></li>
             </ul>
         </div>
         <div class="ftr-column">
             <ul>
-                <li><a href="#">Car hire</a></li>
-                <li><a href="#">Flight finder</a></li>
-                <li><a href="#">Restaurant reservations</a></li>
-                <li><a href="#">For Travel Agents</a></li>
+                <li class="accordion-toggle2"><a>Car hire</a></li>
+                <li><a>Flight finder</a></li>
+                <li><a>Restaurant reservations</a></li>
+                <li><a>For Travel Agents</a></li>
             </ul>
         </div>
         <div class="ftr-column">
             <ul>
-                <li><a href="#">Coronavirus (COVID-19) FAQs</a></li>
-                <li><a href="#">About Booking.com</a></li>
-                <li><a href="#">Customer Service help</a></li>
-                <li><a href="#">Partner help</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Sustainability</a></li>
-                <li><a href="#">Press centre</a></li>
-                <li><a href="#">Safety resource centre</a></li>
-                <li><a href="#">Investor relations</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Partner dispute</a></li>
-                <li><a href="#">How we work</a></li>
-                <li><a href="#">Privacy & Cookie Statement</a></li>
-                <li><a href="#">MSA Statement</a></li>
-                <li><a href="#">Corporate contact</a></li>
-                <li><a href="#">We Price Match</a></li>
+                <li class="accordion-toggle2"><a>Coronavirus (COVID-19) FAQs</a></li>
+                <li><a>About Booking.com</a></li>
+                <li><a>Customer Service help</a></li>
+                <li><a>Partner help</a></li>
+                <li><a>Careers</a></li>
+                <li><a>Sustainability</a></li>
+                <li><a>Press centre</a=></li>
+                <li><a>Safety resource centre</a></li>
+                <li><a>Investor relations</af=></li>
+                <li><a>Terms & Conditions</a></li>
+                <li><a>Partner dispute</a></li>
+                <li><a>How we work</a=></li>
+                <li><a>Privacy & Cookie Statement</a></li>
+                <li><a>MSA Statement</a></li>
+                <li><a>Corporate contact</a></li>
+                <li><a>We Price Match</a></li>
             </ul>
         </div>
+        <ul>
+          <li class="mobile-only"><a>Support</a></li>
+          <li class="mobile-only"><a>Privacy policy</a></li>
+      </ul>
     </div>
 </footer>
 
+
 </body>
+<script src="../Elements.js"></script>
 </html>

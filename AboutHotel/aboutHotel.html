@@ -1,176 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../generalStyles.css">
-    <link rel="stylesheet" href="aboutHotel.css">
-    <link rel="stylesheet" href="../Elements.css">
-    
-    <link rel="stylesheet" href="adapt1024_1439.css">
-    <link rel="stylesheet" href="adapt768_1023.css">
-    <link rel="stylesheet" href="adapt320_765.css">
-
-    <link rel="stylesheet" href="../Adaptive/adaptive_1024_1439.css">
-    <link rel="stylesheet" href="../Adaptive/adaptive_768_1023.css">
-    <link rel="stylesheet" href="../Adaptive/adaptive_0_765.css">
-    <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <h3 class="header-title">Hotel for 
-          <a href="../index.html">you.</a>
-        </h3>
-        <div class="Sign">
-            <a class="lang hoverable-2">
-              <img src="../svg/color_lang_circle.svg" alt="icon">
-            </a>
-            <a class="Reg hoverable-1" href="../Sign_IN_UP/Registration/Registration.html">
-              <p class="header-button-text">Register</p>
-            </a>
-            <a class="SignIn hoverable-1 grid-text-icon" href="../Sign_IN_UP/SignIn/SignIn.html">
-              <p class="header-button-text">Sign In</p>
-              <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="24" height="24" rx="12" fill="#717171"/>
-                <path d="M12.0007 4.5C10.0357 4.5 8.4382 6.0975 8.4382 8.0625C8.4382 9.99 9.9457 11.55 11.9107 11.6175C11.9707 11.61 12.0307 11.61 12.0757 11.6175H12.1282C13.0502 11.5867 13.9241 11.1986 14.5652 10.5352C15.2062 9.87175 15.5641 8.98503 15.5632 8.0625C15.5632 6.0975 13.9657 4.5 12.0007 4.5ZM15.8107 13.6117C13.7182 12.2168 10.3057 12.2168 8.1982 13.6117C7.2457 14.2493 6.7207 15.1117 6.7207 16.0343C6.7207 16.9567 7.2457 17.8118 8.1907 18.4418C9.2407 19.1468 10.6207 19.4993 12.0007 19.4993C13.3807 19.4993 14.7607 19.1468 15.8107 18.4418C16.7557 17.8043 17.2807 16.9492 17.2807 16.0192C17.2732 15.0967 16.7557 14.2417 15.8107 13.6117Z" fill="white"/>
-              </svg>
-            </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About hotel</title>
+        <link rel='icon' href="../img/favicon.png"/>
+        <link rel="stylesheet" href="../generalStyles.css">
+        <link rel="stylesheet" href="aboutHotel.css">
+        <link rel="stylesheet" href="../Elements.css">
+        <link rel="stylesheet" href="adapt1024_1439.css">
+        <link rel="stylesheet" href="adapt768_1023.css">
+        <link rel="stylesheet" href="adapt320_765.css">
+        <link rel="stylesheet" href="../Adaptive/adaptive_1024_1439.css">
+        <link rel="stylesheet" href="../Adaptive/adaptive_768_1023.css">
+        <link rel="stylesheet" href="../Adaptive/adaptive_0_765.css">
+        <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="../Forms/Css/SignIn.css"/>
+        <link rel="stylesheet" href="../Forms/Css/Registration.css"/>
+        <link rel="stylesheet" href="../Forms/Css/Authen.css"/>
+        <link rel="stylesheet" href="../Forms/Css/Inform.css"/>
+        <link rel="stylesheet" href="../Forms/Css/AllDone.css"/>
+        <script src="../Forms/Js/FormScripts2.js"></script>
+        <script src="../Forms/Js/Inform.js"></script>
+    </head>
+    <body>
+        <!--Вход-->
+        <div id='backmain'>
+            <section id='main'>
+                <h2>Sign In</h2>
+                <img src='/img/cross.png' id='cross'>
+                <input type='text' placeholder="Email">
+                <input type='password' placeholder="Password">
+                <a href="/Profile/Account/Account.html">
+                    <input type='button' value='Continue' class='but1'>
+                </a>
+                <p>Do not have an account? 
+                    <a id='openreg'>Register</a>
+                </p>
+                <input type='button' value='Sign In with Google' class='but2' id='google'>
+                <input type='button' value='Sign In with Facebook' class='but2' id='facebook'>
+                <input type='button' value='Sign In with Apple' class='but2' id='apple'>
+            </section>
         </div>
-    </header>
-    <main>
-        <section class="container">
-            <!-- HEADER -->
-            <div class="header flex-row-btw">
-
-                <!-- LEFT PART -->
-                <div class="left-part flex-row-btw">
-                    <!-- KYIV -->
-                    <div class="header-item-box">
-                        <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.03023 21.6898L11.3602 19.7298C11.7102 19.4298 12.2902 19.4298 12.6402 19.7298L14.9702 21.6898C15.5102 21.9598 16.1702 21.6898 16.3702 21.1098L16.8102 19.7798C16.9202 19.4598 16.8102 18.9898 16.5702 18.7498L14.3002 16.4698C14.1302 16.3098 14.0002 15.9898 14.0002 15.7598V12.9098C14.0002 12.4898 14.3102 12.2898 14.7002 12.4498L19.6102 14.5698C20.3802 14.8998 21.0102 14.4898 21.0102 13.6498V12.3598C21.0102 11.6898 20.5102 10.9198 19.8902 10.6598L14.3002 8.24977C14.2146 8.20578 14.1418 8.14022 14.0892 8.05956C14.0366 7.97889 14.0059 7.8859 14.0002 7.78977V4.78977C14.0002 3.84977 13.3102 2.73977 12.4702 2.30977C12.1702 2.15977 11.8202 2.15977 11.5202 2.30977C10.6802 2.73977 9.99023 3.85977 9.99023 4.79977V7.79977C9.99023 7.97977 9.85023 8.18977 9.69023 8.25977L4.11023 10.6698C3.49023 10.9198 2.99023 11.6898 2.99023 12.3598V13.6498C2.99023 14.4898 3.62023 14.8998 4.39023 14.5698L9.30023 12.4498C9.68023 12.2798 10.0002 12.4898 10.0002 12.9098V15.7598C10.0002 15.9898 9.87023 16.3098 9.71023 16.4698L7.44023 18.7498C7.20023 18.9898 7.09023 19.4498 7.20023 19.7798L7.64023 21.1098C7.82023 21.6898 8.48023 21.9698 9.03023 21.6898Z" stroke="#717171" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        <p class="simple-text fc-sc">Kyiv</p>
-                        <div class="elipse-box flex-row-btw">
-                            <div class="circle-3"></div>
-                            <div class="circle-3"></div>
-                            <div class="circle-3"></div>
-                        </div>
-                    </div>
-                    <!-- APR 9-11 -->
-                    <div class="header-item-box">
-                        <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 2V5M16 2V5M3.5 9.09H20.5M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M15.6959 13.7002H15.7049M15.6959 16.7002H15.7049M11.9959 13.7002H12.0059M11.9959 16.7002H12.0059M8.29492 13.7002H8.30492M8.29492 16.7002H8.30492" stroke="#717171" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        <p class="simple-text fc-sc">Apr 9-11</p>
-                        <div class="elipse-box flex-row-btw">
-                            <div class="circle-3"></div>
-                            <div class="circle-3"></div>
-                            <div class="circle-3"></div>
-                        </div>
-                    </div>
-                    <!-- 2 ad. 1ch. -->
-                    <div class="header-item-box">
-                        <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.4107 3.99975C18.3507 3.99975 19.9107 5.56975 19.9107 7.49975C19.9107 9.38975 18.4107 10.9297 16.5407 10.9997C16.4543 10.9897 16.3671 10.9897 16.2807 10.9997M18.3407 19.9997C19.0607 19.8497 19.7407 19.5597 20.3007 19.1297C21.8607 17.9597 21.8607 16.0297 20.3007 14.8597C19.7507 14.4397 19.0807 14.1597 18.3707 13.9997M9.1607 10.8697C9.0607 10.8597 8.9407 10.8597 8.8307 10.8697C7.68291 10.8308 6.59535 10.3466 5.79833 9.51971C5.00132 8.69283 4.55744 7.5882 4.5607 6.43975C4.5607 3.98975 6.5407 1.99975 9.0007 1.99975C10.1769 1.97853 11.3134 2.42544 12.1602 3.24216C13.0069 4.05888 13.4945 5.17851 13.5157 6.35475C13.5369 7.53098 13.09 8.66747 12.2733 9.5142C11.4566 10.3609 10.3369 10.8485 9.1607 10.8697ZM4.1607 14.5597C1.7407 16.1797 1.7407 18.8197 4.1607 20.4297C6.9107 22.2697 11.4207 22.2697 14.1707 20.4297C16.5907 18.8097 16.5907 16.1697 14.1707 14.5597C11.4307 12.7297 6.9207 12.7297 4.1607 14.5597Z" stroke="#717171" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        <p class="simple-text fc-sc">2 ad. 1 ch.</p>
-                        <div class="elipse-box flex-row-btw">
-                            <div class="circle-3"></div>
-                            <div class="circle-3"></div>
-                            <div class="circle-3"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CENTER PART -->
-                <div class="center-part">
-                    <div class="star-container">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h1 class="main-title ta-c tt-up"> tourist hotel </h1>
-                    <p class="simple-text">(380) 555-0103</p>
-                </div>
-
-                <!-- RIGHT PART -->
-                <div class="right-part ">
-                    
-                    <div class="reviews-box flex-row-btw">
-                        <p class="circle-border-text">7.9</p>
-                        <p class="reviews-text simple-text">reviews<br>345</p>
-                    </div>
-
-                    <div class="check-box">
-                        <p class="simple-text fc-sc">check</p>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                </div>
-
+        <!--Регистрация-->
+        <div id='backmain2'>
+            <section id='main'>
+                <h2>Register</h2>
+                <img src='/img/cross.png' id='cross2'>
+                <input type='email' placeholder="Email" maxlength='50'>
+                <p>We will send you an email to confirm your email address</p>
+                <input type='password' placeholder="Password" maxlength='50'>
+                <input type='password' placeholder="Repeat password" maxlength='50'>
+                <p>*Get acquainted with our <a>Privacy policy</a></p>
+                <input type='button' value='Continue' class='but1' id='cont1'>
+                <input type='button' value='Sign In with Google' class='but2' id='google'>
+                <input type='button' value='Sign In with Facebook' class='but2' id='facebook'>
+                <input type='button' value='Sign In with Apple' class='but2' id='apple'>
+            </section>
+        </div>
+        <!--Аутентификация-->
+        <div id='backmain3'>
+            <section id='main'>
+                <h2>Authentication</h2>
+                <img src='../img/cross.png' id='cross3'>
+                <input type='number' placeholder="Code">
+                <p>We have sent you an email with the code. Check your mail and enter the code for the authentication.</p>
+                <input type='button' value='Continue' class='but1' id='cont2'>
+            </section>
+        </div>
+        <!--Информация-->
+        <div id='backmain4'>
+            <section id='main'>
+                <h2>Information</h2>
+                <img class='cross' src='../img/cross.png' id='cross4'>
+                <p>Tell us about yourself so we can better choose options for you ;)</p>
+                <select>
+                    <option>Country</option>
+                </select>
+                <select>
+                    <option>City</option>
+                </select>
+                <select>
+                    <option>Why do you travel?</option>
+                </select>
+                <p class='text'>Traveling with a pet?</p>
+                <img class='check1' src='../img/yes.png' tabindex="0"><img class='check2' src='../img/no.png' tabindex="0">
+                <input type='button' value='Continue' class='but1' id='cont3'>
+                <input type='button' value='Later' class='but2' id='cont3'>
+            </section>
+        </div>
+        <!--Все сделано!-->
+        <div id='backmain5'>
+            <section id='main'>
+                <h2>All done!</h2>
+                <img class='cross' src='../img/cross.png' id='cross5'>
+                <div class='checkcont'>
+                    <img class='check' src='../img/check.png'>
+                </div>  
+                <a href="../Profile/Account/Account.html">
+                    <input type='button' value='Check your profile!' class='but1'>
+                </a>
+                <a href=../index.html">
+                    <input type='button' value='Continue booking' class='but2'>
+                </a>
+            </section>
+        </div>
+        <header>
+            <h3 class="header-title">Hotel for 
+            <a href="../index.html">you.</a>
+            </h3>
+            <div class="Sign">
+                <a class="lang hoverable-2">
+                    <img src="../svg/color_lang_circle.svg" alt="icon">
+                </a>
+                <a class="Reg hoverable-1" id='register'>
+                    <p class="header-button-text">Register</p>
+                </a>
+                <a class="SignIn hoverable-1 grid-text-icon" id='signin'>
+                    <p class="header-button-text">Sign In</p>
+                    <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="12" fill="#717171"/>
+                        <path d="M12.0007 4.5C10.0357 4.5 8.4382 6.0975 8.4382 8.0625C8.4382 9.99 9.9457 11.55 11.9107 11.6175C11.9707 11.61 12.0307 11.61 12.0757 11.6175H12.1282C13.0502 11.5867 13.9241 11.1986 14.5652 10.5352C15.2062 9.87175 15.5641 8.98503 15.5632 8.0625C15.5632 6.0975 13.9657 4.5 12.0007 4.5ZM15.8107 13.6117C13.7182 12.2168 10.3057 12.2168 8.1982 13.6117C7.2457 14.2493 6.7207 15.1117 6.7207 16.0343C6.7207 16.9567 7.2457 17.8118 8.1907 18.4418C9.2407 19.1468 10.6207 19.4993 12.0007 19.4993C13.3807 19.4993 14.7607 19.1468 15.8107 18.4418C16.7557 17.8043 17.2807 16.9492 17.2807 16.0192C17.2732 15.0967 16.7557 14.2417 15.8107 13.6117Z" fill="white"/>
+                    </svg>
+                </a>
             </div>
-            
-            <!-- HOTEL-->
-            <div class="Hotel">
-                <div class="image">
-                    <!-- main image -->
-                    <img class="main-im" src="../img/TouristHotel/1.png" alt="mainPicture">
-                    <!-- addition images -->
-                    <div class="im-cont">
-                        <img src="../img/TouristHotel/2.png" alt="img1">
-                        <img src="../img/TouristHotel/3.png" alt="img2">
-                        <img src="../img/TouristHotel/4.png" alt="img3">
-                    </div>
-                </div>
-                
-                <div class="descr">
-                    <!-- PRICE -->
-                    <div class="price">
-                        <div class="price-text">
-                            <!-- price -->
-                            <p class="fw-7 fs-32 ta-s fc-pr">
-                                <span class="fc-sc">85$ </span>
-                                per night 
-                            </p>
-                            <!-- location -->
-                            <div class="prev-item">
-                                <svg class="pin" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20.6211 8.45C19.5711 3.83 15.5411 1.75 12.0011 1.75H11.9911C8.46107 1.75 4.42107 3.82 3.37107 8.44C2.20107 13.6 5.36107 17.97 8.22107 20.72C9.23479 21.7012 10.5903 22.2498 12.0011 22.25C13.3611 22.25 14.7211 21.74 15.7711 20.72C18.6311 17.97 21.7911 13.61 20.6211 8.45ZM12.0011 13.46C11.5874 13.46 11.1778 13.3785 10.7956 13.2202C10.4134 13.0619 10.0662 12.8299 9.77369 12.5374C9.48118 12.2449 9.24915 11.8976 9.09085 11.5155C8.93255 11.1333 8.85107 10.7237 8.85107 10.31C8.85107 9.89634 8.93255 9.48672 9.09085 9.10455C9.24915 8.72237 9.48118 8.37512 9.77369 8.08261C10.0662 7.79011 10.4134 7.55808 10.7956 7.39978C11.1778 7.24148 11.5874 7.16 12.0011 7.16C12.8365 7.16 13.6377 7.49187 14.2285 8.08261C14.8192 8.67335 15.1511 9.47457 15.1511 10.31C15.1511 11.1454 14.8192 11.9466 14.2285 12.5374C13.6377 13.1281 12.8365 13.46 12.0011 13.46Z" fill="#EE0039"/>
-                                </svg>
-                                <p class="simple-text tt-up">lviv street 8 | kyiv </p>
+        </header>
+        <main>
+            <section class="container">
+                <!-- HEADER -->
+                <div class="header flex-row-btw">
+                    <!-- LEFT PART -->
+                    <div class="left-part flex-row-btw">
+                        <!-- KYIV -->
+                        <div class="header-item-box">
+                            <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.03023 21.6898L11.3602 19.7298C11.7102 19.4298 12.2902 19.4298 12.6402 19.7298L14.9702 21.6898C15.5102 21.9598 16.1702 21.6898 16.3702 21.1098L16.8102 19.7798C16.9202 19.4598 16.8102 18.9898 16.5702 18.7498L14.3002 16.4698C14.1302 16.3098 14.0002 15.9898 14.0002 15.7598V12.9098C14.0002 12.4898 14.3102 12.2898 14.7002 12.4498L19.6102 14.5698C20.3802 14.8998 21.0102 14.4898 21.0102 13.6498V12.3598C21.0102 11.6898 20.5102 10.9198 19.8902 10.6598L14.3002 8.24977C14.2146 8.20578 14.1418 8.14022 14.0892 8.05956C14.0366 7.97889 14.0059 7.8859 14.0002 7.78977V4.78977C14.0002 3.84977 13.3102 2.73977 12.4702 2.30977C12.1702 2.15977 11.8202 2.15977 11.5202 2.30977C10.6802 2.73977 9.99023 3.85977 9.99023 4.79977V7.79977C9.99023 7.97977 9.85023 8.18977 9.69023 8.25977L4.11023 10.6698C3.49023 10.9198 2.99023 11.6898 2.99023 12.3598V13.6498C2.99023 14.4898 3.62023 14.8998 4.39023 14.5698L9.30023 12.4498C9.68023 12.2798 10.0002 12.4898 10.0002 12.9098V15.7598C10.0002 15.9898 9.87023 16.3098 9.71023 16.4698L7.44023 18.7498C7.20023 18.9898 7.09023 19.4498 7.20023 19.7798L7.64023 21.1098C7.82023 21.6898 8.48023 21.9698 9.03023 21.6898Z" stroke="#717171" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="simple-text fc-sc">Kyiv</p>
+                            <div class="elipse-box flex-row-btw">
+                                <div class="circle-3"></div>
+                                <div class="circle-3"></div>
+                                <div class="circle-3"></div>
                             </div>
                         </div>
-
-                        <input class="btn-big-book btn-fill btn-shadow" type="button" value="BOOK">
-                    </div>
-                    
-                    <!-- DESCRIPTION -->
-                    <p class="descr-text simple-text">Located in the heart of Kiev, our hotel offers a prime location for exploring the city's rich history and culture. With luxurious accommodations and top-notch amenities, we provide a comfortable and relaxing stay for all our guests. Whether you're traveling for business or leisure, our attentive staff is always on hand to assist with any needs you may have. </p>
-                    
-                    <!-- PRIVILIEGE -->
-                    <div class="prev-item">
-                        <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="24" height="24" fill="white"/>
-                            <path d="M2 15.2905V5.71045C2 4.38045 2.77 4.06045 3.71 5.00045L6.3 7.59045C6.69 7.98045 7.33 7.98045 7.71 7.59045L11.29 4.00045C11.3825 3.90775 11.4924 3.8342 11.6134 3.78402C11.7343 3.73384 11.864 3.70801 11.995 3.70801C12.126 3.70801 12.2557 3.73384 12.3766 3.78402C12.4976 3.8342 12.6075 3.90775 12.7 4.00045L16.29 7.59045C16.68 7.98045 17.32 7.98045 17.7 7.59045L20.29 5.00045C21.23 4.06045 22 4.38045 22 5.71045V15.3005C22 18.3005 20 20.3005 17 20.3005H7C4.24 20.2905 2 18.0505 2 15.2905Z" stroke="#717171" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <p class="simple-text">popular</p>
-                    </div>
-                    <div class="prev-item">
-                        <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="24" height="24" fill="white"/>
-                            <path d="M8.67 14H4C2.9 14 2 14.9 2 16V22H8.67V14Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M15.3302 22H8.66016V12C8.66016 10.9 9.56016 10 10.6602 10H13.3302C13.8606 10 14.3693 10.2107 14.7444 10.5858C15.1194 10.9609 15.3302 11.4696 15.3302 12V22ZM15.3302 22V17H20.0002C21.1002 17 22.0002 17.9 22.0002 19V22H15.3302Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M12.5202 2.06981L13.0502 3.12981C13.1202 3.27981 13.3102 3.41981 13.4702 3.43981L14.4302 3.59981C15.0402 3.69981 15.1902 4.14981 14.7502 4.57981L14.0002 5.32981C13.8702 5.45981 13.8002 5.69981 13.8402 5.86981L14.0502 6.78981C14.2202 7.51981 13.8302 7.79981 13.1902 7.41981L12.2902 6.88981C12.1302 6.78981 11.8602 6.78981 11.7002 6.88981L10.8002 7.41981C10.1602 7.79981 9.77023 7.51981 9.94023 6.78981L10.1502 5.86981C10.1673 5.77356 10.1617 5.67466 10.1339 5.58094C10.1062 5.48721 10.057 5.40124 9.99023 5.32981L9.25023 4.58981C8.81023 4.14981 8.95023 3.70981 9.57023 3.60981L10.5302 3.44981C10.6902 3.41981 10.8802 3.27981 10.9502 3.13981L11.4802 2.07981C11.7702 1.49981 12.2302 1.49981 12.5202 2.06981Z" stroke="#717171" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- APR 9-11 -->
+                        <div class="header-item-box">
+                            <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 2V5M16 2V5M3.5 9.09H20.5M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.6959 13.7002H15.7049M15.6959 16.7002H15.7049M11.9959 13.7002H12.0059M11.9959 16.7002H12.0059M8.29492 13.7002H8.30492M8.29492 16.7002H8.30492" stroke="#717171" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                        <p class="simple-text">city center</p>
+                            <p class="simple-text fc-sc">Apr 9-11</p>
+                            <div class="elipse-box flex-row-btw">
+                                <div class="circle-3"></div>
+                                <div class="circle-3"></div>
+                                <div class="circle-3"></div>
+                            </div>
+                        </div>
+                        <!-- 2 ad. 1ch. -->
+                        <div class="header-item-box">
+                            <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.4107 3.99975C18.3507 3.99975 19.9107 5.56975 19.9107 7.49975C19.9107 9.38975 18.4107 10.9297 16.5407 10.9997C16.4543 10.9897 16.3671 10.9897 16.2807 10.9997M18.3407 19.9997C19.0607 19.8497 19.7407 19.5597 20.3007 19.1297C21.8607 17.9597 21.8607 16.0297 20.3007 14.8597C19.7507 14.4397 19.0807 14.1597 18.3707 13.9997M9.1607 10.8697C9.0607 10.8597 8.9407 10.8597 8.8307 10.8697C7.68291 10.8308 6.59535 10.3466 5.79833 9.51971C5.00132 8.69283 4.55744 7.5882 4.5607 6.43975C4.5607 3.98975 6.5407 1.99975 9.0007 1.99975C10.1769 1.97853 11.3134 2.42544 12.1602 3.24216C13.0069 4.05888 13.4945 5.17851 13.5157 6.35475C13.5369 7.53098 13.09 8.66747 12.2733 9.5142C11.4566 10.3609 10.3369 10.8485 9.1607 10.8697ZM4.1607 14.5597C1.7407 16.1797 1.7407 18.8197 4.1607 20.4297C6.9107 22.2697 11.4207 22.2697 14.1707 20.4297C16.5907 18.8097 16.5907 16.1697 14.1707 14.5597C11.4307 12.7297 6.9207 12.7297 4.1607 14.5597Z" stroke="#717171" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="simple-text fc-sc">2 ad. 1 ch.</p>
+                            <div class="elipse-box flex-row-btw">
+                                <div class="circle-3"></div>
+                                <div class="circle-3"></div>
+                                <div class="circle-3"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="prev-item">
-                        <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="24" height="24" fill="white"/>
-                            <path d="M5.5 4V2.25M9.5 4V2.25M13.5 4V2.25M2 12H17.51M17.79 10.47V17.79C17.79 18.9066 17.3464 19.9774 16.5569 20.7669C15.7674 21.5564 14.6966 22 13.58 22H6.21C3.89 22 2 20.11 2 17.79V10.47C2 9.35344 2.44355 8.28261 3.23308 7.49308C4.02261 6.70355 5.09344 6.26 6.21 6.26H13.58C15.9 6.26 17.79 8.15 17.79 10.47ZM22 13.16C22 15.48 20.11 17.37 17.79 17.37V8.95C18.3429 8.95 18.8903 9.05889 19.4011 9.27047C19.9119 9.48204 20.376 9.79215 20.7669 10.1831C21.1579 10.574 21.468 11.0381 21.6795 11.5489C21.8911 12.0597 22 12.6071 22 13.16Z" stroke="#717171" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <!-- CENTER PART -->
+                    <div class="center-part">
+                        <div class="star-container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h1 class="main-title ta-c tt-up"> tourist hotel </h1>
+                        <p class="simple-text">(380) 555-0103</p>
+                    </div>
+                    <!-- RIGHT PART -->
+                    <div class="right-part ">
+                        <div class="reviews-box flex-row-btw">
+                            <p class="circle-border-text">7.9</p>
+                            <p class="reviews-text simple-text">reviews<br>345</p>
+                        </div>
+                        <div class="check-box">
+                            <p class="simple-text fc-sc">check</p>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- HOTEL-->
+                <div class="Hotel">
+                    <div class="image">
+                        <!-- main image -->
+                        <img class="main-im" src="/img/TouristHotel/1.png" alt="mainPicture">
+                        <!-- addition images -->
+                        <div class="im-cont">
+                            <img src="/img/TouristHotel/2.png" alt="img1">
+                            <img src="/img/TouristHotel/3.png" alt="img2">
+                            <img src="/img/TouristHotel/4.png" alt="img3">
+                        </div>
+                    </div>
+                    <div class="descr">
+                        <!-- PRICE -->
+                        <div class="price">
+                            <div class="price-text">
+                                <!-- price -->
+                                <p class="fw-7 fs-32 ta-s fc-pr">
+                                    <span class="fc-sc">85$ </span>
+                                    per night 
+                                </p>
+                                <!-- location -->
+                                <div class="prev-item">
+                                    <svg class="pin" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.6211 8.45C19.5711 3.83 15.5411 1.75 12.0011 1.75H11.9911C8.46107 1.75 4.42107 3.82 3.37107 8.44C2.20107 13.6 5.36107 17.97 8.22107 20.72C9.23479 21.7012 10.5903 22.2498 12.0011 22.25C13.3611 22.25 14.7211 21.74 15.7711 20.72C18.6311 17.97 21.7911 13.61 20.6211 8.45ZM12.0011 13.46C11.5874 13.46 11.1778 13.3785 10.7956 13.2202C10.4134 13.0619 10.0662 12.8299 9.77369 12.5374C9.48118 12.2449 9.24915 11.8976 9.09085 11.5155C8.93255 11.1333 8.85107 10.7237 8.85107 10.31C8.85107 9.89634 8.93255 9.48672 9.09085 9.10455C9.24915 8.72237 9.48118 8.37512 9.77369 8.08261C10.0662 7.79011 10.4134 7.55808 10.7956 7.39978C11.1778 7.24148 11.5874 7.16 12.0011 7.16C12.8365 7.16 13.6377 7.49187 14.2285 8.08261C14.8192 8.67335 15.1511 9.47457 15.1511 10.31C15.1511 11.1454 14.8192 11.9466 14.2285 12.5374C13.6377 13.1281 12.8365 13.46 12.0011 13.46Z" fill="#EE0039"/>
+                                    </svg>
+                                    <p class="simple-text tt-up">lviv street 8 | kyiv </p>
+                                </div>
+                            </div>
+                            <input class="btn-big-book btn-fill btn-shadow" type="button" value="BOOK">
+                        </div>
+                        <!-- DESCRIPTION -->
+                        <p class="descr-text simple-text">Located in the heart of Kiev, our hotel offers a prime location for exploring the city's rich history and culture. With luxurious accommodations and top-notch amenities, we provide a comfortable and relaxing stay for all our guests. Whether you're traveling for business or leisure, our attentive staff is always on hand to assist with any needs you may have. </p>
+                        <!-- PRIVILIEGE -->
+                        <div class="prev-item">
+                            <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="24" fill="white"/>
+                                <path d="M2 15.2905V5.71045C2 4.38045 2.77 4.06045 3.71 5.00045L6.3 7.59045C6.69 7.98045 7.33 7.98045 7.71 7.59045L11.29 4.00045C11.3825 3.90775 11.4924 3.8342 11.6134 3.78402C11.7343 3.73384 11.864 3.70801 11.995 3.70801C12.126 3.70801 12.2557 3.73384 12.3766 3.78402C12.4976 3.8342 12.6075 3.90775 12.7 4.00045L16.29 7.59045C16.68 7.98045 17.32 7.98045 17.7 7.59045L20.29 5.00045C21.23 4.06045 22 4.38045 22 5.71045V15.3005C22 18.3005 20 20.3005 17 20.3005H7C4.24 20.2905 2 18.0505 2 15.2905Z" stroke="#717171" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="simple-text">popular</p>
+                        </div>
+                        <div class="prev-item">
+                            <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="24" fill="white"/>
+                                <path d="M8.67 14H4C2.9 14 2 14.9 2 16V22H8.67V14Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.3302 22H8.66016V12C8.66016 10.9 9.56016 10 10.6602 10H13.3302C13.8606 10 14.3693 10.2107 14.7444 10.5858C15.1194 10.9609 15.3302 11.4696 15.3302 12V22ZM15.3302 22V17H20.0002C21.1002 17 22.0002 17.9 22.0002 19V22H15.3302Z" stroke="#717171" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.5202 2.06981L13.0502 3.12981C13.1202 3.27981 13.3102 3.41981 13.4702 3.43981L14.4302 3.59981C15.0402 3.69981 15.1902 4.14981 14.7502 4.57981L14.0002 5.32981C13.8702 5.45981 13.8002 5.69981 13.8402 5.86981L14.0502 6.78981C14.2202 7.51981 13.8302 7.79981 13.1902 7.41981L12.2902 6.88981C12.1302 6.78981 11.8602 6.78981 11.7002 6.88981L10.8002 7.41981C10.1602 7.79981 9.77023 7.51981 9.94023 6.78981L10.1502 5.86981C10.1673 5.77356 10.1617 5.67466 10.1339 5.58094C10.1062 5.48721 10.057 5.40124 9.99023 5.32981L9.25023 4.58981C8.81023 4.14981 8.95023 3.70981 9.57023 3.60981L10.5302 3.44981C10.6902 3.41981 10.8802 3.27981 10.9502 3.13981L11.4802 2.07981C11.7702 1.49981 12.2302 1.49981 12.5202 2.06981Z" stroke="#717171" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="simple-text">city center</p>
+                        </div>
+                        <div class="prev-item">
+                            <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="24" fill="white"/>
+                                <path d="M5.5 4V2.25M9.5 4V2.25M13.5 4V2.25M2 12H17.51M17.79 10.47V17.79C17.79 18.9066 17.3464 19.9774 16.5569 20.7669C15.7674 21.5564 14.6966 22 13.58 22H6.21C3.89 22 2 20.11 2 17.79V10.47C2 9.35344 2.44355 8.28261 3.23308 7.49308C4.02261 6.70355 5.09344 6.26 6.21 6.26H13.58C15.9 6.26 17.79 8.15 17.79 10.47ZM22 13.16C22 15.48 20.11 17.37 17.79 17.37V8.95C18.3429 8.95 18.8903 9.05889 19.4011 9.27047C19.9119 9.48204 20.376 9.79215 20.7669 10.1831C21.1579 10.574 21.468 11.0381 21.6795 11.5489C21.8911 12.0597 22 12.6071 22 13.16Z" stroke="#717171" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         <p class="simple-text">comfortable</p>
                     </div>
@@ -182,7 +258,7 @@
                         <div class="head-comm flex-row-btw">
                             <div class=" flex-row-btw">
                                 <!-- Imamge -->
-                                <img src="../img/Com.png" alt="img">
+                                <img src="/img/Com.png" alt="img">
                                 <div class="Name-box">
                                     <!-- Name -->
                                     <p class="Comment-Name">Name</p>
@@ -290,75 +366,75 @@
                             </div>
 
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Shuttle service</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Additional charge</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Grocery deliveries</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Minimarket on site</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Designated smoking area</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Air conditioning</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Mosquito net</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Wake-up service</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Heating</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Interconnected room(s) available</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Lift</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Family rooms</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Barber/beauty shop</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Airport shuttle</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Additional charge</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Non-smoking rooms</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Wake up service/Alarm clock</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Room service</p>
                             </div>
                         </div>
@@ -380,11 +456,11 @@
                             </div>
 
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Upper floors accessible by stairs only</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Upper floors accessible by elevator</p>
                             </div>
                         </div>
@@ -412,15 +488,15 @@
                             </div>
 
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">English</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Russian</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Ukrainian</p>
                             </div>
                         </div>
@@ -450,7 +526,7 @@
                             </div>
 
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Parking garage</p>
                             </div>
                         </div>
@@ -475,35 +551,35 @@
                             </div>
 
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Fire extinguishers</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">CCTV outside property</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">CCTV in common areas</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Smoke alarms</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Security alarm</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Key card access</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">24-hour security</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Safety deposit box</p>
                             </div>
                         </div>
@@ -522,15 +598,15 @@
                             </div>
 
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Daily housekeeping</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Laundry</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Additional charge</p>
                             </div>
                         </div>
@@ -548,7 +624,7 @@
                             </div>
 
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Kids' outdoor play equipment</p>
                             </div>
                         </div>
@@ -563,27 +639,27 @@
                             </div>
 
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Invoice provided</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Private check-in/check-out</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Concierge service</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Luggage storage</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Express check-in/check-out</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">24-hour front desk</p>
                             </div>
                         </div>
@@ -613,35 +689,35 @@
                             </div>
 
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Toilet paper</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Towels</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Slippers</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Private bathroom</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Toilet</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Free toiletries</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Hairdryer</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Shower</p>
                             </div>
                         </div>
@@ -670,7 +746,7 @@
                             </div>
 
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Linen</p>
                             </div>
                         </div>
@@ -687,7 +763,7 @@
                             </div>
 
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Electric kettle</p>
                             </div>
                         </div>
@@ -712,7 +788,7 @@
                             </div>
 
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Clothes rack</p>
                             </div>
                         </div>
@@ -738,7 +814,7 @@
                             </div>
 
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Pets are allowed. No extra charges</p>
                             </div>
                         </div>
@@ -763,11 +839,11 @@
                             </div>
 
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Flat-screen TV</p>
                             </div>
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Cable channels</p>
                             </div>
                         </div>
@@ -783,7 +859,7 @@
                             </div>
 
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Coffee house on site</p>
                             </div>
                         </div>
@@ -800,7 +876,7 @@
                             </div>
 
                             <div class="facility-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="fac-simple simple-text">Internet access available</p>
                             </div>
                         </div>
@@ -964,7 +1040,7 @@
                                 </div>
                             </div>
                             <div class="last prev-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="simple-text fc-sc">FREE cancellation</p>
                             </div>
                         </div>
@@ -1025,7 +1101,7 @@
                                 </div>
                             </div>
                             <div class="last prev-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="simple-text fc-sc">FREE cancellation</p>
                             </div>
                         </div>
@@ -1085,7 +1161,7 @@
                                 </div>
                             </div>
                             <div class="last prev-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="simple-text fc-sc">FREE cancellation</p>
                             </div>
                         </div>
@@ -1145,7 +1221,7 @@
                                 </div>
                             </div>
                             <div class="last prev-item">
-                                <img src="../svg/material-symbols_check-small-rounded.svg" alt="check">
+                                <img src="/svg/check.svg" alt="check">
                                 <p class="simple-text fc-sc">FREE cancellation</p>
                             </div>
                         </div>
@@ -1740,66 +1816,72 @@
         <div class="ftr-container">
             <div class="ftr-column">
                 <ul>
-                    <li><a href="#">Countries</a></li>
-                    <li><a href="#">Regions</a></li>
-                    <li><a href="#">Cities</a></li>
-                    <li><a href="#">Districts</a></li>
-                    <li><a href="#">Airports</a></li>
-                    <li><a href="#">Hotels</a></li>
-                    <li><a href="#">Places of interest</a></li>
+                    <li class="accordion-toggle2"><a>Countries</a></li>
+                    <li><a>Regions</a></li>
+                    <li><a>Cities</a></li>
+                    <li><a>Districts</a></li>
+                    <li><a>Airports</a></li>
+                    <li><a>Hotels</a></li>
+                    <li><a>Places of interest</a></li>
                 </ul>
             </div>
             <div class="ftr-column">
                 <ul>
-                    <li><a href="#">Homes</a></li>
-                    <li><a href="#">Apartments</a></li>
-                    <li><a href="#">Resorts</a></li>
-                    <li><a href="#">Villas</a></li>
-                    <li><a href="#">Hostels</a></li>
-                    <li><a href="#">B&amp;Bs</a></li>
-                    <li><a href="#">Guest houses</a></li>
+                    <li class="accordion-toggle2"><a>Homes</a></li>
+                    <li><a>Apartments</a></li>
+                    <li><a>Resorts</a></li>
+                    <li><a>Villas</af=></li>
+                    <li><a>Hostels</a></li>
+                    <li><a>B&amp;Bs</a></li>
+                    <li><a>Guest houses</a></li>
                 </ul>
             </div>
             <div class="ftr-column">
                 <ul>
-                    <li><a href="#">Unique places to stay</a></li>
-                    <li><a href="#">All destinations</a></li>
-                    <li><a href="#">All flight destinations</a></li>
-                    <li><a href="#">All car hire locations</a></li>
-                    <li><a href="#">Discover</a></li>
-                    <li><a href="#">Reviews</a></li>
-                    <li><a href="#">Awards</a></li>
+                    <li class="accordion-toggle2"><a>Unique places to stay</a></li>
+                    <li><a>All destinations</a></li>
+                    <li><a>All flight destinations</a></li>
+                    <li><a>All car hire locations</a></li>
+                    <li><a>Discover</a></li>
+                    <li><a>Reviews</a></li>
+                    <li><a>Awards</a></li>
                 </ul>
             </div>
             <div class="ftr-column">
                 <ul>
-                    <li><a href="#">Car hire</a></li>
-                    <li><a href="#">Flight finder</a></li>
-                    <li><a href="#">Restaurant reservations</a></li>
-                    <li><a href="#">For Travel Agents</a></li>
+                    <li class="accordion-toggle2"><a>Car hire</a></li>
+                    <li><a>Flight finder</a></li>
+                    <li><a>Restaurant reservations</a></li>
+                    <li><a>For Travel Agents</a></li>
                 </ul>
             </div>
             <div class="ftr-column">
                 <ul>
-                    <li><a href="#">Coronavirus (COVID-19) FAQs</a></li>
-                    <li><a href="#">About Booking.com</a></li>
-                    <li><a href="#">Customer Service help</a></li>
-                    <li><a href="#">Partner help</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Sustainability</a></li>
-                    <li><a href="#">Press centre</a></li>
-                    <li><a href="#">Safety resource centre</a></li>
-                    <li><a href="#">Investor relations</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Partner dispute</a></li>
-                    <li><a href="#">How we work</a></li>
-                    <li><a href="#">Privacy & Cookie Statement</a></li>
-                    <li><a href="#">MSA Statement</a></li>
-                    <li><a href="#">Corporate contact</a></li>
-                    <li><a href="#">We Price Match</a></li>
+                    <li class="accordion-toggle2"><a>Coronavirus (COVID-19) FAQs</a></li>
+                    <li><a>About Booking.com</a></li>
+                    <li><a>Customer Service help</a></li>
+                    <li><a>Partner help</a></li>
+                    <li><a>Careers</a></li>
+                    <li><a>Sustainability</a></li>
+                    <li><a>Press centre</a=></li>
+                    <li><a>Safety resource centre</a></li>
+                    <li><a>Investor relations</af=></li>
+                    <li><a>Terms & Conditions</a></li>
+                    <li><a>Partner dispute</a></li>
+                    <li><a>How we work</a=></li>
+                    <li><a>Privacy & Cookie Statement</a></li>
+                    <li><a>MSA Statement</a></li>
+                    <li><a>Corporate contact</a></li>
+                    <li><a>We Price Match</a></li>
                 </ul>
             </div>
+            <ul>
+              <li class="mobile-only"><a>Support</a></li>
+              <li class="mobile-only"><a>Privacy policy</a></li>
+          </ul>
         </div>
     </footer>
+  
 </body>
+<script src="../Elements.js"></script>
 </html>
