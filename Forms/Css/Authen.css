@@ -1,0 +1,103 @@
+#backmain3{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(1,1,1,0.75);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+    opacity:0;
+    visibility:hidden;
+}
+#backmain3 #main{
+    height:70vh;
+    width:30%;
+    background:white;
+    border-radius:10px;
+}
+#backmain3 #main h2{
+    margin-top:10%;
+    text-align:center;
+    color:#581ADB;
+}
+#backmain3 #main img{
+    position:absolute;
+    top:18%;
+    right:36.5%;
+    width:2%;
+    transition:.15s;
+}
+#backmain3 #main img:hover{
+    content:url(../../img/hovercross.png);
+    cursor:pointer;
+}
+#backmain3 #main img:active{transform:scale(0.9);}
+#backmain3 #main input[type='number']{
+    margin:7% 0 0 7%;
+    width:85%;
+    height:10%;
+    padding-left:1em;
+    border:1px solid #C7C7C7;
+    border-radius:30px;
+    outline:none;
+    font-size:1em;
+    transition:.15s;
+}
+#backmain3 #main input[type='number']:hover{border:1px solid black;}
+#backmain3 #main input[type='number']:focus{border:1px solid #581ADB;}
+#backmain3 #main input[type='number']:active{transform:scale(0.95);}
+#backmain3 #main p{
+    margin:2% 0 0 11%;
+    width:80%;
+    color:gray;
+}
+#backmain3 #main .but1{
+    margin:44% 0 0 7%;
+    width:85%;
+    height:10%;
+    background-color:#581ADB;
+    border:none;
+    border-radius:30px;
+    font-size:1em;
+    color:white;
+    transition:.15s;
+}
+#backmain3 #main .but1:hover{
+    box-shadow:0px 0px 12px #581ADB;
+    cursor:pointer;
+}
+#backmain3 #main .but1:active{transform:scale(0.95);}
+/* ==================================================
+                    ADAPTIVE 1024-1439
+====================================================*/
+@media only screen and (min-width:1024px) and (max-width:1439px){
+    #backmain3 #main{width:35%;}
+    #backmain3 #main img{
+        right:34%;
+        width:2.5%;
+    }
+    #backmain3 #main .but1{margin:41% 0 0 7%;}
+}
+/* ==================================================
+                    ADAPTIVE 768-1023
+====================================================*/
+@media only screen and (min-width:768px) and (max-width:1023px){
+    #backmain3 #main{width:45%;}
+    #backmain3 #main img{
+        right:29.75%;
+        width:3%;
+    }
+    #backmain3 #main .but1{margin:38.5% 0 0 7%;}
+}
+/* ==================================================
+                    ADAPTIVE 320-767
+====================================================*/
+@media only screen and (max-width:767px){
+    #backmain3 #main{width:50%;}
+    #backmain3 #main img{
+        top:27.5%;
+        right:27%;
+        width:4%;
+    }
+}

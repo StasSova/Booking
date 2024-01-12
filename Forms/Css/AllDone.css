@@ -1,0 +1,108 @@
+#backmain5{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(1,1,1,0.5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+    opacity:0;
+    visibility:hidden;
+}
+#backmain5 #main{
+    height:55vh;
+    width:30%;
+    background:white;
+    border-radius:10px;
+}
+#backmain5 #main h2{
+    margin-top:6%;
+    text-align:center;
+    color:#581ADB;
+}
+#backmain5 #main .cross{
+    position:absolute;
+    top:25%;
+    right:36%;
+    width:2%;
+    transition:.15s;
+}
+#backmain5 #main .cross:hover{
+    content:url(../../img/hovercross.png);
+    cursor:pointer;
+}
+#backmain5 #main .cross:active{transform:scale(0.9);}
+#backmain5 #main .checkcont{
+    margin-top:6.5%;
+    width:100%;
+    height:30%;
+    display:flex;
+    justify-content:center;
+}
+#backmain5 #main .but1{
+    margin:8% 0 0 7%;
+    width:85%;
+    height:13%;
+    background-color:#581ADB;
+    border:none;
+    border-radius:30px;
+    font-size:1em;
+    color:white;
+    transition:.15s;
+}
+#backmain5 #main .but1:hover{
+    box-shadow:0px 0px 12px #581ADB;
+    cursor:pointer;
+}
+#backmain5 #main .but1:active{transform:scale(0.95);}
+#backmain5 #main .but2{
+    margin:3.5% 0 0 7%;
+    width:85%;
+    height:13%;
+    background:white;
+    border:1px solid #C7C7C7;
+    border-radius:30px;
+    font-size:1em;
+    color:gray;
+    transition:.15s;
+}
+#backmain5 #main .but2:hover{
+    border:1px solid #581ADB;
+    color:#581ADB;
+    cursor:pointer;
+}
+#backmain5 #main .but2:active{transform:scale(0.95);}
+/* ==================================================
+                    ADAPTIVE 1024-1439
+====================================================*/
+@media only screen and (min-width:1024px) and (max-width:1439px){
+    #backmain5 #main{width:35%;}
+    #backmain5 #main .cross{
+        right:34%;
+        width:2.3%;
+    }
+}
+/* ==================================================
+                    ADAPTIVE 768-1023
+====================================================*/
+@media only screen and (min-width:768px) and (max-width:1023px){
+    #backmain5 #main{width:45%;}
+    #backmain5 #main .cross{
+        right:29.5%;
+        width:3%;
+    }
+}
+/* ==================================================
+                    ADAPTIVE 320-767
+====================================================*/
+@media only screen and (max-width:767px){
+    #backmain5 #main{width:50%;}
+    #backmain5 #main .cross{
+        top:32.25%;
+        right:27%;
+        width:4%;
+    }
+    #backmain5 #main .checkcont{ margin-top:8.5%;}
+    #backmain5 #main .but1{margin:9% 0 0 7%;}
+}
