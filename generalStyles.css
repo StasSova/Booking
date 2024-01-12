@@ -192,6 +192,7 @@ nav .panel p{
 .fc-pr{color: var(--primary-color);}
 .fc-sc{color: var(--secondary-color);}
 .fc-bl{color: var(--black-color);}
+.fc-gr{color: var(--border-primary-color);}
 /* TEXT ALIGN */
 .ta-s{text-align: start;}
 .ta-c{text-align: center;}
