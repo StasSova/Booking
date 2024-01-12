@@ -173,6 +173,8 @@ main input[type="checkbox"] + label::after {
 }
 main input[type="checkbox"]:checked + label {background-color: var(--secondary-color);}
 main input[type="checkbox"]:checked + label::after {transform: translate(-50%, -50%) scale(1); }
+
+
 main aside section .Box .Block p{
   color: var(--primary-color);
   font-size: 16px;
@@ -180,6 +182,8 @@ main aside section .Box .Block p{
   margin-bottom: 4px;
   margin-top: 4px;
 }
+
+
 main aside section .pur {
   transition: transform 0.3s ease;
   transform: rotate(-90deg);
