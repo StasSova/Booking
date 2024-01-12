@@ -29,7 +29,7 @@ function initializeSelectMenu(menuId) {
   const options = optionMenu.querySelectorAll(".option");
   const sBtn_text = optionMenu.querySelector(".sBtn-text");
 
-  selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
+selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));       
 
   options.forEach(option => {
       option.addEventListener("click", () => {
