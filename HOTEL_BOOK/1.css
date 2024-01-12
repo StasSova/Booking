@@ -86,8 +86,12 @@ main .regBox .inputWrap{
     
     align-items: center;
     width: 90%;
-    margin:50px auto;
+    margin:15px auto;
     margin-bottom: 0;
+}
+main .regBox .wr{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 main .regBox .inputWrap2{
 
@@ -112,7 +116,9 @@ main .regBox .inputWrap3 input{
     width: 45%;
     margin:0;
 }
-
+#small input{
+    width: 30%;
+}
 
 
 main .regBox .inputWrap input{
@@ -313,4 +319,156 @@ main .TouristHotel a{
 }
 main .TouristHotel span{
     margin-left: 10px;
+}
+@media screen and (min-width:430px) {
+    main aside{
+        display: none;
+    }
+}
+@media only screen and (max-width: 950px){
+
+   
+    body .cross{
+        display: none !important;
+    }
+    header .Sign{
+        display: none !important;
+    }
+    .wrap{
+        width: 100% !important;
+        flex-direction: column;
+        margin:0;
+    }
+ 
+    aside{
+        
+       display: none;
+    }
+    main aside{
+        width: 90% !important;
+        margin: auto !important;
+        display: flex;
+        justify-content: space-between !important;
+        margin-top: 15px !important;
+    }
+    main aside .box{
+        width: 115px;
+       
+    }
+  
+ 
+    .book-cont{
+       width: 90% !important;
+       margin: auto;
+    }
+    .book-item img.im-hotel{
+        width: 100%;
+        align-self: center;
+    }
+    
+    .book-cont .descr{
+        width: 90% !important;
+        margin: auto;
+    }
+    main{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+  
+    .book-cont .book-item{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+      
+    }
+    .book-item img.im-hotel{
+        width: 100% !important;
+        align-self: center !important;
+    }
+
+
+
+
+
+
+    
+    .regBox{
+        width: 90% !important;
+        margin: auto;
+        margin-top: 15px !important;
+    }
+    .regBox .inputWrap{
+        align-items:normal !important; 
+        flex-direction: column;
+        margin-top: 20px !important;
+    }
+    .regBox .inputWrap input, .regBox .inputWrap p{
+        width: 100% !important;
+        margin: auto;
+        margin-top: 15px !important;
+    }
+
+
+    .regBox .wr .inputWrap{
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+ 
+    #small{
+        width: 90% !important;
+        margin: auto;
+    }
+    #small input{
+  
+        width: 50% !important;
+        
+    }
+    
+   
+
+
+
+
+
+
+
+
+    .checkWrap{
+        width: 90% !important;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px !important;
+    }
+    .checkWrap .box{
+        width: 100% !important;
+        margin-top: 20px;
+    }
+
+
+    .butWrap{
+        width: 90%;
+        margin: auto;
+    }
+    .butWrap button{
+        margin-right: 0px !important;
+        margin-top:40px;
+        width: 100% !important;
+    }
+    .butWrap .b2{
+        margin-top: 15px;
+    }
+    .checkWrap2{
+        width: 90%;
+        margin: auto;
+    }
+
+    .back{
+        display: none;
+    }
+   
 }
