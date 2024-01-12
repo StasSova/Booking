@@ -31,16 +31,16 @@
         flex-basis: 100%;
         margin-bottom: 24px;
     }
-    header .right-part{
-        order: 2;
-        flex-basis: 100%;
-        margin-bottom: 24px;
-        justify-content: center; 
+    .desktop-icon {
+        display: none !important;; 
     }
-    .hide-on-mobile {display: none;}
-    .desktop-icon {display: none !important;; }
-    .mobile-icon {display: block !important;}
-    nav .panel div {margin-left: 0px;}
+    .mobile-icon {
+        display: block !important;
+        filter: brightness(0) invert(1);
+    }
+    nav .panel div {
+        margin-left: 0px;
+    }
     nav .panel {
         width: 90%;
         padding-left: 30px;

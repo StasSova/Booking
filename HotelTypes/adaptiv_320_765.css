@@ -46,7 +46,7 @@
     main aside{
         margin-top: -30px;
     }
-    section{
+    .sectionAdap{
     display: none;
     margin-bottom: 30px;
     }
@@ -92,7 +92,9 @@
     main content .card .container .description p {
         width: 100%;
     }
-
+    main content .card .container .description .price a {
+        width: 150%;
+    }
 }
 @media only screen and (max-width: 374px){
     main{
@@ -137,7 +139,7 @@
     main aside{
         margin-top: -30px;
     }
-    section{
+    .sectionAdap{
     display: none;
     margin-bottom: 30px;
     }

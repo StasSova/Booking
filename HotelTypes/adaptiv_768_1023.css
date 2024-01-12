@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px) and (max-width: 1439px){
+@media only screen and (min-width: 766px) and (max-width: 1439px){
     main{
         width: 100%;
         margin: 0px 10px 0 10px;
@@ -39,9 +39,10 @@
         margin-right: 10px;
     }
     main aside{margin-top: -30px;}
-    section{
+    .sectionAdap{
         display: none;
         margin-bottom: 30px;
     }
     main content .card {width: 95%;}
+    
 }
