@@ -121,3 +121,8 @@ footer {
 
 
 }
+@media only screen and (max-width: 374px){
+    header .Sign .SignIn {
+        display: none;
+    }
+}
