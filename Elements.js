@@ -14,22 +14,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-const optionMenu = document.querySelector(".select-menu"),
-selectBtn = optionMenu.querySelector(".select-btn"),
-options = optionMenu.querySelectorAll(".option"),
-sBtn_text = optionMenu.querySelector(".sBtn-text");
-
-selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));       
-
-options.forEach(option =>{
-    option.addEventListener("click", ()=>{
-        let selectedOption = option.querySelector(".option-text").innerText;
-        sBtn_text.innerText = selectedOption;
-
-        optionMenu.classList.remove("active");
-    });
+document.addEventListener('DOMContentLoaded', function () {
+  initializeSelectMenu("sel-payment");
+  initializeSelectMenu("sel-country");
+  initializeSelectMenu("sel-preferred-currency");
+  initializeSelectMenu("sel-ampthill");
 });
+
+function initializeSelectMenu(menuId) {
+  const optionMenu = document.getElementById(menuId);
+  if (!optionMenu) return;
+
+  const selectBtn = optionMenu.querySelector(".select-btn");
+  const options = optionMenu.querySelectorAll(".option");
+  const sBtn_text = optionMenu.querySelector(".sBtn-text");
+
+  selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
+
+  options.forEach(option => {
+      option.addEventListener("click", () => {
+          let selectedOption = option.querySelector(".option-text").innerText;
+          sBtn_text.innerText = selectedOption;
+          optionMenu.classList.remove("active");
+      });
+  });
+}
 document.getElementById('monthDayInput').addEventListener('input', function(e) {
     var input = e.target.value;
   
@@ -42,8 +51,3 @@ document.getElementById('monthDayInput').addEventListener('input', function(e) {
     }
   
   });
-  
-
-
-
- 
