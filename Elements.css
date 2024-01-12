@@ -117,4 +117,7 @@
     font-weight: 400;
     color: var(--primary-color);
     margin: 20px 0;
+  }
+  .mobile-only {
+    display: none;
 }

@@ -1,17 +1,24 @@
-document.addEventListener('DOMContentLoaded', function () {
-  initializeSelectMenu("sel-payment");
-  initializeSelectMenu("sel-country");
-  initializeSelectMenu("sel-preferred-currency");
-  initializeSelectMenu("sel-ampthill");
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.ftr-container .accordion-toggle2').forEach(button => {
+      button.addEventListener('click', () => {
+          const column = button.closest('.ftr-column');
+          if (!column) {
+              console.error('Родительский элемент .ftr-column не найден');
+              return;
+          }
+
+          column.classList.toggle('active');
+      });
+  });
 });
 
-function initializeSelectMenu(menuId) {
-  const optionMenu = document.getElementById(menuId);
-  if (!optionMenu) return;
 
-  const selectBtn = optionMenu.querySelector(".select-btn");
-  const options = optionMenu.querySelectorAll(".option");
-  const sBtn_text = optionMenu.querySelector(".sBtn-text");
+
+
+const optionMenu = document.querySelector(".select-menu"),
+       selectBtn = optionMenu.querySelector(".select-btn"),
+       options = optionMenu.querySelectorAll(".option"),
+       sBtn_text = optionMenu.querySelector(".sBtn-text");
 
   selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
 
@@ -38,3 +45,8 @@ document.getElementById('monthDayInput').addEventListener('input', function(e) {
     }
   
   });
+  
+
+
+
+ 
