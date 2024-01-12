@@ -24,8 +24,8 @@
 }
 #backmain2 #main img{
     position:absolute;
-    top:7%;
-    right:36%;
+    top:24px;
+    right:32px;
     transition:.15s;
 }
 #backmain2 #main img:hover{
