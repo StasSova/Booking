@@ -1,3 +1,20 @@
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.ftr-container .accordion-toggle2').forEach(button => {
+      button.addEventListener('click', () => {
+          const column = button.closest('.ftr-column');
+          if (!column) {
+              console.error('Родительский элемент .ftr-column не найден');
+              return;
+          }
+
+          column.classList.toggle('active');
+      });
+  });
+});
+
+
+
+
 const optionMenu = document.querySelector(".select-menu"),
        selectBtn = optionMenu.querySelector(".select-btn"),
        options = optionMenu.querySelectorAll(".option"),
@@ -26,3 +43,7 @@ document.getElementById('monthDayInput').addEventListener('input', function(e) {
   
   });
   
+
+
+
+ 

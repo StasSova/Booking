@@ -139,3 +139,6 @@
     color: var(--primary-color);
     margin: 20px 0;
   }
+  .mobile-only {
+    display: none;
+}
