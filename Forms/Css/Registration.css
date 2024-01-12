@@ -11,6 +11,7 @@
     visibility:hidden;
 }
 #backmain2 #main{
+    position:relative;
     height:90vh;
     width:30%;
     background:white;
@@ -25,7 +26,6 @@
     position:absolute;
     top:7%;
     right:36%;
-    width:2%;
     transition:.15s;
 }
 #backmain2 #main img:hover{
