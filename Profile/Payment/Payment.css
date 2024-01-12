@@ -33,6 +33,10 @@ main section{
     grid-column-gap: 16px;
     align-items: start;
 }
+
+.input-text-cont a.simple-text{
+    margin-top: 15px;
+}
 .input-text-cont a.simple-text{margin-top: 15px;}
 #monthDayInput {
     width: 35% !important; 
