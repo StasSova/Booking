@@ -11,25 +11,25 @@
     visibility:hidden;
 }
 #backmain #main{
+    position:relative;
     height:90vh;
     width:30%;
     background:white;
     border-radius:10px;
 }
 #backmain #main h2{
-    margin-top:10%;
+    margin-top:4%;
     text-align:center;
     color:#581ADB;
 }
 #backmain #main img{
-    position:fixed;
-    top:8%;
-    right:36.5%;
-    width:2%;
+    position:absolute;
+    top:2.5%;
+    right:4%;
     transition:.15s;
 }
 #backmain #main img:hover{
-    content:url(../../img/hovercross.png);
+    content:url(../../svg/close_hover.svg);
     cursor:pointer;
 }
 #backmain #main img:active{transform:scale(0.9);}
@@ -39,17 +39,17 @@
     height:8%;
     padding-left:1em;
     border:1px solid #C7C7C7;
-    border-radius:30px;
+    border-radius:32px;
     outline:none;
     font-size:1em;
     transition:.15s;
 }
 #backmain #main input[type='text']:hover{border:1px solid black;}
 #backmain #main input[type='text']:focus{border:1px solid #581ADB;}
-#backmain #main input[type='text']:active{transform:scale(0.95);}
+#backmain #main input[type='text']:active{transform:scale(0.97);}
 #backmain #main input[type='password']:hover{border:1px solid black;}
 #backmain #main input[type='password']:focus{border:1px solid #581ADB;}
-#backmain #main input[type='password']:active{transform:scale(0.95);}
+#backmain #main input[type='password']:active{transform:scale(0.97);}
 #backmain #main p{
     margin-top:2%;
     color:gray;
@@ -69,7 +69,7 @@
     height:8%;
     background-color:#581ADB;
     border:none;
-    border-radius:30px;
+    border-radius:32px;
     font-size:1em;
     color:white;
     transition:.15s;
@@ -85,7 +85,8 @@
     height:8%;
     background:white;
     border:1px solid #C7C7C7;
-    border-radius:30px;
+    border-radius:32px;
+    color:#4e4e4e;
     font-size:1em;
     transition:.15s;
 }
@@ -95,7 +96,7 @@
 }
 #backmain #main .but2:active{transform:scale(0.95);}
 #backmain #main #google{
-    margin:8% 0 0 7%;
+    margin:12% 0 0 7%;
     background-image:url(../../svg/google.svg);
     background-size:6%;
     background-repeat:no-repeat;

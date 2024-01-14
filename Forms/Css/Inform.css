@@ -11,48 +11,40 @@
     visibility:hidden;
 }
 #backmain4 #main{
+    position:relative;
     height:90vh;
     width:30%;
     background:white;
     border-radius:10px;
 }
 #backmain4 #main h2{
-    margin-top:5%;
+    margin-top:4%;
     text-align:center;
     color:#581ADB;
 }
-#backmain4 #main .cross{
+#backmain4 #main #cross4{
     position:absolute;
-    top:7%;
-    right:36%;
-    width:2%;
+    top:2.5%;
+    right:4%;
     transition:.15s;
 }
-#backmain4 #main .cross:hover{
-    content:url(../../img/hovercross.png);
+#backmain4 #main #cross4:hover{
+    content:url(../../svg/close_hover.svg);
     cursor:pointer;
 }
-#backmain4 #main .cross:active{transform:scale(0.9);}
+#backmain4 #main #cross4:active{transform:scale(0.9);}
 #backmain4 #main p{
     margin:8% 0 0 10.5%;
     width:80%;
     color:gray;
 }
-#backmain4 #main select{
-    margin:3% 0 0 7%;
+#backmain4 #main .select-menu{
+    margin:5% 0 0 7%;
     width:85%;
     height:8%;
-    padding-left:1em;
-    border:1px solid #C7C7C7;
-    border-radius:30px;
-    outline:none;
-    color:gray;
-    font-size:1em;
     transition:.15s;
 }
-#backmain4 #main select:hover{border:1px solid black;}
-#backmain4 #main select:focus{border:1px solid #581ADB;}
-#backmain4 #main select:active{transform:scale(0.98);}
+#backmain4 #main .select-menu:active{transform:scale(0.98);}
 #backmain4 #main .text{margin:5% 0 0 10.5%;}
 #backmain4 #main .check1{
     margin:3% 0 0 10.5%;
@@ -65,12 +57,12 @@
     transition:.15s;
 }
 #backmain4 #main .but1{
-    margin:17% 0 0 7%;
+    margin:11% 0 0 7%;
     width:85%;
     height:8%;
     background-color:#581ADB;
     border:none;
-    border-radius:30px;
+    border-radius:32px;
     font-size:1em;
     color:white;
     transition:.15s;
@@ -86,7 +78,7 @@
     height:8%;
     background:white;
     border:1px solid #C7C7C7;
-    border-radius:30px;
+    border-radius:32px;
     font-size:1em;
     color:gray;
     transition:.15s;

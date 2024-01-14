@@ -12,13 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
-
 document.addEventListener('DOMContentLoaded', function () {
   initializeSelectMenu("sel-payment");
   initializeSelectMenu("sel-country");
   initializeSelectMenu("sel-preferred-currency");
   initializeSelectMenu("sel-ampthill");
+  initializeSelectMenu("sel-country2");
+  initializeSelectMenu("sel-city");
+  initializeSelectMenu("sel-travel");
 });
 
 function initializeSelectMenu(menuId) {
