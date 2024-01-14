@@ -12,7 +12,7 @@
 }
 #backmain2 #main{
     position:relative;
-    height:90vh;
+    height:93vh;
     width:30%;
     background:white;
     border-radius:10px;
@@ -24,12 +24,12 @@
 }
 #backmain2 #main img{
     position:absolute;
-    top:24px;
-    right:32px;
+    top:2.5%;
+    right:4%;
     transition:.15s;
 }
 #backmain2 #main img:hover{
-    content:url(../../img/hovercross.png);
+    content:url(../../svg/close_hover.svg);
     cursor:pointer;
 }
 #backmain2 #main img:active{transform:scale(0.9);}
@@ -39,17 +39,18 @@
     height:8%;
     padding-left:1em;
     border:1px solid #C7C7C7;
-    border-radius:30px;
+    border-radius:32px;
+    color:#4e4e4e;
     outline:none;
     font-size:1em;
     transition:.15s;
 }
 #backmain2 #main input[type='email']:hover{border:1px solid black;}
 #backmain2 #main input[type='email']:focus{border:1px solid #581ADB;}
-#backmain2 #main input[type='email']:active{transform:scale(0.95);}
+#backmain2 #main input[type='email']:active{transform:scale(0.97);}
 #backmain2 #main input[type='password']:hover{border:1px solid black;}
 #backmain2 #main input[type='password']:focus{border:1px solid #581ADB;}
-#backmain2 #main input[type='password']:active{transform:scale(0.95);}
+#backmain2 #main input[type='password']:active{transform:scale(0.97);}
 #backmain2 #main p{
     margin:2% 0 0 10.5%;
     width:80%;
@@ -64,12 +65,12 @@
     cursor:pointer;
 }
 #backmain2 #main .but1{
-    margin:5% 0 0 7%;
+    margin:3.5% 0 0 7%;
     width:85%;
     height:8%;
     background-color:#581ADB;
     border:none;
-    border-radius:30px;
+    border-radius:32px;
     font-size:1em;
     color:white;
     transition:.15s;
@@ -85,7 +86,8 @@
     height:8%;
     background:white;
     border:1px solid #C7C7C7;
-    border-radius:30px;
+    border-radius:32px;
+    color:#4e4e4e;
     font-size:1em;
     transition:.15s;
 }
@@ -95,6 +97,7 @@
 }
 #backmain2 #main .but2:active{transform:scale(0.95);}
 #backmain2 #main #google{
+    margin:8% 0 0 7%;
     background-image:url(../../svg/google.svg);
     background-size:6%;
     background-repeat:no-repeat;

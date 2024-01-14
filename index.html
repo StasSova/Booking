@@ -29,7 +29,7 @@
     <div id='backmain'>
         <section id='main'>
             <h2>Sign In</h2>
-            <img src='img/cross.png' id='cross'>
+            <img class="cust-icon" src='svg/close.svg' id='cross'>
             <input type='text' placeholder="Email">
             <input type='password' placeholder="Password">
             <a href="Profile/Account/Account.html">
@@ -48,7 +48,7 @@
         <section id='main'>
             <h2>Register</h2>
             <img class="cust-icon" src='svg/close.svg' id='cross2'>
-            <input type='email' placeholder="Email" maxlength='50'>
+            <input type='email' class="input-border" placeholder="Email" maxlength='50'>
             <p>We will send you an email to confirm your email address</p>
             <input type='password' placeholder="Password" maxlength='50'>
             <input type='password' placeholder="Repeat password" maxlength='50'>
@@ -63,8 +63,8 @@
     <div id='backmain3'>
         <section id='main'>
             <h2>Authentication</h2>
-            <img src='img/cross.png' id='cross3'>
-            <input type='number' placeholder="Code">
+            <img class="cust-icon" src='svg/close.svg' id='cross3'>
+            <input type="number" class="input-border simple-text" placeholder="Code">
             <p>We have sent you an email with the code. Check your mail and enter the code for the authentication.</p>
             <input type='button' value='Continue' class='but1' id='cont2'>
         </section>
@@ -73,17 +73,47 @@
     <div id='backmain4'>
         <section id='main'>
             <h2>Information</h2>
-            <img class='cross' src='img/cross.png' id='cross4'>
+            <img class="cust-icon" src='svg/close.svg' id='cross4'>
             <p>Tell us about yourself so we can better choose options for you ;)</p>
-            <select>
-                <option>Country</option>
-            </select>
-            <select>
-                <option>City</option>
-            </select>
-            <select>
-                <option>Why do you travel?</option>
-            </select>
+            <div class="select-menu" id="sel-country2">
+                <div class="select-btn input-border">
+                    <span class="simple-text sBtn-text">Country</span>
+                    <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502" stroke="#581ADB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <ul class="options">
+                    <li class="option">
+                        <span class="option-text">Country</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="select-menu" id="sel-city">
+                <div class="select-btn input-border">
+                    <span class="simple-text sBtn-text">City</span>
+                    <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502" stroke="#581ADB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <ul class="options">
+                    <li class="option">
+                        <span class="option-text">City</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="select-menu" id="sel-travel">
+                <div class="select-btn input-border">
+                    <span class="simple-text sBtn-text">Why do you travel?</span>
+                    <svg class="cust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502" stroke="#581ADB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <ul class="options">
+                    <li class="option">
+                        <span class="option-text">Why do you travel?</span>
+                    </li>
+                </ul>
+            </div>
             <p class='text'>Traveling with a pet?</p>
             <img class='check1' src='img/yes.png' tabindex="0"><img class='check2' src='img/no.png' tabindex="0">
             <input type='button' value='Continue' class='but1' id='cont3'>
@@ -94,7 +124,7 @@
     <div id='backmain5'>
         <section id='main'>
             <h2>All done!</h2>
-            <img class='cross' src='img/cross.png' id='cross5'>
+            <img class="cust-icon" src='svg/close.svg' id='cross5'>
             <div class='checkcont'>
                 <img class='check' src='img/check.png'>
             </div>  
