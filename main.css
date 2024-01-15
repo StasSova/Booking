@@ -66,3 +66,72 @@ section{
 }
 .butWrap img{margin: 0 15px 0 15px;}
 .butWrap #Sec{transform: scaleX(-1);}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .slider-container {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .sm-hotel-card {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+
+
+@media only screen and (max-width: 950px){
+
+    .slider-container {
+        display: block; /* Показываем слайдер при условии */
+      }
+    
+      .slider {
+        flex-direction: row; /* Горизонтальное расположение слайдов */
+      }
+    section{
+        width: 100% !important;
+        margin: auto !important;
+    }
+    .BeOurRegular{
+        flex-direction: column;
+        width: 90% !important;
+        margin: auto !important;
+    }
+    .BeOurRegular .wrap img{
+        width: 100%;
+    }
+    .BeOurRegular .box{
+        margin: 0;
+    }
+    .Safe{
+        width: 90% !important;
+        margin: auto !important;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    #last{
+        grid-area: 3 / 1 / 4 / 3
+    }
+}
