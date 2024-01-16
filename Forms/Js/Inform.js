@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   let check1 = document.querySelector('.check1');
-  let heck2 = document.querySelector('.check2');
+  let check2 = document.querySelector('.check2');
   check1.addEventListener('focus', function() {
     check1.src = '../img/actyes.png';
   });

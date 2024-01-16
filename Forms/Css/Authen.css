@@ -39,7 +39,7 @@
     height:10%;
     padding-left:1em;
     border:1px solid #C7C7C7;
-    border-radius:30px;
+    border-radius:32px;
     outline:none;
     font-size:1em;
     transition:.15s;
@@ -58,7 +58,7 @@
     height:10%;
     background-color:#581ADB;
     border:none;
-    border-radius:30px;
+    border-radius:32px;
     font-size:1em;
     color:white;
     transition:.15s;
@@ -69,14 +69,22 @@
 }
 #backmain3 #main .but1:active{transform:scale(0.95);}
 /* ==================================================
+                    ADAPTIVE 1800+
+====================================================*/
+@media only screen and (min-width:1800px){
+    #backmain3 #main h2{
+        margin-top:7%;
+        font-size:2em;
+    }
+    #backmain3 #main input[type='number']{font-size:1.25em;}
+    #backmain3 #main p{font-size:1.1em;}
+    #backmain3 #main .but1{font-size:1.25em;}
+}
+/* ==================================================
                     ADAPTIVE 1024-1439
 ====================================================*/
 @media only screen and (min-width:1024px) and (max-width:1439px){
     #backmain3 #main{width:35%;}
-    #backmain3 #main img{
-        right:34%;
-        width:2.5%;
-    }
     #backmain3 #main .but1{margin:41% 0 0 7%;}
 }
 /* ==================================================
@@ -84,20 +92,15 @@
 ====================================================*/
 @media only screen and (min-width:768px) and (max-width:1023px){
     #backmain3 #main{width:45%;}
-    #backmain3 #main img{
-        right:29.75%;
-        width:3%;
-    }
     #backmain3 #main .but1{margin:38.5% 0 0 7%;}
 }
 /* ==================================================
-                    ADAPTIVE 320-767
+                    ADAPTIVE 767-
 ====================================================*/
 @media only screen and (max-width:767px){
-    #backmain3 #main{width:50%;}
-    #backmain3 #main img{
-        top:27.5%;
-        right:27%;
-        width:4%;
+    #backmain3 #main{
+        height:50vh;
+        width:70%;
     }
+    #backmain3 #main .but1{margin:40% 0 0 7%;}
 }

@@ -90,35 +90,40 @@
 }
 #backmain4 #main .but2:active{transform:scale(0.95);}
 /* ==================================================
+                    ADAPTIVE 1800+
+====================================================*/
+@media only screen and (min-width:1800px){
+    #backmain4 #main h2{
+        margin-top:7%;
+        font-size:2em;
+    }
+    #backmain4 #main p{font-size:1.1em;}
+    #backmain4 #main .select-menu{ margin:3% 0 0 7%;}
+    #backmain4 #main .but1{
+        margin:14% 0 0 7%;
+        font-size:1.25em;
+    }
+    #backmain4 #main .but2{font-size:1.25em;}
+}
+/* ==================================================
                     ADAPTIVE 1024-1439
 ====================================================*/
 @media only screen and (min-width:1024px) and (max-width:1439px){
     #backmain4 #main{width:35%;}
-    #backmain4 #main .cross{
-        top:7%;
-        right:34%;
-        width:2.3%;
-    }
 }
 /* ==================================================
                     ADAPTIVE 768-1023
 ====================================================*/
 @media only screen and (min-width:768px) and (max-width:1023px){
     #backmain4 #main{width:45%;}
-    #backmain4 #main .cross{
-        right:29.5%;
-        width:3%;
-    }
 }
 /* ==================================================
                     ADAPTIVE 320-767
 ====================================================*/
 @media only screen and (max-width:767px){
-    #backmain4 #main{width:50%;}
-    #backmain4 #main .cross{
-        top:20%;
-        right:27%;
-        width:4%;
+    #backmain4 #main{
+        height:70vh;
+        width:75%;
     }
-    #backmain4 #main .but1{margin:24% 0 0 7%;}
+    #backmain4 #main .select-menu{margin:7% 0 0 7%;}
 }
