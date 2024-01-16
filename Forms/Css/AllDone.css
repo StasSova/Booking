@@ -74,35 +74,41 @@
 }
 #backmain5 #main .but2:active{transform:scale(0.95);}
 /* ==================================================
+                    ADAPTIVE 1800+
+====================================================*/
+@media only screen and (min-width:1800px){
+    #backmain5 #main h2{
+        margin-top:7%;
+        font-size:2em;
+    }
+    #backmain5 #main .but1{font-size:1.25em;}
+    #backmain5 #main .but2{font-size:1.25em;}
+}
+/* ==================================================
                     ADAPTIVE 1024-1439
 ====================================================*/
 @media only screen and (min-width:1024px) and (max-width:1439px){
     #backmain5 #main{width:35%;}
-    #backmain5 #main .cross{
-        right:34%;
-        width:2.3%;
-    }
+    #backmain5 #main #cross5{right:33.5%;}
 }
 /* ==================================================
                     ADAPTIVE 768-1023
 ====================================================*/
 @media only screen and (min-width:768px) and (max-width:1023px){
     #backmain5 #main{width:45%;}
-    #backmain5 #main .cross{
-        right:29.5%;
-        width:3%;
-    }
+    #backmain5 #main #cross5{right:29%;}
 }
 /* ==================================================
-                    ADAPTIVE 320-767
+                    ADAPTIVE 767-
 ====================================================*/
 @media only screen and (max-width:767px){
-    #backmain5 #main{width:50%;}
-    #backmain5 #main .cross{
-        top:32.25%;
-        right:27%;
-        width:4%;
+    #backmain5 #main{
+        height:40vh;
+        width:70%;
     }
-    #backmain5 #main .checkcont{ margin-top:8.5%;}
-    #backmain5 #main .but1{margin:9% 0 0 7%;}
+    #backmain5 #main #cross5{
+        top:31%;
+        right:17%;
+    }
+    #backmain5 #main .but1{margin:11% 0 0 7%;}
 }
