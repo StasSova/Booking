@@ -6,10 +6,12 @@ section{
 /* ==================================================
                         HOTELS
 ====================================================*/
-.Hotels{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+#adapt{
+    display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 20px;
 }
 /* ==================================================
                         COMMENT
@@ -87,7 +89,7 @@ section{
   
   .slider {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1s ease-in-out;
   }
   
   .sm-hotel-card {
@@ -96,10 +98,22 @@ section{
     box-sizing: border-box;
   }
   
+  .slider-container {
+    display: none; /* Показываем слайдер при условии */
+  }
 
+
+  
 
 @media only screen and (max-width: 950px){
 
+
+ 
+    
+
+    #adapt{
+        display: none;
+    }
     .slider-container {
         display: block; /* Показываем слайдер при условии */
       }
