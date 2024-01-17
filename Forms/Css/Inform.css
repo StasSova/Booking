@@ -6,13 +6,14 @@
     display:flex;
     justify-content:center;
     align-items:center;
+    overflow:scroll;
     z-index:1000;
     opacity:0;
     visibility:hidden;
 }
 #backmain4 #main{
     position:relative;
-    height:90vh;
+    height:auto;
     width:30%;
     background:white;
     border-radius:10px;
@@ -35,13 +36,13 @@
 #backmain4 #main #cross4:active{transform:scale(0.9);}
 #backmain4 #main p{
     margin:8% 0 0 10.5%;
+    font-size:1.1em;
     width:80%;
     color:gray;
 }
 #backmain4 #main .select-menu{
     margin:5% 0 0 7%;
     width:85%;
-    height:8%;
     transition:.15s;
 }
 #backmain4 #main .select-menu:active{transform:scale(0.98);}
@@ -59,7 +60,7 @@
 #backmain4 #main .but1{
     margin:11% 0 0 7%;
     width:85%;
-    height:8%;
+    min-height:55px;
     background-color:#581ADB;
     border:none;
     border-radius:32px;
@@ -73,9 +74,9 @@
 }
 #backmain4 #main .but1:active{transform:scale(0.95);}
 #backmain4 #main .but2{
-    margin:3.5% 0 0 7%;
+    margin:3.5% 0 3% 7%;
     width:85%;
-    height:8%;
+    min-height:55px;
     background:white;
     border:1px solid #C7C7C7;
     border-radius:32px;
@@ -122,8 +123,9 @@
 ====================================================*/
 @media only screen and (max-width:767px){
     #backmain4 #main{
-        height:70vh;
         width:75%;
     }
     #backmain4 #main .select-menu{margin:7% 0 0 7%;}
+    #backmain4 #main .but1{min-height:48px;}
+    #backmain4 #main .but2{min-height:48px;}
 }

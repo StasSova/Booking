@@ -11,7 +11,7 @@
     visibility:hidden;
 }
 #backmain5 #main{
-    posititon:relative;
+    position:relative;
     height:55vh;
     width:30%;
     background:white;
@@ -24,8 +24,8 @@
 }
 #backmain5 #main #cross5{
     position:absolute;
-    top:24.5%;
-    right:36%;
+    top:2.5%;
+    right:4%;
     transition:.15s;
 }
 #backmain5 #main #cross5:hover{
@@ -89,26 +89,21 @@
 ====================================================*/
 @media only screen and (min-width:1024px) and (max-width:1439px){
     #backmain5 #main{width:35%;}
-    #backmain5 #main #cross5{right:33.5%;}
 }
 /* ==================================================
                     ADAPTIVE 768-1023
 ====================================================*/
 @media only screen and (min-width:768px) and (max-width:1023px){
     #backmain5 #main{width:45%;}
-    #backmain5 #main #cross5{right:29%;}
 }
 /* ==================================================
                     ADAPTIVE 767-
 ====================================================*/
-@media only screen and (max-width:767px){
+@media only screen and (min-width:320px) and (max-width:767px){
     #backmain5 #main{
         height:40vh;
         width:70%;
     }
-    #backmain5 #main #cross5{
-        top:31%;
-        right:17%;
-    }
-    #backmain5 #main .but1{margin:11% 0 0 7%;}
+    #backmain5 #main .checkcont{margin-top:15%;}
+    #backmain5 #main .but1{margin:13% 0 0 7%;}
 }

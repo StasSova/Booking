@@ -145,7 +145,8 @@
 @media only screen and (max-width:767px){
     #backmain #main h2{margin-top:7%;}
     #backmain #main{
-        height:70vh;
+        height:60vh;
         width:70%;
     }
+    #backmain #main #google{margin:23% 0 0 7%;}
 }
