@@ -325,7 +325,7 @@ main .TouristHotel span{
         display: none;
     }
 }
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 1000px){
 
    
     body .cross{
