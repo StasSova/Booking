@@ -101,7 +101,7 @@
 ====================================================*/
 @media only screen and (min-width:320px) and (max-width:767px){
     #backmain5 #main{
-        height:40vh;
+        height:50vh;
         width:70%;
     }
     #backmain5 #main .checkcont{margin-top:15%;}

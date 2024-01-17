@@ -145,7 +145,7 @@
 ====================================================*/
 @media only screen and (max-width:767px){
     #backmain2 #main{
-        height:70vh;
+        height:75vh;
         width:70%;
     }
     #backmain2 #main .but1{margin:11% 0 0 7%;}
