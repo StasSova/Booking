@@ -230,7 +230,7 @@ text.percentage{
 }
 .book-item{
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: 1fr 3fr auto;
     gap: 16px;
     border: 1px solid var(--border-primary-color);
     border-radius: 14px;
@@ -238,7 +238,7 @@ text.percentage{
 /* IMAGE */
 .book-item img.im-hotel{
     height: 207px;
-    width: auto;
+    width: 100%;
     align-self: center;
 }
 /* DESCRIPTION */

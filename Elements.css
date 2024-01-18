@@ -95,7 +95,15 @@
   display: none;
   border-color: #581ADB !important;
 }
-.select-menu.active .options{display: block;}
+.select-menu.active .options {
+  display: block;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.select-menu.active .options::-webkit-scrollbar {
+  width: 0; /* Ширина полосы прокрутки */
+}
 .options .option{
   display: flex;
   height: 55px;
