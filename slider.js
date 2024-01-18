@@ -3,20 +3,22 @@ let isSliderEnabled = false;
 
 function showSlide(index) {
   const slider = document.querySelector('.slider');
-  const slideWidth = document.querySelector('.sm-hotel-card').offsetWidth;
+  const slideWidth = document.querySelector('.slider .sm-hotel-card').offsetWidth;
   const newTransformValue = -index * slideWidth;
   slider.style.transform = `translateX(${newTransformValue}px)`;
   currentSlide = index;
 }
 
 function nextSlide() {
-  const totalSlides = document.querySelectorAll('.sm-hotel-card').length;
+  const totalSlides = document.querySelectorAll('.slider .sm-hotel-card').length;
+
   currentSlide = (currentSlide + 1) % totalSlides;
   showSlide(currentSlide);
+  console.log(currentSlide)
 }
 
 function prevSlide() {
-  const totalSlides = document.querySelectorAll('.sm-hotel-card').length;
+  const totalSlides = document.querySelectorAll('.slider .sm-hotel-card').length;
   currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
   showSlide(currentSlide);
 }
@@ -34,7 +36,7 @@ function handleResize() {
 function enableSlider() {
   document.querySelector('.slider-container').style.display = 'block';
   document.querySelector('.slider').style.transition = 'transform 2s ease-in-out';
-  setInterval(nextSlide, 3000);
+  setInterval(nextSlide,2000);
   isSliderEnabled = true;
 }
 

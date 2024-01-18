@@ -325,7 +325,26 @@ main .TouristHotel span{
         display: none;
     }
 }
-@media only screen and (max-width: 1000px){
+
+@media only screen and (max-width: 1200px){
+    .book-cont{
+      
+        
+    }
+    .book-item img{
+        justify-self: center !important;
+    }
+    .book-item .descr{
+       margin-left: 25px;
+    }
+    .book-item{
+       
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-template-rows: repeat(2, 1fr) !important;
+    }
+}
+
+@media only screen and (max-width: 700px){
 
    
     body .cross{
