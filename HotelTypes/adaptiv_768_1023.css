@@ -42,12 +42,16 @@
     .sectionAdap{
         display: none;
         margin-bottom: 30px;
+        margin-left: 10px;
     }
     main content .card {width: 95%;}
 
     
 }
-@media only screen and (min-width: 764px) and (max-width: 891px){
+@media only screen and (min-width: 765px) and (max-width: 891px){
+    main content .card .container .description {
+        margin-top: -10px;
+    }
     .container {
         margin: 0px;
     }
@@ -95,6 +99,7 @@
     .sectionAdap{
         display: none;
         margin-bottom: 30px;
+        margin-left: 10px;
     }
     main content .card {width: 95%;}
 

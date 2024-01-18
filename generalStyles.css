@@ -385,7 +385,7 @@ nav .panel .search svg{
     stroke: var(--background-color); /*цвет бордера*/
 }
 .desktop-icon {display: block !important;}
-.mobile-icon {display: none !important;}
+.mobile-icon {display: none !important; filter: brightness(0) invert(1);}
 /* ==================================================
                         BOOKING
 ====================================================*/
@@ -452,7 +452,7 @@ nav .panel .search svg{
     border-radius: 16px;
     border: 1px solid var(--border-primary-color);
     align-items: center;
-    margin: 0 0 8px 0;
+    /* margin: 0 0 8px 0; */
     transition:.2s;
 }
 /* BACK */

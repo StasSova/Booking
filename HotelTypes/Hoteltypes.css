@@ -136,6 +136,7 @@ main aside section .Box .Block{
 main .checkbox-container {display: flex;}
 aside section .Box .Rating, .Popular, .Stars, .Facilities, .Typeofhotel, .Chainhotels{margin-top: 5px;}
 /* Скрытие стандартного чекбокса и стилизация кастомного */
+/* Скрываем стандартный чекбокс */
 main input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
@@ -143,37 +144,45 @@ main input[type="checkbox"] {
   opacity: 0;
   position: absolute;
 }
-main input[type="checkbox"] + label {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: 2px solid var(--primary-color);
-  display: inline-block;
-  position: relative;
-  margin-left: 5px;
-  margin-right: 5px;
-  cursor: pointer;
-  background-color: white; 
-  margin-bottom: 5px;
-  margin-top: 5px;
-  transition: background-color 0.3s; 
-}
-main input[type="checkbox"] + label::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 9px; 
-  height: 9px; 
-  background-color: white; 
-  border-radius: 50%; 
-  transform: translate(-50%, -50%) scale(0); 
-  transition: transform 0.3s; 
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
-}
-main input[type="checkbox"]:checked + label {background-color: var(--secondary-color);}
-main input[type="checkbox"]:checked + label::after {transform: translate(-50%, -50%) scale(1); }
 
+main input[type="checkbox"] + label {
+  width: 16px; 
+  height: 16px; 
+  border-radius: 50%;
+  margin-top: 6px;
+  margin-right: 4px;
+  border: 1px solid var(--border-primary-color); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent; 
+  transition: background-color 0.3s;
+}
+
+main input[type="checkbox"]:checked + label {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color); 
+}
+
+/* Галочка */
+main input[type="checkbox"] + label::before {
+  content: "";
+  border: 2px solid var(--background-color);
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+  height: 3px; 
+  width: 8px; 
+  margin-top: -1px;
+  opacity: 0;
+  position: absolute; 
+}
+
+main input[type="checkbox"]:checked + label::before {
+  opacity: 1;
+}
 
 main aside section .Box .Block p{
   color: var(--primary-color);
