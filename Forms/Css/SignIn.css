@@ -121,68 +121,38 @@
     background-position:4%;
 }
 /* ==================================================
-                    ADAPTIVE 1024-1439
+                    ADAPTIVE 1800+
 ====================================================*/
-@media only screen and (min-width:1024px) and (max-width:1439px){
-    #backmain #main{width:35%;}
-    #backmain #main img{
-        top:8.2%;
-        right:34%;
-        width:2.3%;
+@media only screen and (min-width:1800px){
+    #backmain #main h2{
+        margin-top:7%;
+        font-size:2em;
     }
-}
-/* ==================================================
-                    ADAPTIVE 768-1023
-====================================================*/
-@media only screen and (min-width:768px) and (max-width:1023px){
-    #backmain #main{width:45%;}
-    #backmain #main img{
-        top:7.7%;
-        right:29.5%;
-        width:3%;
-    }
-}
-/* ==================================================
-                    ADAPTIVE 320-767
-====================================================*/
-@media only screen and (max-width:767px){
-    #backmain #main{width:50%;}
-    #backmain #main img{
-        top:20%;
-        right:27%;
-        width:4%;
-    }
+    #backmain #main input[type='text'], input[type='password']{font-size:1.25em;}
+    #backmain #main p{font-size:1.1em;}
+    #backmain #main .but1{font-size:1.25em;}
+    #backmain #main .but2{font-size:1.25em;}
 }
 /* ==================================================
                     ADAPTIVE 1024-1439
 ====================================================*/
 @media only screen and (min-width:1024px) and (max-width:1439px){
     #backmain #main{width:35%;}
-    #backmain #main img{
-        top:8.2%;
-        right:34%;
-        width:2.3%;
-    }
 }
 /* ==================================================
                     ADAPTIVE 768-1023
 ====================================================*/
 @media only screen and (min-width:768px) and (max-width:1023px){
     #backmain #main{width:45%;}
-    #backmain #main img{
-        top:7.7%;
-        right:29.5%;
-        width:3%;
-    }
 }
 /* ==================================================
-                    ADAPTIVE 320-767
+                    ADAPTIVE 767-
 ====================================================*/
 @media only screen and (max-width:767px){
-    #backmain #main{width:50%;}
-    #backmain #main img{
-        top:20%;
-        right:27%;
-        width:4%;
+    #backmain #main h2{margin-top:7%;}
+    #backmain #main{
+        height:60vh;
+        width:70%;
     }
+    #backmain #main #google{margin:20% 0 0 7%;}
 }

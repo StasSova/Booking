@@ -116,34 +116,37 @@
     background-position:4%;
 }
 /* ==================================================
+                    ADAPTIVE 1800+
+====================================================*/
+@media only screen and (min-width:1800px){
+    #backmain2 #main h2{
+        margin-top:7%;
+        font-size:2em;
+    }
+    #backmain2 #main input[type='email'], input[type='password']{font-size:1.25em;}
+    #backmain2 #main p{font-size:1.1em;}
+    #backmain2 #main .but1{font-size:1.25em;}
+    #backmain2 #main .but2{font-size:1.25em;}
+}
+/* ==================================================
                     ADAPTIVE 1024-1439
 ====================================================*/
 @media only screen and (min-width:1024px) and (max-width:1439px){
     #backmain2 #main{width:35%;}
-    #backmain2 #main img{
-        right:34%;
-        width:2.3%;
-    }
 }
 /* ==================================================
                     ADAPTIVE 768-1023
 ====================================================*/
 @media only screen and (min-width:768px) and (max-width:1023px){
     #backmain2 #main{width:45%;}
-    #backmain2 #main img{
-        top:7%;
-        right:29.2%;
-        width:3%;
-    }
 }
 /* ==================================================
-                    ADAPTIVE 320-767
+                    ADAPTIVE 767-
 ====================================================*/
 @media only screen and (max-width:767px){
-    #backmain2 #main{width:50%;}
-    #backmain2 #main img{
-        top:20%;
-        right:27%;
-        width:4%;
+    #backmain2 #main{
+        height:75vh;
+        width:70%;
     }
+    #backmain2 #main .but1{margin:11% 0 0 7%;}
 }
