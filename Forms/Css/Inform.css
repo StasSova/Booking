@@ -63,7 +63,7 @@
     min-height:55px;
     background-color:#581ADB;
     border:none;
-    border-radius:32px;
+    border-radius:40px;
     font-size:1em;
     color:white;
     transition:.15s;
@@ -79,7 +79,7 @@
     min-height:55px;
     background:white;
     border:1px solid #C7C7C7;
-    border-radius:32px;
+    border-radius:40px;
     font-size:1em;
     color:gray;
     transition:.15s;
